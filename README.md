@@ -33,7 +33,9 @@ usalo. boy
 
 ![Descargar](https://img.shields.io/badge/Download-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer)
 
+# License
 
+Esta bajo la ![GitHub](https://img.shields.io/github/license/bracozs/raxer?color=brightgreen)
 
 
 #Lorem ipsum:
