@@ -8,7 +8,7 @@
  <img  alt="App Icon" src="https://repository-images.githubusercontent.com/677630972/50860305-f0bf-4e46-9a7c-0db729363970">
 </picture>
 </p>
-
+<sub><p align="center">Raxer is simple system tray application built with ♥️ by Braco ZS</p></sub> <br>
 
 
 
@@ -25,26 +25,10 @@
 
 
 
-App for switch lateral buttons of mouse. 😉.
-Also known as extra mouse buttons, side buttons, foward - back, mouse 4, mouse 5, xbuttons.
+**Raxer** is an app for swap lateral buttons of mouse, also known as extra mouse buttons, side buttons, foward - back, mouse 4, mouse 5, X buttons. 
 
-# Usage
+It works with any mouse, regardless of brand.
 
-usalo. boy
-
-
-# Download
-
-![Descargar](https://img.shields.io/badge/Download-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer)
-
-# License
-
-Esta bajo la ![GitHub](https://img.shields.io/github/license/bracozs/raxer?color=brightgreen)
-
-
-# Lorem ipsum:
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  
 <details>
 <summary>Short History</summary>
 I bought a mouse, and when I started using it, I noticed that the side buttons were reversed. I looked for a simple way to configure it in Windows and other applications, but I couldn't do it. Then I thought: "I am a programmer, maybe I can create an application for this..." . After a lot of research and hard work I managed to make the app work XD.<br>
@@ -54,8 +38,36 @@ Compré un mouse y al momento de usarlo me di cuenta que los botones laterales e
 Ahora es gratis para cualquiera que quiera intercambiar sus botones laterales. 🙂
 </details>
 
+
+
+
+
+# Usage
+
+Just run the application and it will start working. You will see the application icon in the system tray.
+Click on the icon and the menu with the following options will be displayed:
+- **Activate/deactivate**  -  (enables/disables the app functionality, without closing the application).
+- **Exit**  -  (i don't know what it does 🤐 😁)
+  
+If you **right click** on the icon an additional menu item will be displayed: 
+- **Start** with system - (runs the application when you turn on the computer).
+
+
+# Download
+
+![Descargar](https://img.shields.io/badge/Download-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer)
+
+# License
+**Raxer** is free software. You are free to use it for any purpose - personal, commercial, institutional, or educational - and install it on as many computers as you like. <br>
+It´s under [MIT License](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
+
+
+  
+
+
 # Support this proyect
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)
 
-
+# Credits
+Some imagenes estan aqui icnoononon8.com
