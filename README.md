@@ -8,7 +8,7 @@
  <img  alt="App Icon" src="https://repository-images.githubusercontent.com/677630972/50860305-f0bf-4e46-9a7c-0db729363970">
 </picture>
 </p>
-<sub><p align="center">Raxer is simple system tray application built with ♥️ by Braco ZS</p></sub> <br>
+<sub><p align="center">Raxer is simple system tray application, built with ♥️ by Braco ZS</p></sub> <br>
 
 
 
@@ -25,33 +25,30 @@
 
 
 
-**Raxer** is an app for swap lateral buttons of mouse, also known as extra mouse buttons, side buttons, foward - back, mouse 4, mouse 5, X buttons. 
+**Raxer** is an app for swap side buttons of mouse, also known as extra mouse buttons, additional buttons, foward - back, mouse 4, mouse 5, X buttons. 
 
 It works with any mouse, regardless of brand.
 
 <details>
 <summary>Short History</summary>
-I bought a mouse, and when I started using it, I noticed that the side buttons were reversed. I looked for a simple way to configure it in Windows and other applications, but I couldn't do it. Then I thought: "I am a programmer, maybe I can create an application for this..." . After a lot of research and hard work I managed to make the app work XD.<br>
-Now it's free so anyone who wants to swap their side buttons can do it.<br>
-  ESP:<br>
-Compré un mouse y al momento de usarlo me di cuenta que los botones laterales estaban invertidos. Busqué alguna forma simple de configurarlo en Windows y en otras aplicaciones, pero no pude hacerlo. Entonces pensé: "Soy programador, tal vez pueda crear una aplicación para esto..." . Luego de mucha investigación y trabajo duro logré hacer funcionar la app XD.<br>
-Ahora es gratis para cualquiera que quiera intercambiar sus botones laterales. 🙂
+I bought a mouse, and when I started using it, I noticed that the side buttons were reversed. I looked for a simple way to configure it in Windows and other applications, but I couldn't do it. Then I thought: "I am a programmer, maybe I can create an application for this...". After a lot of research and hard work I managed to make the app work XD.<br>
+Now it's free so anyone who wants to swap their side buttons can do it. 🙂 <br>
 </details>
-
-
-
 
 
 # Usage
 
 Just run the application and it will start working. You will see the application icon in the system tray.
 Click on the icon and the menu with the following options will be displayed:
-- **Activate/deactivate**  -  (enables/disables the app functionality, without closing the application).
+- **Turn Off/Turn On**  -  (enables/disables the app functionality, without closing the application).
 - **Exit**  -  (i don't know what it does 🤐 😁)
-  
-If you **right click** on the icon an additional menu item will be displayed: 
-- **Start** with system - (runs the application when you turn on the computer).
 
+<img height="155" width="255" src="https://github.com/BracoZS/Raxer/assets/100613002/3207a428-7764-41cd-baa0-9c4aa72cfcf8"> <br>
+
+If you **right click** on the icon an additional menu item will be displayed: 
+- **Start with system** - (runs the application when you turn on the computer).
+
+<img src="https://github.com/BracoZS/Raxer/assets/100613002/2dd6259d-d600-4bc8-b0b4-2c8847326bbe">
 
 # Download
 
