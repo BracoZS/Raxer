@@ -8,7 +8,7 @@
  <img  alt="App Icon" src="https://repository-images.githubusercontent.com/677630972/50860305-f0bf-4e46-9a7c-0db729363970">
 </picture>
 </p>
-<sub><p align="center">Raxer is simple system tray application, built with ♥️ by Braco ZS</p></sub> <br>
+<sub><p align="center">Raxer is a simple system tray application, built with ♥️ by Braco ZS</p></sub> <br>
 
 
 
