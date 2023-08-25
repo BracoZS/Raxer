@@ -25,7 +25,7 @@
 
 
 
-**Raxer** is an app for swap side buttons of mouse, also known as extra mouse buttons, additional buttons, foward - back, mouse 4, mouse 5, X buttons. 
+**Raxer** is an app for swap side buttons of mouse, also known as extra mouse buttons, additional buttons, foward - back, mouse 4 - mouse 5, X buttons. 
 
 It works with any mouse, regardless of brand.
 
@@ -55,7 +55,7 @@ If you **right click** on the icon an additional menu item will be displayed:
 ![Descargar](https://img.shields.io/badge/Download-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer)
 
 # License
-**Raxer** is free software. You are free to use it for any purpose - personal, commercial, institutional, or educational - and install it on as many computers as you like. <br>
+**Raxer** is free software. You are free to use it for any purpose, personal or commercial. And install it on as many computers as you like. <br>
 It´s under [MIT License](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
 
@@ -66,5 +66,5 @@ It´s under [MIT License](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)
 
-# Credits
-Some imagenes estan aqui icnoononon8.com
+<br>
+ Some icons by <a target="_blank" href="https://icons8.com">Icons8</a>
