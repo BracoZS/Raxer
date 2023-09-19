@@ -1,5 +1,5 @@
 # Raxer
-[![sdgnsfgnsfg](https://img.shields.io/badge/leer_en:-español-yellow)](https://github.com/BracoZS)
+[![change language](https://img.shields.io/badge/leer_en:-español-yellow)](https://github.com/BracoZS/Raxer/blob/main/Readme.ES.md)
 
 <p align="center">
 <picture>
