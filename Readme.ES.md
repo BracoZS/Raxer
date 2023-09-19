@@ -35,7 +35,7 @@ Ahora es gratis para cualquiera que quiera intercambiar sus botones laterales. �
 
 # Uso
 
-Sólo ejecute la plicación y empezará a funcionar. Verás el icono de la aplicación en la bandeja del sistema.
+Sólo ejecuta la aplicación y empezará a funcionar. Verás el icono de la aplicación en la bandeja del sistema.
 Haz clic en el icono y se mostrará el menú con las siguientes opciones:
 - **Activar/Desactivar**  -  (habilita/Deshabilita el funcionamiento de la aplicación, sin cerrarla).
 - **Cerrar**  -  (no sé lo que hace 🤐 😁)
@@ -52,7 +52,7 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 ![Descargar](https://img.shields.io/badge/Download-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer)
 
 # Licencia
-**Raxer** es de uso gratis. Eres libre de usarlo para cualquier propósito personal, commercial, institucional, or educacional - e instalarlo en tantas conmputadoras como quieras. <br>
+**Raxer** es de uso gratis. Eres libre de usarlo para cualquier propósito personal, commercial, institucional, or educacional - e instalarlo en tantas computadoras como quieras. <br>
 Está bajo la [Licencia MIT](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
 
@@ -62,5 +62,5 @@ Está bajo la [Licencia MIT](https://github.com/BracoZS/Raxer/blob/main/LICENSE)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)
 
-# Créditos
-Algunas imagenes estan aqui icnoononon8.com
+<br>
+Algunos iconos por <a target="_blank" href="https://icons8.com">Icons8</a>
