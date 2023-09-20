@@ -52,7 +52,7 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 ![Descargar](https://img.shields.io/badge/Download-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer)
 
 # Licencia
-**Raxer** es de uso gratis. Eres libre de usarlo para cualquier propósito personal, commercial, institucional, or educacional - e instalarlo en tantas computadoras como quieras. <br>
+**Raxer** es de uso gratis. Eres libre de usarlo para cualquier propósito personal o commercial. Instálalo en tantas computadoras como quieras. <br>
 Está bajo la [Licencia MIT](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
 
