@@ -3,7 +3,7 @@
 
 <p align="center">
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/BracoZS/Raxer/assets/100613002/fae42717-34af-4709-99cd-7cc40c509092">
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/BracoZS/Raxer/assets/100613002/fae42717-34af-4709-99cd-7cc40c509092" height="284">
  <source media="(prefers-color-scheme: light)" srcset="https://github.com/BracoZS/Raxer/assets/100613002/afeb3cc1-0439-4b83-8cfe-fa79d9fe2d53">
  <img  alt="App Icon" src="https://repository-images.githubusercontent.com/677630972/50860305-f0bf-4e46-9a7c-0db729363970">
 </picture>
