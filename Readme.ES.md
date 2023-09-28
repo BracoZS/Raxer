@@ -31,7 +31,13 @@ Compré un mouse y al momento de usarlo me di cuenta que los botones laterales e
 Ahora es gratis para cualquiera que quiera intercambiar sus botones laterales. 🙂
 </details>
 
+# Descarga
 
+[![Descargar](https://img.shields.io/badge/Descargar-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABU0lEQVR4nO2ZQUrDQBRA5xJZVaReoS7qXdVNoSIi3shNqW6kdXqCJ0NTkJpkZn4nmS/8B9kNyXv9ndAmzhmGPoAb4A3YA1/AKzB3/wFgDnj+8g1cO+0AL/Tz7LQDfA4EfDjtEMFpBwuojE2gNjaB2tgEamMTqI1NoDY2gdqomgAwA1bAe3s8AM1YAUADPP66Xrj27BL5Q4fDDliWDgCW7bnPOYgi2vo+fF+EJICjfNeDgBMrScA24tIZkRtAXD6wlQRsYjJdETkBpMkHNpKAsGHJjUgNyJAP3EsCmp5NNRgRWyiQ38XufEMRi8yIu4R1t+0jx9Rz9t7xUiNyPq2UdX4yeeEkSuCLyVeI8MXlhV8nXfITTMKPLj/iJPxk8iNE+MnlC0b4avIF9kR9+QsmoUdeMAl98hmT0Ct/FtH1Y22vXv4EcAU8tW8sw7EW/zk3DDcqP23s71WYH0nAAAAAAElFTkSuQmCC)]()
+
+# Licencia
+**Raxer** es de uso gratis. Eres libre de usarlo para cualquier propósito personal o commercial. Instálalo en tantas computadoras como quieras. <br>
+Está bajo la [Licencia MIT](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
 # Uso
 
@@ -46,17 +52,6 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 - **Iniciar con el sistema** - (ejecuta la aplicación al encender el ordenador).
 
 <img src="https://github.com/BracoZS/Raxer/assets/100613002/9f44ccfd-e77a-4759-938f-36fa85769129">
-
-# Descarga
-
-[![Descargar](https://img.shields.io/badge/Descargar-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABU0lEQVR4nO2ZQUrDQBRA5xJZVaReoS7qXdVNoSIi3shNqW6kdXqCJ0NTkJpkZn4nmS/8B9kNyXv9ndAmzhmGPoAb4A3YA1/AKzB3/wFgDnj+8g1cO+0AL/Tz7LQDfA4EfDjtEMFpBwuojE2gNjaB2tgEamMTqI1NoDY2gdqomgAwA1bAe3s8AM1YAUADPP66Xrj27BL5Q4fDDliWDgCW7bnPOYgi2vo+fF+EJICjfNeDgBMrScA24tIZkRtAXD6wlQRsYjJdETkBpMkHNpKAsGHJjUgNyJAP3EsCmp5NNRgRWyiQ38XufEMRi8yIu4R1t+0jx9Rz9t7xUiNyPq2UdX4yeeEkSuCLyVeI8MXlhV8nXfITTMKPLj/iJPxk8iNE+MnlC0b4avIF9kR9+QsmoUdeMAl98hmT0Ct/FtH1Y22vXv4EcAU8tW8sw7EW/zk3DDcqP23s71WYH0nAAAAAAElFTkSuQmCC)]()
-
-# Licencia
-**Raxer** es de uso gratis. Eres libre de usarlo para cualquier propósito personal o commercial. Instálalo en tantas computadoras como quieras. <br>
-Está bajo la [Licencia MIT](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
-
-
-  
 
 # Apoya este proyecto
 
