@@ -45,7 +45,7 @@ Now it's free so anyone who wants to swap their side buttons can do it. 🙂 <br
 **Raxer** is free software. You are free to use it for any purpose, personal or commercial. And install it on as many computers as you like. <br>
 It´s under [MIT License](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
-# Usage
+# How to use
 
 Just run the application and it will start working. You will see the application icon in the system tray.
 Click on the icon and the menu with the following options will be displayed:
