@@ -27,7 +27,7 @@
 
 
 
-**Raxer** is an app for swapping the mouse side buttons, also known as extra mouse buttons, additional buttons, foward - back, mouse 4 - mouse 5, X buttons, etc. 
+**Raxer** is an app for swapping the mouse side buttons, also known as extra mouse buttons, additional buttons, back - forward, mouse 4 - mouse 5, X buttons, etc. 
 
 It works with any mouse, regardless of brand.
 
