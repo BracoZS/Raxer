@@ -16,7 +16,7 @@
 
 <!--Insignias-->
 ![GitHub lanzamiento](https://img.shields.io/github/v/release/bracozs/raxer)
-![GitHub todas las descargas](https://img.shields.io/github/downloads/BracoZS/Raxer/total?color=%23bf00f7)
+<!--![GitHub todas las descargas](https://img.shields.io/github/downloads/BracoZS/Raxer/total?color=%23bf00f7) -->
 [![GitHub licencia MIT](https://img.shields.io/github/license/BracoZS/Raxer?color=brightgreen)](https://github.com/BracoZS/Raxer/blob/main/LICENSE)
 <!-- ![GitHub](https://img.shields.io/github/languages/code-size/bracozs/raxer) -->
 <!-- ![GitHub](https://img.shields.io/github/stars/bracozs/raxer) -->
