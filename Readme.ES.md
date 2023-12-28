@@ -37,7 +37,7 @@ Ahora es gratis para cualquiera que quiera intercambiar sus botones laterales. �
 [![.Zip](https://img.shields.io/badge/.zip-brightgreen?style=for-the-badge&link=github.com/BracoZS/Raxer&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVR4nO2XTU7DMBBGs6OcgQ3qKQoSvUGkUoldDxFxh5ZLwD5i3RWIVpyAHVt+dqDSE1R9yJKNRsVJY8c4aslIs4lnPr94RoknSTYMOAUegS9g6eHPwHHiY8A5sKK+vThDAIfApxZYAw/AbYG/i83k8ydvCKAvksdbYnMTaHmJOy8IIBWJIx8AvXYATIXWG9ANDdADLrSb489qnQQOABt5xvJaJ0FgAGcIAvWAJdZWjqNoAALiXuinSU2ATDSfacbelpxRMICqPbC/ADRdAhybcL8BmuqBXO7cAvzLEtxYAK5jAgwtAINoAMqAS+BV+89tKPq/oKq1AOxCCfoiYPIHAFdC/6zo3vYhRrNZyWjm6jOtid6jU0Q5CDScFpnSLv1eKIgTYA4sPMdzmystpfnr1vQNvmWWabsENSgAAAAASUVORK5CYII=)](https://github.com/BracoZS/Raxer/releases/download/v1.0.0/Raxer.zip)
 
 # Licencia
-**Raxer** es de uso gratuito. Eres libre de usarlo para cualquier propósito personal o commercial. Instálalo en tantas computadoras como quieras. <br>
+**Raxer** es de uso gratuito. Eres libre de usarlo para cualquier propósito personal o comercial. Instálalo en tantas computadoras como quieras. <br>
 Está bajo la [Licencia MIT](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
 # Uso
