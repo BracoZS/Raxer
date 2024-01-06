@@ -54,9 +54,42 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 
 <img src="https://github.com/BracoZS/Raxer/assets/100613002/9f44ccfd-e77a-4759-938f-36fa85769129">
 
+# Raxer 2: Próximamente
+### (Siguiente versión actualmente en desarrollo)
+Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta próxima versión incluirá nuevas funciones de **"Reprogramación de todos los botones del mouse"** que de seguro les resultará útil para personalizar su experiencia con el ratón.
+
+La nuevas funciones incluirán:
+
+- Reprogramar botones a:
+  - Otro botón del ratón (clic, clic derecho, rueda, etc)
+  - Tecla/combinación de tecla, por ejem: `a`, `3`, `Atl` `Ctrl + C`
+  - Copiar, pegar, cortar
+  - Deshabilitar botón
+  - Controles multimedia (reproducir/detener, subir/bajar volumen, silenciar, siguiente )
+  - Minimizar/maximizar/cerrar  ventana
+  - Mejorar precición del puntero (mientras se presiona)
+  - Fijar eje X/Y (mientras se presiona)
+  - Abrir aplicación
+  - Abrir sitio web
+  - Silenciar/abrir micrófono
+  - Tomar captura de pantalla
+  - Botón de gestos
+- Perfiles (con atajos)
+- Configuración específica por aplicación.
+
+
+Como desarrollador independiente, estoy comprometido con la mejora de esta aplicación. Agradezco enormemente su apoyo, entusiasmo y paciencia mientras trabajo en las adiciones de la siguiente actualización.
+
+Espero que en un futuro cercano puedan disfrutar de las nuevas funcionalidades tanto como yo disfruto creándolas y que mejoren tu experiencia de usuario y te brinden control, comodidad y flexibilidad al utilizar tu ratón.
+
+¡Gracias por ser parte de esta travesía!
+
 # Apoya este proyecto
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)
 
 <br>
 Algunos iconos por <a target="_blank" href="https://icons8.com">Icons8</a>
+
+<!--If you find a bug, create a GitHub issue, or even better, submit a pull request. Similarly, if you have questions, simply post them as GitHub issues.
+Si encuentras un error, crea una incidencia en GitHub o, mejor aún, envía una solicitud de extracción. Del mismo modo, si tienes preguntas, publícalas como problemas de GitHub.-->
