@@ -62,7 +62,7 @@ La nuevas funciones incluirán:
 
 - Reprogramar botones a:
   - Otro botón del ratón (clic, clic derecho, rueda, etc)
-  - Tecla/combinación de tecla, por ejem: `a`, `3`, `Atl` `Ctrl + C`
+  - Tecla/combinación de tecla, por ejem: tecla `A`, `3`, `Alt` ó  `Ctrl + Alt`, `Mayús+ A`, etc
   - Copiar, pegar, cortar
   - Deshabilitar botón
   - Controles multimedia (reproducir/detener, subir/bajar volumen, silenciar, siguiente )
