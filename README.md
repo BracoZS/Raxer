@@ -71,7 +71,7 @@ The new features will include:
 
 - Remap button/s to:
   - Other mouse button (click, right click, wheel, etc).
-  - Key/key combination, e.g.: `A`, `9`, `Tab`, `🔼`, `Alt` or `Ctrl + Alt`, `Shift + A` keys, etc.
+  - Key/key combination, e.g.: `A`, `9`, `Tab`, `🔼`, `Alt` or `Alt + Tab`, `Ctrl + S` keys, etc.
   - `Copy`, `Paste`, `Cut` commands
   - Disable button/s
   - Multimedia controls (volume up, volume down, play/pause, stop, mute, next/previous track)
