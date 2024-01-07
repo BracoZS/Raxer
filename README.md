@@ -63,6 +63,35 @@ If you **right click** on the icon an additional menu item will be displayed:
 
 <img src="https://github.com/BracoZS/Raxer/assets/100613002/2dd6259d-d600-4bc8-b0b4-2c8847326bbe">
 
+# (Raxer v2.0.0: Coming soon)
+### (Next version currently under development)
+I am excited to work on the next Raxer update.  This next version will include new **"Remap all mouse buttons"** features that I'm sure you will find useful to customize your mouse experience.
+
+The new features will include:
+
+- Remap button/s to:
+  - Other mouse button (click, right click, wheel, etc).
+  - Key/key combination, e.g.: `A`, `9`, `Tab`, `🔼`, `Alt` or `Ctrl + Alt`, `Shift + A` keys, etc.
+  - `Copy`, `Paste`, `Cut` commands
+  - Disable button/s
+  - Multimedia controls (volume up, volume down, play/pause, stop, mute, next/previous track)
+  - Minimize, maximize, close window
+  - Improve pointer precision (while pressing)
+  - Fix X/Y axis (while pressing)
+  - Open application
+  - Open web site
+  - Mute/unmute microphone 🎙️
+  - Take screenshot
+  - Gesture button
+- Profiles (with shortcuts)
+- Application specific-settings (e.g. Chrome, Photoshop, notepad, etc).
+
+  
+As an independent developer, I am committed to improving this application. I greatly appreciate your support, patience and entusiasm while I work on the additions of the next update.
+
+I hope that in the near future you will enjoy the new features as much as I enjoy creating them and that they will enhance your user experience and give you control, comfort and flexibility when using your mouse.
+
+Thank you for being part of this journey!
 
 # Support this proyect
 
