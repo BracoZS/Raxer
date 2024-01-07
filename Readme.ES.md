@@ -54,19 +54,19 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 
 <img src="https://github.com/BracoZS/Raxer/assets/100613002/9f44ccfd-e77a-4759-938f-36fa85769129">
 
-# Raxer 2: Próximamente
+# Raxer v2.0.0: Próximamente
 ### (Siguiente versión actualmente en desarrollo)
 Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta próxima versión incluirá nuevas funciones de **"Reprogramación de todos los botones del mouse"** que de seguro les resultará útil para personalizar su experiencia con el ratón.
 
 La nuevas funciones incluirán:
 
-- Reprogramar botones a:
+- Reprogramar boton/es a:
   - Otro botón del ratón (clic, clic derecho, rueda, etc)
-  - Tecla/combinación de tecla, por ejem: tecla `A`, `3`, `Alt` ó  `Ctrl + Alt`, `Mayús+ A`, etc
-  - Copiar, pegar, cortar
-  - Deshabilitar botón
-  - Controles multimedia (reproducir/detener, subir/bajar volumen, silenciar, siguiente )
-  - Minimizar/maximizar/cerrar  ventana
+  - Tecla/combinación de tecla, por ejem: teclas `A`, `9`, `Tab`, `🔼`, `Alt` ó  `Ctrl + Alt`, `Mayús + A`, etc
+  - Comandos `Copiar`, `pegar`, `cortar`
+  - Deshabilitar botón/es
+  - Controles multimedia (reproducir, detener, subir volumen, bajar volumen, silenciar, siguiente pista)
+  - Minimizar, maximizar, cerrar  ventana
   - Mejorar precición del puntero (mientras se presiona)
   - Fijar eje X/Y (mientras se presiona)
   - Abrir aplicación
@@ -75,7 +75,7 @@ La nuevas funciones incluirán:
   - Tomar captura de pantalla
   - Botón de gestos
 - Perfiles (con atajos)
-- Configuración específica por aplicación.
+- Configuración específica por aplicación (por ejem. Chrome, Photoshop, bloc de notas, etc).
 
 
 Como desarrollador independiente, estoy comprometido con la mejora de esta aplicación. Agradezco enormemente su apoyo, entusiasmo y paciencia mientras trabajo en las adiciones de la siguiente actualización.
@@ -91,5 +91,8 @@ Espero que en un futuro cercano puedan disfrutar de las nuevas funcionalidades t
 <br>
 Algunos iconos por <a target="_blank" href="https://icons8.com">Icons8</a>
 
-<!--If you find a bug, create a GitHub issue, or even better, submit a pull request. Similarly, if you have questions, simply post them as GitHub issues.
+
+<!--
+
+If you find a bug, create a GitHub issue, or even better, submit a pull request. Similarly, if you have questions, simply post them as GitHub issues.
 Si encuentras un error, crea una incidencia en GitHub o, mejor aún, envía una solicitud de extracción. Del mismo modo, si tienes preguntas, publícalas como problemas de GitHub.-->
