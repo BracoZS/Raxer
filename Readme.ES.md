@@ -62,16 +62,16 @@ La nuevas funciones incluirán:
 
 - Reprogramar boton/es a:
   - Otro botón del ratón (clic, clic derecho, rueda, etc)
-  - Tecla/combinación de tecla, por ejem: teclas `A`, `9`, `Tab`, `🔼`, `Alt` ó  `Ctrl + Alt`, `Mayús + A`, etc
+  - Tecla/combinación de tecla, por ejem: teclas `A`, `9`, `Tab`, `🔼`, `Alt` ó  `Alt + Tab`, `Ctrl + s`, etc
   - Comandos `Copiar`, `pegar`, `cortar`
   - Deshabilitar botón/es
-  - Controles multimedia (reproducir, detener, subir volumen, bajar volumen, silenciar, siguiente pista)
+  - Controles multimedia ( subir volumen, bajar volumen, reproducir, detener, silenciar, previa/siguiente pista )
   - Minimizar, maximizar, cerrar  ventana
   - Mejorar precición del puntero (mientras se presiona)
   - Fijar eje X/Y (mientras se presiona)
   - Abrir aplicación
   - Abrir sitio web
-  - Silenciar/abrir micrófono
+  - Silenciar/abrir micrófono 🎙️
   - Tomar captura de pantalla
   - Botón de gestos
 - Perfiles (con atajos)
