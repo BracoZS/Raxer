@@ -14,7 +14,7 @@
 
 <!--Insignias-->
 ![GitHub](https://img.shields.io/github/v/release/bracozs/raxer)
-![GitHub all releases](https://img.shields.io/github/downloads/BracoZS/Raxer/total)
+![GitHub todas las descargas](https://img.shields.io/github/downloads/BracoZS/Raxer/total?color=%23bf00f7)
 [![GitHub](https://img.shields.io/github/license/bracozs/raxer?color=brightgreen)](https://github.com/BracoZS/Raxer/blob/main/LICENSE)
 <!--![GitHub](https://img.shields.io/github/languages/code-size/bracozs/raxer)-->
 <!--![GitHub](https://img.shields.io/github/stars/bracozs/raxer)-->
@@ -23,7 +23,7 @@
 
 **Raxer** es una aplicación para intercambiar el funcionamiento de los botones laterales del ratón, también conocidos como botones extra del ratón, botones para avanzar - retroceder, ir adelante - ir atrás, botón 4 - botón 5, X buttons, etc. 
 
-Funciona con cualquier ratón, sin importar la marca.
+Si por alguna razón tu mouse tiene los **botones laterales invertidos**, puedes solucionarlo con Raxer. Funciona con cualquier ratón, sin importar la marca.
 
 <details>
 <summary>Corta Historia</summary>
