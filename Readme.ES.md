@@ -77,6 +77,8 @@ Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta pr�
 ** Completado: :white_check_mark: **   
 ** En desarrollo: :construction_worker::construction: **
 
+Si te interesa este proyecto considera apoyar este trabajo. !Muchas gracias!  
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)
 
 Como desarrollador independiente, estoy comprometido con la mejora de esta aplicación. Agradezco enormemente su apoyo, entusiasmo y paciencia mientras trabajo en las adiciones de la siguiente actualización.
 
