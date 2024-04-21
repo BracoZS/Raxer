@@ -67,24 +67,26 @@ If you **right click** on the icon an additional menu item will be displayed:
 ### (Next version currently under development)
 I am excited to work on the next Raxer update.  This next version will include new **"Remap all mouse buttons"** features that I'm sure you will find useful to customize your mouse experience.
 
-The new features will include:
-
+#### Checklist of new features that will be added (updated 21/04/24):
 - Remap button/s to:
-  - Other mouse button (click, right click, wheel, etc).
-  - Key/key combination, e.g.: `A`, `9`, `Tab`, `🔼`, `Alt` or `Alt + Tab`, `Ctrl + S` keys, etc.
-  - `Copy`, `Paste`, `Cut` commands
-  - Disable button/s
-  - Multimedia controls (volume up, volume down, play/pause, stop, mute, next/previous track)
-  - Minimize, maximize, close window
-  - Improve pointer precision (while pressing)
-  - Fix X/Y axis (while pressing)
-  - Open application
-  - Open web site
-  - Mute/unmute microphone 🎙️
-  - Take screenshot
-  - Gesture button
-- Profiles (with shortcuts)
-- Application specific-settings (e.g. Chrome, Photoshop, notepad, etc).
+  - :white_check_mark: Other mouse button (click, right click, middle, etc).
+  - :white_check_mark: Key/key combination, e.g.: `A`, `9`, `Tab`, `🔼`, `Alt` or `Alt + Tab`, `Ctrl + S` keys, etc.
+  - :white_check_mark: `Copy`, `Paste`, `Cut` commands
+  - :white_check_mark: Disable button/s
+  - :white_check_mark: Multimedia controls (volume up, volume down, play/pause, stop, mute, next/previous track)
+  - :white_check_mark: Minimize, maximize, close window
+  - :construction_worker::construction: Improve pointer precision (while pressing)
+  - :white_check_mark: Fix X/Y axis (while pressing)
+  - :white_check_mark: Open application
+  - :construction_worker::construction: Open web site
+  - :white_check_mark: Mute/unmute microphone 🎙️
+  - :construction_worker::construction: Take screenshot 
+  - :sparkles: Gesture button (this feature will be included in the next  minor version)
+- :construction_worker::construction: Profiles (with shortcuts)
+- :construction_worker::construction:  Application specific-settings (e.g. Chrome, Photoshop, notepad, etc).
+
+** Completed: :white_check_mark: **  
+** Under development:  :construction_worker::construction: **
 
   
 As an independent developer, I am committed to improving this application. I greatly appreciate your support, patience and entusiasm while I work on the additions of the next update.
