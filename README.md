@@ -88,6 +88,8 @@ I am excited to work on the next Raxer update.  This next version will include n
 ** Completed: :white_check_mark: **  
 ** Under development:  :construction_worker::construction: **
 
+If you are interested in this project, please consider supporting this work. Thank you very much!    
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)
   
 As an independent developer, I am committed to improving this application. I greatly appreciate your support, patience and entusiasm while I work on the additions of the next update.
 
