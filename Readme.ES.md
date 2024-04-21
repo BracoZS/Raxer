@@ -56,24 +56,26 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 ### (Siguiente versión actualmente en desarrollo)
 Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta próxima versión incluirá nuevas funciones de **"Reprogramación de todos los botones del mouse"** que de seguro les resultará útil para personalizar su experiencia con el ratón.
 
-La nuevas funciones incluirán:
+#### Lista de las nuevas funciones que se añadirán (actualizada el 21/04/24):  
+- Reasignar botón/es a:
+  - :white_check_mark: Otro botón del ratón (clic, clic derecho, central, etc).
+  - :white_check_mark: Combinación de teclas, por ejemplo: `A`, `9`, `Tab`, `🔼`, `Alt` o `Alt + Tab`, teclas `Ctrl + S`, etc.
+  - :white_check_mark: Comandos `Copiar`, `Pegar`, `Cortar`
+  - :white_check_mark: Inhabilitar botón/es
+  - :white_check_mark: Controles multimedia (subir volumen, bajar volumen, reproducir/pausar, detener, silenciar, pista siguiente/anterior)
+  - :white_check_mark: Minimizar, maximizar, cerrar ventana
+  - :construction_worker::construction: Mejorar la precisión del puntero (al pulsar)
+  - :white_check_mark: Fijar eje X/Y (al pulsar)
+  - :white_check_mark: Abrir aplicación
+  - :construction_worker::construction: Abrir página web
+  - :white_check_mark: Silenciar/activar micrófono 🎙️
+  - :construction_worker::construction: Hacer captura de pantalla 
+  - :sparkles: Botón gestual (esta función se incluirá en la próxima actualización menor)
+- :construction_worker::construction: Perfiles (con accesos directos)
+- :construction_worker::construction: Ajustes específicos por aplicación (por ejemplo, Chrome, Photoshop, bloc de notas, etc).
 
-- Reprogramar boton/es a:
-  - Otro botón del ratón (clic, clic derecho, rueda, etc)
-  - Tecla/combinación de tecla, por ejem: teclas `A`, `9`, `Tab`, `🔼`, `Alt` ó  `Alt + Tab`, `Ctrl + s`, etc
-  - Comandos `Copiar`, `pegar`, `cortar`
-  - Deshabilitar botón/es
-  - Controles multimedia ( subir volumen, bajar volumen, reproducir, detener, silenciar, previa/siguiente pista )
-  - Minimizar, maximizar, cerrar  ventana
-  - Mejorar precición del puntero (mientras se presiona)
-  - Fijar eje X/Y (mientras se presiona)
-  - Abrir aplicación
-  - Abrir sitio web
-  - Silenciar/abrir micrófono 🎙️
-  - Tomar captura de pantalla
-  - Botón de gestos
-- Perfiles (con atajos)
-- Configuración específica por aplicación (por ejem. Chrome, Photoshop, bloc de notas, etc).
+** Completado: :white_check_mark: **   
+** En desarrollo: :construction_worker::construction: **
 
 
 Como desarrollador independiente, estoy comprometido con la mejora de esta aplicación. Agradezco enormemente su apoyo, entusiasmo y paciencia mientras trabajo en las adiciones de la siguiente actualización.
