@@ -59,7 +59,7 @@ Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta pr�
 #### Lista de las nuevas funciones que se añadirán (actualizada el 21/04/24):  
 - Reasignar botón/es a:
   - :white_check_mark: Otro botón del ratón (clic, clic derecho, central, etc).
-  - :white_check_mark: Combinación de teclas, por ejemplo: `A`, `9`, `Tab`, `🔼`, `Alt` o `Alt + Tab`, teclas `Ctrl + S`, etc.
+  - :white_check_mark: Combinación de teclas, por ejemplo: teclas `A`, `9`, `Tab`, `🔼`, `Alt` o `Alt + Tab`, `Ctrl + S`, etc.
   - :white_check_mark: Comandos `Copiar`, `Pegar`, `Cortar`
   - :white_check_mark: Inhabilitar botón/es
   - :white_check_mark: Controles multimedia (subir volumen, bajar volumen, reproducir/pausar, detener, silenciar, pista siguiente/anterior)
@@ -70,7 +70,7 @@ Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta pr�
   - :construction_worker::construction: Abrir página web
   - :white_check_mark: Silenciar/activar micrófono 🎙️
   - :construction_worker::construction: Hacer captura de pantalla 
-  - :sparkles: Botón gestual (esta función se incluirá en la próxima actualización menor)
+  - :sparkles: Botón de gestos (esta función se incluirá en la próxima actualización menor)
 - :construction_worker::construction: Perfiles (con accesos directos)
 - :construction_worker::construction: Ajustes específicos por aplicación (por ejemplo, Chrome, Photoshop, bloc de notas, etc).
 
