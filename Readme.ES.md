@@ -58,7 +58,7 @@ Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta pr�
 
 #### Lista de las nuevas funciones que se añadirán (actualizada el 21/04/24):  
 - Reasignar botón/es a:
-  - :white_check_mark: Otro botón del ratón (clic, clic derecho, central, etc).
+  - :white_check_mark: Otro botón del ratón (clic, clic derecho, rueda, etc).
   - :white_check_mark: Combinación de teclas, por ejemplo: teclas `A`, `9`, `Tab`, `🔼`, `Alt` o `Alt + Tab`, `Ctrl + S`, etc.
   - :white_check_mark: Comandos `Copiar`, `Pegar`, `Cortar`
   - :white_check_mark: Inhabilitar botón/es
