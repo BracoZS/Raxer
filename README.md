@@ -75,12 +75,12 @@ I am excited to work on the next Raxer update.  This next version will include n
   - :white_check_mark: Disable button/s
   - :white_check_mark: Multimedia controls (volume up, volume down, play/pause, stop, mute, next/previous track)
   - :white_check_mark: Minimize, maximize, close window
-  - :construction_worker::construction: Improve pointer precision (while pressing)
+  - :white_check_mark: Improve pointer precision (while pressing)
   - :white_check_mark: Fix X/Y axis (while pressing)
   - :white_check_mark: Open application
-  - :construction_worker::construction: Open web site
+  - :white_check_mark: Open web site
   - :white_check_mark: Mute/unmute microphone 🎙️
-  - :construction_worker::construction: Take screenshot 
+  - :white_check_mark: Take screenshot 
   - :sparkles: Gesture button (this feature will be included in the next  minor version)
 - :construction_worker::construction: Profiles (with shortcuts)
 - :construction_worker::construction:  Application specific-settings (e.g. Chrome, Photoshop, notepad, etc).
