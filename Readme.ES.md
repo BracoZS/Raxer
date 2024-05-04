@@ -64,10 +64,10 @@ Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta pr�
   - :white_check_mark: Inhabilitar botón/es
   - :white_check_mark: Controles multimedia (subir volumen, bajar volumen, reproducir/pausar, detener, silenciar, pista siguiente/anterior)
   - :white_check_mark: Minimizar, maximizar, cerrar ventana
-  - :construction_worker::construction: Mejorar la precisión del puntero (al pulsar)
+  - :white_check_mark: Mejorar la precisión del puntero (al pulsar)
   - :white_check_mark: Fijar eje X/Y (al pulsar)
   - :white_check_mark: Abrir aplicación
-  - :construction_worker::construction: Abrir página web
+  - :white_check_mark: Abrir página web
   - :white_check_mark: Silenciar/activar micrófono 🎙️
   - :construction_worker::construction: Hacer captura de pantalla 
   - :sparkles: Botón de gestos (esta función se incluirá en la próxima actualización menor)
