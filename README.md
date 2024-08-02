@@ -82,7 +82,7 @@ I am excited to work on the next Raxer update.  This next version will include n
   - :white_check_mark: Mute/unmute microphone 🎙️
   - :white_check_mark: Take screenshot 
   - :sparkles: Gesture button (this feature will be included in the next  minor version)
-- :construction_worker::construction: Profiles (with shortcuts)
+- :white_check_mark: Profiles (with shortcuts)
 - :white_check_mark:  Application specific-settings (e.g. Chrome, Photoshop, notepad, etc).
 
 ** Completed: :white_check_mark: **  
