@@ -69,10 +69,10 @@ Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta pr�
   - :white_check_mark: Abrir aplicación
   - :white_check_mark: Abrir página web
   - :white_check_mark: Silenciar/activar micrófono 🎙️
-  - :construction_worker::construction: Hacer captura de pantalla 
+  - :white_check_mark: Hacer captura de pantalla 
   - :sparkles: Botón de gestos (esta función se incluirá en la próxima actualización menor)
-- :construction_worker::construction: Perfiles (con accesos directos)
-- :construction_worker::construction: Ajustes específicos por aplicación (por ejemplo, Chrome, Photoshop, bloc de notas, etc).
+- :white_check_mark: Perfiles (con accesos directos)
+- :white_check_mark: Ajustes específicos por aplicación (por ejemplo, Chrome, Photoshop, bloc de notas, etc).
 
 ** Completado: :white_check_mark: **   
 ** En desarrollo: :construction_worker::construction: **
