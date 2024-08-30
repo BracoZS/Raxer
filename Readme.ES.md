@@ -56,7 +56,7 @@ Si haces **clic derecho** en el icono se mostrará un elemento adicional en el m
 ### (Siguiente versión actualmente en desarrollo)
 Estoy trabajando con entusiasmo en la próxima actualización de Raxer. Esta próxima versión incluirá nuevas funciones de **"Reprogramación de todos los botones del mouse"** que de seguro les resultará útil para personalizar su experiencia con el ratón.
 
-#### Lista de las nuevas funciones que se añadirán (actualizada el 21/04/24):  
+#### Lista de las nuevas funciones que se añadirán (actualizada el 30/08/24):  
 - Reasignar botón/es a:
   - :white_check_mark: Otro botón del ratón (clic, clic derecho, rueda, etc).
   - :white_check_mark: Combinación de teclas, por ejemplo: teclas `A`, `9`, `Tab`, `🔼`, `Alt` o `Alt + Tab`, `Ctrl + S`, etc.
