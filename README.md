@@ -67,7 +67,7 @@ If you **right click** on the icon an additional menu item will be displayed:
 ### (Next version currently under development)
 I am excited to work on the next Raxer update.  This next version will include new **"Remap all mouse buttons"** features that I'm sure you will find useful to customize your mouse experience.
 
-#### Checklist of new features that will be added (updated 21/04/24):
+#### Checklist of new features that will be added (updated 30/08/24):
 - Remap button/s to:
   - :white_check_mark: Other mouse button (click, right click, middle, etc).
   - :white_check_mark: Key/key combination, e.g.: `A`, `9`, `Tab`, `🔼`, `Alt` or `Alt + Tab`, `Ctrl + S` keys, etc.
