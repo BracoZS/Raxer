@@ -97,7 +97,7 @@ I hope that in the near future you will enjoy the new features as much as I enjo
 
 Thank you for being part of this journey!
 
-# Support this proyect
+# Sponsor this proyect
 
 
 [![Patreon](https://img.shields.io/badge/Support_on_patreon-ECEFF1?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABxklEQVR4nO2WPWvbQBiAr6VEKNAxUEinbh2SmIZg%2BSOW7Uh3siXLli6aQ6Fbp06FLulUSqBD5uQfZEwyJ3RsofQnhCYdQu6kk9MO7ZA3KBDoUDfSnbfqgWcTvI%2Feg5MQKin5A%2F2ZacxUutGt%2BoL5GP0D4YZPUkLfjgn9lDr0PCXhr5TQ07FDD8Zk%2FQVEkY6KoC119rRKF27NIv72HETRjMD0g8A3A2GimJ4mhIZTDbjw%2FYfCDj6mOIQ8ChxeCSt4M5UA2Ny8L6xgP7UDKO5oQzkgsYLnwgpAztHlDzN6JB0ACN0T1vBEWCOQd7glHZBaA0OsDUFN%2FyR7EamApOO%2FEl0fVGVdd14qIG4PtpKOD6qKNW9FbgNt713SHoCyZr8iuQHvZdL2QNVx05mTCmCt%2FtPE9EDJlvd14vA89wBfdb%2FELRdk5S33NVIMIPFqH%2BTsnX1f9maVAjJ4o7cdN3tQRN7s%2FU7q%2FQ66Cy1HAJjmA9ZwdnjDgXySn6yO6Z3Di3yOM1jD3uB1fMbrBCZaw0dx1VlEedEKBGR8Mwyd1ex1XsO7rIaPuYE%2FMwMfMsN%2Bz6p2Nfdg2YCpo5UBS%2F%2F7EegFf8tLStAUuAZWoCwNWjXb3wAAAABJRU5ErkJggg%3D%3D&logoSize=auto)](https://www.patreon.com/Braco_ZS)
