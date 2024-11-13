@@ -84,6 +84,7 @@ I am excited to work on the next Raxer update.  This next version will include n
   - :sparkles: Gesture button (this feature will be included in the next  minor version)
 - :white_check_mark: Profiles (with shortcuts)
 - :white_check_mark:  Application specific-settings (e.g. Chrome, Photoshop, notepad, etc).
+- :construction_worker::construction: UI/UX 
 
 ** Completed: :white_check_mark: **  
 ** Under development:  :construction_worker::construction: **
