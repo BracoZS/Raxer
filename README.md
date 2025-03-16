@@ -1,3 +1,14 @@
+# 🚀 Raxer v2.0 Alpha - ¡Ya disponible!  
+
+¡La versión Alpha de Raxer v2.0 ya está disponible! 🎉 Pruébala antes del lanzamiento oficial y ayúda a mejorarla.  
+
+🔹 **Descárgala ahora** desde la sección [Releases](https://github.com/BracoZS/Raxer/releases).  
+🔹 **Comparte tu feedback** y reporta errores en la pestaña de [Issues](https://github.com/BracoZS/Raxer/issues).  
+
+¡Gracias por ser parte de esta etapa de desarrollo! 🚀  
+
+
+
 # Raxer
 [![change language](https://img.shields.io/badge/leer_en:-español-yellow)](https://github.com/BracoZS/Raxer/blob/main/Readme.ES.md)
 
