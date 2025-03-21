@@ -1,0 +1,157 @@
+﻿<Window x:Class="Raxer_2_alpha.Configuracion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Raxer_2_alpha"
+        mc:Ignorable="d"
+        xmlns:viewmodels="clr-namespace:Raxer_2_alpha.ViewModels"
+        Title="Configuracion"
+        Width="542"
+        Height="522"
+        AllowsTransparency="True"
+        Background="{x:Null}"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    
+    <Window.DataContext>
+        <viewmodels:NavegadorVM/>
+    </Window.DataContext>
+
+    <Border Width="520"
+            Margin="11"
+            CornerRadius="8">
+        <Border.Background>
+            <ImageBrush ImageSource="/imgs/Fondo.png"
+                        Stretch="UniformToFill"/>
+        </Border.Background>
+
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="34" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="39" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <!--  Parte izquierda  -->
+                <ColumnDefinition Width="75" />
+                <!--  Parte derecha  -->
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Barra de título -->
+            <Border Name="Barra"
+                    Grid.ColumnSpan="2"
+                    Width="auto"
+                    Background="{StaticResource barra_titulo}"
+                    CornerRadius="8,8,0,0"
+                    MouseLeftButtonDown="Barra_Arrastre">
+                <TextBlock Text="Raxer - Settings"
+                           Margin="12,7,0,0"
+                           Style="{StaticResource t_1}"/>
+            </Border>
+
+            <!-- Panel Izquierdo -->
+            <StackPanel Grid.Row="1"
+                        Grid.RowSpan="2"
+                        Width="75"
+                        Margin="0,0,0,4"
+                        Background="{StaticResource panel_izquierdo}">
+
+                <!-- Logo -->
+                <Image Source="/imgs/appIcon.png"
+                       Width="60"
+                       Height="64"
+                       Margin="0,11,0,11"/>
+
+                <!-- Inicio -->
+                <RadioButton Command="{Binding IrInicio}"
+                             Style="{StaticResource radio}">
+                    <StackPanel>
+                        <Image Source="/imgs/inicio.png"
+                               Style="{StaticResource page_icon}"/>
+                        <TextBlock Text="Inicio"
+                                   Style="{StaticResource t_2}"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <!-- Perfiles -->
+                <RadioButton Command="{Binding IrPerfiles}"
+                             Margin="1,4,1,0"
+                             Style="{StaticResource radio}">
+                    <StackPanel>
+                        <Image Source="/imgs/perfiles.png"
+                               Style="{StaticResource page_icon}"/>
+                        <TextBlock Text="Perfiles"
+                                   Style="{StaticResource t_2}"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <!-- Filtros -->
+                <RadioButton Command="{Binding IrFiltros}"
+                             Style="{StaticResource radio}">
+                    <StackPanel>
+                        <Image Source="/imgs/filtro.png"
+                               Style="{StaticResource page_icon}"/>
+                        <TextBlock Text="Filtros"
+                                   Style="{StaticResource t_2}"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <!-- Info -->
+                <RadioButton Command="{Binding IrInfo}"
+                             Style="{StaticResource radio}"
+                             IsChecked="True">
+                    <StackPanel>
+                        <Image Source="/imgs/info.png"
+                               Style="{StaticResource page_icon}"/>
+                        <TextBlock Text="Info"
+                                   Style="{StaticResource t_2}"/>
+                    </StackPanel>
+                </RadioButton>
+            </StackPanel>
+
+            <!-- Contenido de página -->
+            <ContentControl Content="{Binding PaginaActual}"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            Margin="0,0,0,2"/>
+
+            <!-- Botones de control -->
+            <StackPanel Grid.Row="0"
+                        Grid.Column="1"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button Style="{StaticResource boton_control}"
+                        Click="Minimizar">
+                    <Image Source="/imgs/minimizar.png"
+                           Margin="4"/>
+                </Button>
+                <Separator Width="1" Background="Transparent"/>
+                <Button Style="{StaticResource boton_control_cerrar}"
+                        Click="Cerrar">
+                    <Image Source="/imgs/cerrar.png"
+                           Margin="4"/>
+                </Button>
+            </StackPanel>
+
+            <!-- Botones de implementación -->
+            <StackPanel
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="0,0,4,0"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Button Content="OK"
+                        Style="{StaticResource boton_confirmacion}" Click="Button_Click"/>
+                <Button Content="Cancelar"
+                        IsEnabled="False"
+                        Foreground="Gray"
+                        Style="{StaticResource boton_confirmacion}"/>
+            </StackPanel>
+
+            <TextBlock Text="Raxer 2.0.0 Alpha (versión en desarrollo)" Foreground="Yellow" Grid.Column="1" Margin="72,8,149,7" HorizontalAlignment="Center"/>
+        </Grid>
+    </Border>
+</Window>

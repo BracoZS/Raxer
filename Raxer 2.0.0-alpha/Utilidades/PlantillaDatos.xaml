@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:rx="clr-namespace:Raxer_2_alpha"
+                    xmlns:viewmodels="clr-namespace:Raxer_2_alpha.ViewModels" 
+                    xmlns:views="clr-namespace:Raxer_2_alpha.Views">
+
+    <DataTemplate DataType="{x:Type viewmodels:InicioVM}">
+        <views:InicioV />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewmodels:PerfilesVM}">
+        <views:PerfilesV />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewmodels:FiltrosVM}">
+        <views:FiltrosV />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewmodels:InfoVM}">
+        <views:InfoV />
+    </DataTemplate>
+    
+    <!--<DataTemplate DataType="{x:Type viewmodels:NavegadorVM}">
+        <rx:Configuracion />
+    </DataTemplate>-->
+
+</ResourceDictionary>

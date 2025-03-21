@@ -1,0 +1,166 @@
+﻿<UserControl x:Class="Raxer_2_alpha.Views.PerfilesV"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Raxer_2_alpha.Views"
+             xmlns:viewmodels="clr-namespace:Raxer_2_alpha.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignWidth="445" 
+             d:DesignHeight="426"
+             Foreground="{StaticResource primario}"
+             Style="{StaticResource pagina}"
+             x:Name="periflexxx">
+
+
+    <Grid>
+        <Grid.Effect>
+            <DropShadowEffect ShadowDepth="0" BlurRadius="2" Color="#FF0A0A0A" Opacity="0.5" Direction="1000"/>
+        </Grid.Effect>
+        <!-- Base -->
+        <Border CornerRadius="0,0,8,0"
+                Grid.RowSpan="2"/>
+
+        <!-- Título de contenido -->
+        <StackPanel
+            Height="30"
+            Width="400"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="11,2,0,0">
+            <Canvas
+                Height="29"
+                Width="69"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Text="Perfiles"
+                    Canvas.Left="11"
+                    Canvas.Top="7"
+                    Style="{StaticResource t_3}" />
+            </Canvas>
+            <Canvas>
+                <Rectangle 
+                    Height="1"
+                    Width="69"
+                    Fill="{StaticResource primario_variant}"/>
+                <Rectangle
+                    Height="1"
+                    Width="417">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="#00CDCDCD" Offset="0.95"/>
+                            <GradientStop Color="#59F1F1F1" Offset="0"/>
+                            <GradientStop Color="#59F1F1F1" Offset="0.85"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Canvas>
+        </StackPanel>
+
+
+        <UniformGrid Columns="1" Margin="10,50,10,10"  >
+            
+            <UniformGrid Rows="1" Height="20">
+                <TextBlock Text="MB 1 (clic) ⚠️"
+                           Style="{StaticResource t_3}"
+                           Height="19" 
+                           Margin="11,0,0,0" 
+                           HorizontalAlignment="Left"
+                           Foreground="Yellow"/>
+                <ComboBox ItemsSource="{Binding ClicIzquierdo.Tipos}"
+                          SelectedValue="{Binding ClicIzquierdo.TipoSeleccionado}"
+                          SelectedIndex="{Binding ClicIzquierdo.TipoSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+                <ComboBox ItemsSource="{Binding ClicIzquierdo.Opciones}"
+                          SelectedValue="{Binding ClicIzquierdo.OpcionSeleccionada}"
+                          SelectedIndex="{Binding ClicIzquierdo.OpcionSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+            </UniformGrid>
+
+            <UniformGrid Rows="1" Height="20">
+                <TextBlock Text="MB 2 (clic derecho)"
+                           Style="{StaticResource t_3}"
+                           Height="19"
+                           Margin="11,0,0,0"
+                           HorizontalAlignment="Left" />
+                <ComboBox ItemsSource="{Binding ClicDerecho.Tipos}"
+                          SelectedValue="{Binding ClicDerecho.TipoSeleccionado}"
+                          SelectedIndex="{Binding ClicDerecho.TipoSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+                <ComboBox ItemsSource="{Binding ClicDerecho.Opciones}"
+                          SelectedValue="{Binding ClicDerecho.OpcionSeleccionada}"
+                          SelectedIndex="{Binding ClicDerecho.OpcionSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+            </UniformGrid>
+
+            <UniformGrid Rows="1" Height="20" >
+                <TextBlock Text="MB 3 (clic de rueda)"
+                           Style="{StaticResource t_3}"
+                           Height="19" HorizontalAlignment="Left"
+                           Margin="11,0,0,0"/>
+                <ComboBox ItemsSource="{Binding ClicCentral.Tipos}"
+                          SelectedValue="{Binding ClicCentral.TipoSeleccionado}"
+                          SelectedIndex="{Binding ClicCentral.TipoSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+                <ComboBox ItemsSource="{Binding ClicCentral.Opciones}"
+                          SelectedValue="{Binding ClicCentral.OpcionSeleccionada}"
+                          SelectedIndex="{Binding ClicCentral.OpcionSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor" 
+                          Style="{StaticResource combod}"/>
+            </UniformGrid>
+
+            <UniformGrid Name="mb5" Rows="1" Height="20">
+                <TextBlock Text="MB 4 (atrás)"
+                           Style="{ StaticResource t_3}"
+                           Height="19" HorizontalAlignment="Left"
+                           Margin="11,0,0,0"/>
+                <ComboBox ItemsSource="{Binding Atras.Tipos}"
+                          SelectedValue="{Binding Atras.TipoSeleccionado}"
+                          SelectedIndex="{Binding Atras.TipoSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+                <ComboBox ItemsSource="{Binding Atras.Opciones}" 
+                          SelectedValue="{Binding Atras.OpcionSeleccionada}"
+                          SelectedIndex="{Binding Atras.OpcionSelIndex}"
+                          SelectedValuePath="Valor" 
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+            </UniformGrid>
+            
+            <UniformGrid Rows="1" Height="20">
+                <TextBlock Text="MB 5 (adelante)"
+                           Style="{StaticResource t_3}"
+                           Height="19" HorizontalAlignment="Left"
+                           Margin="11,0,0,0"/>
+                <ComboBox ItemsSource="{Binding Adelante.Tipos}"
+                          SelectedValue="{Binding Adelante.TipoSeleccionado}"
+                          SelectedIndex="{Binding Adelante.TipoSelIndex}"
+                          SelectedValuePath="Valor"
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+                <ComboBox ItemsSource="{Binding Adelante.Opciones}"
+                          SelectedValue="{Binding Adelante.OpcionSeleccionada}"
+                          SelectedIndex="{Binding Adelante.OpcionSelIndex}"
+                          SelectedValuePath="Valor" 
+                          DisplayMemberPath="LangValor"
+                          Style="{StaticResource combod}"/>
+            </UniformGrid>
+            
+        </UniformGrid>
+
+
+    </Grid>
+</UserControl>
