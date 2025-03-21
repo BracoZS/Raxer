@@ -1,0 +1,28 @@
+﻿<Application x:Class="Raxer_2_alpha.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Raxer_2_alpha"
+             xmlns:utilidades="clr-namespace:Raxer_2_alpha.Utilidades"
+             Startup="Iniciar"
+             ShutdownMode="OnExplicitShutdown">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Estilos/Colores.xaml"/>
+                <ResourceDictionary Source="Estilos/Botones.xaml"/>
+                <ResourceDictionary Source="Estilos/RadioBoton.xaml"/>
+                <ResourceDictionary Source="Estilos/Imagenes.xaml"/>
+                <ResourceDictionary Source="Estilos/Texto.xaml"/>
+                <ResourceDictionary Source="Estilos/Pagina.xaml"/>
+                <ResourceDictionary Source="Estilos/Paneles.xaml"/>
+                <ResourceDictionary Source="Estilos/Combo.xaml"/>
+                <ResourceDictionary Source="Estilos/Scroll.xaml"/>
+                <ResourceDictionary Source="Estilos/Borde.xaml"/>
+                <ResourceDictionary Source="Estilos/Checkbox.xaml"/>
+                <ResourceDictionary Source="Estilos/Slider.xaml"/>
+                <ResourceDictionary Source="Utilidades/PlantillaDatos.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <utilidades:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        </ResourceDictionary>  
+    </Application.Resources>
+</Application>

@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Raxer_2_alpha.Views.InicioV"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Raxer_2_alpha.Views"
+             xmlns:viewmodels="clr-namespace:Raxer_2_alpha.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignWidth="445" 
+             d:DesignHeight="426"
+             Foreground="{StaticResource primario}"
+             Style="{StaticResource pagina}">
+
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/imgs/working.png"/>
+        </Grid.Background>
+
+    </Grid>
+</UserControl>

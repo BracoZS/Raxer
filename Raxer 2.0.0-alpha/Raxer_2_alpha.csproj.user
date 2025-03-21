@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Joseph\Desktop\Raxer 2.0.0-alpha\Raxer 2.0.0-alpha\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Configuracion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modelos\CustomMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="SelectDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Configuracion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Borde.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Botones.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Checkbox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Colores.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Combo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Imagenes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Pagina.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Paneles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\RadioBoton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Scroll.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Slider.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Estilos\Texto.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SelectDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Utilidades\PlantillaDatos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FiltrosV.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InfoV.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InicioV.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PerfilesV.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

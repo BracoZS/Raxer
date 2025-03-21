@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SEPARATOR TIPOS DE REASIGNACION" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="porDefecto" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="botonMouse" xml:space="preserve">
+    <value>Mouse button</value>
+  </data>
+  <data name="cortar" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="pegar" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="copiar" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="seleccionarCombo" xml:space="preserve">
+    <value>Choose a key combination</value>
+  </data>
+  <data name="SEPARATOR TECLAS VIRTUALES" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="experimental" xml:space="preserve">
+    <value>Experimental</value>
+  </data>
+  <data name="inhabilitar" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="abrir" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="puntero" xml:space="preserve">
+    <value>Mouse pointer</value>
+  </data>
+  <data name="accion" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="multimedia" xml:space="preserve">
+    <value>Media controls</value>
+  </data>
+  <data name="edicion" xml:space="preserve">
+    <value>Edit commands</value>
+  </data>
+  <data name="comboTeclas" xml:space="preserve">
+    <value>Key combination</value>
+  </data>
+  <data name="tecla" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="CANCEL" xml:space="preserve">
+    <value>Control break processing</value>
+  </data>
+  <data name="BACK" xml:space="preserve">
+    <value>Backspace</value>
+  </data>
+  <data name="TAB" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="CLEAR" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="RETURN" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="SHIFT" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="CONTROL" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="MENU" xml:space="preserve">
+    <value>Alt</value>
+  </data>
+  <data name="PAUSE" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="CAPITAL" xml:space="preserve">
+    <value>Caps lock</value>
+  </data>
+  <data name="KANAMODE" xml:space="preserve">
+    <value>IME Kana mode</value>
+  </data>
+  <data name="HANGULMODE" xml:space="preserve">
+    <value>IME Hangul mode</value>
+  </data>
+  <data name="JUNJAMODE" xml:space="preserve">
+    <value>IME Junja mode</value>
+  </data>
+  <data name="FINALMODE" xml:space="preserve">
+    <value>IME Final mode</value>
+  </data>
+  <data name="HANJAMODE" xml:space="preserve">
+    <value>IME Hanja mode</value>
+  </data>
+  <data name="KANJIMODE" xml:space="preserve">
+    <value>IME Kanji mode</value>
+  </data>
+  <data name="ESCAPE" xml:space="preserve">
+    <value>Escape</value>
+  </data>
+  <data name="IMECONVERT" xml:space="preserve">
+    <value>IME Convert</value>
+  </data>
+  <data name="IMENONCONVERT" xml:space="preserve">
+    <value>IME Nonconvert</value>
+  </data>
+  <data name="IMEACCEPT" xml:space="preserve">
+    <value>IME Accept</value>
+  </data>
+  <data name="IMEMODECHANGE" xml:space="preserve">
+    <value>IME Mode Change Request</value>
+  </data>
+  <data name="SPACE" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="PRIOR" xml:space="preserve">
+    <value>Page up</value>
+  </data>
+  <data name="NEXT" xml:space="preserve">
+    <value>Page down</value>
+  </data>
+  <data name="END" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="HOME" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="LEFT" xml:space="preserve">
+    <value>Left arrow</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>Up arrow</value>
+  </data>
+  <data name="RIGHT" xml:space="preserve">
+    <value>Right arrow</value>
+  </data>
+  <data name="DOWN" xml:space="preserve">
+    <value>Down arrow</value>
+  </data>
+  <data name="SELECT" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="PRINT" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="EXECUTE" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="SNAPSHOT" xml:space="preserve">
+    <value>Print screen</value>
+  </data>
+  <data name="INSERT" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="HELP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="NUM_0" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NUM_1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NUM_2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NUM_3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NUM_4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="NUM_5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="NUM_6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="NUM_7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="NUM_8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="NUM_9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="A" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="B" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="C" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="D" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="E" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="F" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="G" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="H" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="I" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="J" xml:space="preserve">
+    <value>J</value>
+  </data>
+  <data name="K" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="L" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="M" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="N" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="O" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="P" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="Q" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="R" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="S" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="T" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="U" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="V" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="W" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="WIN_L" xml:space="preserve">
+    <value>Left Windows</value>
+  </data>
+  <data name="WIN_R" xml:space="preserve">
+    <value>Right Windows</value>
+  </data>
+  <data name="APPS" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="SLEEP" xml:space="preserve">
+    <value>Sleep</value>
+  </data>
+  <data name="NUMPAD_0" xml:space="preserve">
+    <value>Numpad 0</value>
+  </data>
+  <data name="NUMPAD_1" xml:space="preserve">
+    <value>Numpad 1</value>
+  </data>
+  <data name="NUMPAD_2" xml:space="preserve">
+    <value>Numpad 2</value>
+  </data>
+  <data name="NUMPAD_3" xml:space="preserve">
+    <value>Numpad 3</value>
+  </data>
+  <data name="NUMPAD_4" xml:space="preserve">
+    <value>Numpad 4</value>
+  </data>
+  <data name="NUMPAD_5" xml:space="preserve">
+    <value>Numpad 5</value>
+  </data>
+  <data name="NUMPAD_6" xml:space="preserve">
+    <value>Numpad 6</value>
+  </data>
+  <data name="NUMPAD_7" xml:space="preserve">
+    <value>Numpad 7</value>
+  </data>
+  <data name="NUMPAD_8" xml:space="preserve">
+    <value>Numpad 8</value>
+  </data>
+  <data name="NUMPAD_9" xml:space="preserve">
+    <value>Numpad 9</value>
+  </data>
+  <data name="MULTIPLY" xml:space="preserve">
+    <value>Multiply (*)</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>Add (+)</value>
+  </data>
+  <data name="SEPARATOR" xml:space="preserve">
+    <value>Separator</value>
+  </data>
+  <data name="SUBTRACT" xml:space="preserve">
+    <value>Substract (-)</value>
+  </data>
+  <data name="DECIMAL" xml:space="preserve">
+    <value>Decimal (.)</value>
+  </data>
+  <data name="DIVIDE" xml:space="preserve">
+    <value>Divide (/)</value>
+  </data>
+  <data name="F1" xml:space="preserve">
+    <value>F1</value>
+  </data>
+  <data name="F2" xml:space="preserve">
+    <value>F2</value>
+  </data>
+  <data name="F3" xml:space="preserve">
+    <value>F3</value>
+  </data>
+  <data name="F4" xml:space="preserve">
+    <value>F4</value>
+  </data>
+  <data name="F5" xml:space="preserve">
+    <value>F5</value>
+  </data>
+  <data name="F6" xml:space="preserve">
+    <value>F6</value>
+  </data>
+  <data name="F7" xml:space="preserve">
+    <value>F7</value>
+  </data>
+  <data name="F8" xml:space="preserve">
+    <value>F8</value>
+  </data>
+  <data name="F9" xml:space="preserve">
+    <value>F9</value>
+  </data>
+  <data name="F10" xml:space="preserve">
+    <value>F10</value>
+  </data>
+  <data name="F11" xml:space="preserve">
+    <value>F11</value>
+  </data>
+  <data name="F12" xml:space="preserve">
+    <value>F12</value>
+  </data>
+  <data name="F13" xml:space="preserve">
+    <value>F13</value>
+  </data>
+  <data name="F14" xml:space="preserve">
+    <value>F14</value>
+  </data>
+  <data name="F15" xml:space="preserve">
+    <value>F15</value>
+  </data>
+  <data name="F16" xml:space="preserve">
+    <value>F16</value>
+  </data>
+  <data name="F17" xml:space="preserve">
+    <value>F17</value>
+  </data>
+  <data name="F18" xml:space="preserve">
+    <value>F18</value>
+  </data>
+  <data name="F19" xml:space="preserve">
+    <value>F19</value>
+  </data>
+  <data name="F20" xml:space="preserve">
+    <value>F20</value>
+  </data>
+  <data name="F21" xml:space="preserve">
+    <value>F21</value>
+  </data>
+  <data name="F22" xml:space="preserve">
+    <value>F22</value>
+  </data>
+  <data name="F23" xml:space="preserve">
+    <value>F23</value>
+  </data>
+  <data name="F24" xml:space="preserve">
+    <value>F24</value>
+  </data>
+  <data name="NUMLOCK" xml:space="preserve">
+    <value>Num Lock</value>
+  </data>
+  <data name="SCROLL" xml:space="preserve">
+    <value>Scroll Lock</value>
+  </data>
+  <data name="SHIFT_L" xml:space="preserve">
+    <value>Left Shift</value>
+  </data>
+  <data name="SHIFT_R" xml:space="preserve">
+    <value>Right Shift</value>
+  </data>
+  <data name="CONTROL_L" xml:space="preserve">
+    <value>Left Control</value>
+  </data>
+  <data name="CONTROL_R" xml:space="preserve">
+    <value>Right Control</value>
+  </data>
+  <data name="ALT_L" xml:space="preserve">
+    <value>Left Alt</value>
+  </data>
+  <data name="ALT_R" xml:space="preserve">
+    <value>Right Alt</value>
+  </data>
+  <data name="BROWSER_BACK" xml:space="preserve">
+    <value>Browser Back</value>
+  </data>
+  <data name="BROWSER_FORWARD" xml:space="preserve">
+    <value>Browser Foward</value>
+  </data>
+  <data name="BROWSER_REFRESH" xml:space="preserve">
+    <value>Browser Refersh</value>
+  </data>
+  <data name="BROWSER_STOP" xml:space="preserve">
+    <value>Browser Stop</value>
+  </data>
+  <data name="BROWSER_SEARCH" xml:space="preserve">
+    <value>Browser Search</value>
+  </data>
+  <data name="BROWSER_FAVORITES" xml:space="preserve">
+    <value>Browser Favorites</value>
+  </data>
+  <data name="BROWSER_HOME" xml:space="preserve">
+    <value>Browser Home</value>
+  </data>
+  <data name="VOLUME_MUTE" xml:space="preserve">
+    <value>Volume Mute</value>
+  </data>
+  <data name="VOLUME_DOWN" xml:space="preserve">
+    <value>Volume Down</value>
+  </data>
+  <data name="VOLUME_UP" xml:space="preserve">
+    <value>Volume Up</value>
+  </data>
+  <data name="MEDIA_NEXT_TRACK" xml:space="preserve">
+    <value>Next track</value>
+  </data>
+  <data name="MEDIA_PREV_TRACK" xml:space="preserve">
+    <value>Previous track</value>
+  </data>
+  <data name="MEDIA_STOP" xml:space="preserve">
+    <value>Stop media</value>
+  </data>
+  <data name="MEDIA_PLAY_PAUSE" xml:space="preserve">
+    <value>Play/Pause media</value>
+  </data>
+  <data name="LAUNCH_MAIL" xml:space="preserve">
+    <value>Start Mail</value>
+  </data>
+  <data name="LAUNCH_MEDIA_SELECT" xml:space="preserve">
+    <value>Select media</value>
+  </data>
+  <data name="LAUNCH_APP1" xml:space="preserve">
+    <value>Launch app 1</value>
+  </data>
+  <data name="LAUNCH_APP2" xml:space="preserve">
+    <value>Launch app 2</value>
+  </data>
+  <data name="OEM_1" xml:space="preserve">
+    <value>Oem1</value>
+  </data>
+  <data name="OEM_PLUS" xml:space="preserve">
+    <value>Oemplus</value>
+  </data>
+  <data name="OEM_COMMA" xml:space="preserve">
+    <value>Oemcomma</value>
+  </data>
+  <data name="OEM_MINUS" xml:space="preserve">
+    <value>Oemminus</value>
+  </data>
+  <data name="OEM_PERIOD" xml:space="preserve">
+    <value>Oemperiod</value>
+  </data>
+  <data name="OEM_2" xml:space="preserve">
+    <value>Oem2</value>
+  </data>
+  <data name="OEM_3" xml:space="preserve">
+    <value>Oem3</value>
+  </data>
+  <data name="OEM_4" xml:space="preserve">
+    <value>Oem4</value>
+  </data>
+  <data name="OEM_5" xml:space="preserve">
+    <value>Oem5</value>
+  </data>
+  <data name="OEM_6" xml:space="preserve">
+    <value>Oem6</value>
+  </data>
+  <data name="OEM_7" xml:space="preserve">
+    <value>Oem7</value>
+  </data>
+  <data name="OEM_8" xml:space="preserve">
+    <value>Oem8</value>
+  </data>
+  <data name="OEM_102" xml:space="preserve">
+    <value>Oem102</value>
+  </data>
+  <data name="PROCESSKEY" xml:space="preserve">
+    <value>IME Process</value>
+  </data>
+  <data name="ATTN" xml:space="preserve">
+    <value>Attn</value>
+  </data>
+  <data name="CRSEL" xml:space="preserve">
+    <value>Crsel</value>
+  </data>
+  <data name="EXSEL" xml:space="preserve">
+    <value>Exsel</value>
+  </data>
+  <data name="EREOF" xml:space="preserve">
+    <value>Erase EOF</value>
+  </data>
+  <data name="PLAY" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="ZOOM" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PA1" xml:space="preserve">
+    <value>Pa1</value>
+  </data>
+  <data name="OEM_CLEAR" xml:space="preserve">
+    <value>Oemclear</value>
+  </data>
+  <data name="SEPARATOR - EDICION" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="deshacer" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="rehacer" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="nuevo" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="imprimir" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="SEPARATOR - MULTIMEDIA" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="mute" xml:space="preserve">
+    <value>Mute</value>
+  </data>
+  <data name="bajarVolumen" xml:space="preserve">
+    <value>Volume down</value>
+  </data>
+  <data name="subirVolumen" xml:space="preserve">
+    <value>Volume up</value>
+  </data>
+  <data name="pistaAnterior" xml:space="preserve">
+    <value>Previous track</value>
+  </data>
+  <data name="pistaSiguiente" xml:space="preserve">
+    <value>Next track</value>
+  </data>
+  <data name="playPause" xml:space="preserve">
+    <value>Play/Pause</value>
+  </data>
+  <data name="stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="switchMic" xml:space="preserve">
+    <value>Microphone on/off </value>
+  </data>
+  <data name="micBajarVol" xml:space="preserve">
+    <value>Decrease microphone volume</value>
+  </data>
+  <data name="micSubirVol" xml:space="preserve">
+    <value>Increase microphone volume</value>
+  </data>
+  <data name="SEPARATOR - ACCIONES" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="minimizarVentana" xml:space="preserve">
+    <value>Minimize window</value>
+  </data>
+  <data name="maximizarVentana" xml:space="preserve">
+    <value>Maximize window</value>
+  </data>
+  <data name="cerrarVentana" xml:space="preserve">
+    <value>Close window</value>
+  </data>
+  <data name="minimizarTodo" xml:space="preserve">
+    <value>Minimize all</value>
+  </data>
+  <data name="switchMinimizar" xml:space="preserve">
+    <value>Toggle minimize</value>
+  </data>
+  <data name="switchMaximizar" xml:space="preserve">
+    <value>Toggle maximize</value>
+  </data>
+  <data name="wildDrag" xml:space="preserve">
+    <value>Wild drag</value>
+  </data>
+  <data name="SEPARATOR - INHABILITAR" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="deshabilitarBoton" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="SEPARATOR - MOUSEBOTON" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="clicIzquierdo" xml:space="preserve">
+    <value>Left click</value>
+  </data>
+  <data name="clicDerecho" xml:space="preserve">
+    <value>Right click</value>
+  </data>
+  <data name="clicCentral" xml:space="preserve">
+    <value>Scroll wheel click</value>
+  </data>
+  <data name="scrollUp" xml:space="preserve">
+    <value>Scroll up</value>
+  </data>
+  <data name="scrollDown" xml:space="preserve">
+    <value>Scroll down</value>
+  </data>
+  <data name="scrollRight" xml:space="preserve">
+    <value>Scroll right</value>
+  </data>
+  <data name="scrollLeft" xml:space="preserve">
+    <value>Scroll left</value>
+  </data>
+  <data name="atras" xml:space="preserve">
+    <value>Backward (side)</value>
+  </data>
+  <data name="adelante" xml:space="preserve">
+    <value>Forward (side)</value>
+  </data>
+  <data name="COMBOTECLAS - SEPARATOR" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="guardar" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="abrirArchivo" xml:space="preserve">
+    <value>Open file</value>
+  </data>
+  <data name="seleccionarTodo" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="buscar" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="silenciar" xml:space="preserve">
+    <value>Mute</value>
+  </data>
+  <data name="subirVolumenMicrofono" xml:space="preserve">
+    <value>Increase microphone volume</value>
+  </data>
+  <data name="bajarVolumenMicrofono" xml:space="preserve">
+    <value>Decrease microphone volume</value>
+  </data>
+  <data name="kill" xml:space="preserve">
+    <value>Kill app⚠️</value>
+  </data>
+  <data name="deshabilitar" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="SEPARATOR - PUNTERO" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="setPunteroSpeed" xml:space="preserve">
+    <value>Set mouse pointer speed</value>
+  </data>
+  <data name="changuePunteroSpeed" xml:space="preserve">
+    <value>Change mouse pointer speed</value>
+  </data>
+  <data name="fijarHorizontal" xml:space="preserve">
+    <value>Lock on the X-axis</value>
+  </data>
+  <data name="fijarVertical" xml:space="preserve">
+    <value>Lock on the Y-axis</value>
+  </data>
+  <data name="SEPARATOR - ABRIR" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="abrirSitioWeb" xml:space="preserve">
+    <value>Open website</value>
+  </data>
+  <data name="abrirFolder" xml:space="preserve">
+    <value>Open folder</value>
+  </data>
+  <data name="abrirAplicacion" xml:space="preserve">
+    <value>Open application (.exe)</value>
+  </data>
+  <data name="SEPARATOR - ACCIONES 2" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaYoutube" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaGoogle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaBing" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaYahoo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaDuckduckgo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaAsk" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="busquedaWikipedia" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

@@ -1,0 +1,162 @@
+﻿<UserControl x:Class="Raxer_2_alpha.Views.InfoV"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Raxer_2_alpha.Views"
+             xmlns:viewmodels="clr-namespace:Raxer_2_alpha.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignWidth="445" 
+             d:DesignHeight="426"
+             Foreground="{StaticResource primario}"
+             Style="{StaticResource pagina}">
+
+
+    <Grid Background="{x:Null}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="107*"/>
+        </Grid.RowDefinitions>
+        <Grid.Effect>
+            <DropShadowEffect ShadowDepth="0" BlurRadius="2" Color="#FF0A0A0A" Opacity="0.5" Direction="1000"/>
+        </Grid.Effect>
+
+        <!-- Base -->
+        <Border CornerRadius="0,0,8,0"
+                Grid.RowSpan="2"/>
+
+        <!-- Título de contenido -->
+        <StackPanel
+            Height="30"
+            Width="400"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="11,2,0,0">
+            <Canvas
+                Height="29"
+                Width="69"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Text="Acerca de"
+                    Canvas.Left="11"
+                    Canvas.Top="7"
+                    Style="{StaticResource t_3}" />
+            </Canvas>
+            <Canvas>
+                <Rectangle 
+                    Height="1"
+                    Width="85"
+                    Fill="{StaticResource primario_variant}"/>
+                <Rectangle
+                    Height="1"
+                    Width="417">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="#00CDCDCD" Offset="0.95"/>
+                            <GradientStop Color="#59F1F1F1" Offset="0"/>
+                            <GradientStop Color="#59F1F1F1" Offset="0.85"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Canvas>
+        </StackPanel>
+
+        <!-- Cuerpo -->
+        <StackPanel Margin="14,48,14,0" Grid.RowSpan="2">
+            <TextBlock
+                       Style="{StaticResource t_panel}"
+                       FontSize="14"
+                       Foreground="{StaticResource info}"><Run Text="Raxer"/><Run Text=" 2"/><Run Text=".0.0"/><Run Language="es-pe" Text=" alpha"/><LineBreak/><Run Language="es-pe"/><LineBreak/><Run Text=" alpha"/><LineBreak/><Run/><Run Text=" alpha"/><LineBreak/><Run/></TextBlock>
+            <TextBlock Text="Copyright @BracoZS "
+                       Style="{StaticResource t_panel}"
+                       Margin="10,0,0,0"/>
+
+            <TextBlock Style="{StaticResource t_panel}"
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Margin="10,10,10,0"
+                       LineHeight="17">
+            Raxer es una herramienta diseñada para remapear los botones de tu mouse, permitiéndote personalizar la funcionalidad de cada botón y adaptarlos como creas conveniente para productividad, tareas específicas o juegos.
+
+            En esta versión, cuenta con soporte para los 5 botones del mouse.
+            <LineBreak/> 
+            Aún está en fase de desarrollo, por lo que es posible que encuentres algunos errores o funciones en mejora.<LineBreak/>
+            Si estás interesado en contribuir, reportar problemas o ver cómo va el proyecto, puedes acceder al repositorio en GitHub aquí:
+            <Hyperlink NavigateUri="https://github.com/BracoZS/Raxer"
+                        RequestNavigate="Hyperlink_RequestNavigate"
+                        Foreground="{StaticResource info}">
+                https://github.com/BracoZS/Raxer
+            </Hyperlink>
+
+            </TextBlock>
+
+            <TextBlock Text="Componentes adicionales"
+                       Style="{StaticResource t_panel}"
+                       Foreground="{StaticResource info}"
+                       Margin="10,11,0,0"/>
+
+
+            <StackPanel>
+                <TextBlock Style="{StaticResource t_panel}"
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Margin="10,7,0,0">
+                WPF - Page Navigation using MVVM
+                <LineBreak/>
+                Copyright (c) 2022 Arun Mutharasu
+                <LineBreak/>
+                <Hyperlink Foreground="{StaticResource info}">
+                    MIT License
+                </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource t_panel}"
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Margin="10,7,0,0">
+                Algunos iconos por
+                <LineBreak/>
+                <Hyperlink NavigateUri="https://iconos8.es/"
+                           RequestNavigate="Hyperlink_RequestNavigate"
+                           Foreground="{StaticResource info}">
+                   https://iconos8.es/
+                </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource t_panel}"
+                           TextWrapping="Wrap"
+                           Height="auto"
+                           Margin="10,7,0,0">
+                Dropdown Menu CSharp-WinForms
+                <LineBreak/>
+                RJCodeAdvance
+                <LineBreak/>
+                <Hyperlink NavigateUri="https://github.com/RJCodeAdvance/Dropdown-Menu-CSharp-WinForms?tab=Unlicense-1-ov-file#"
+                           RequestNavigate="Hyperlink_RequestNavigate"
+                           Foreground="{StaticResource info}">
+                    Unlicense license
+                </Hyperlink>
+                </TextBlock>
+
+
+                <TextBlock Style="{StaticResource t_panel}"
+                           TextWrapping="Wrap"
+                           Height="auto"
+                           Margin="10,7,0,0"
+                           Visibility="Hidden">
+                Some Library Name v12.
+                <LineBreak/>
+                Copyright @2004 Some Author Name
+                <LineBreak/>
+                <Hyperlink Foreground="{StaticResource info}">
+                    MIT License
+                </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

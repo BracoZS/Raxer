@@ -1,0 +1,102 @@
+﻿<Window x:Class="Raxer_2_alpha.SelectDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Raxer_2_alpha"
+        mc:Ignorable="d"
+        
+        Title="SelectModifiersDialog"
+        Height="200" Width="324"
+        Foreground="{StaticResource primario}"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        KeyDown="Window_KeyDown"
+        >
+    <Border CornerRadius="6" Background="#FF26292B">
+        <Grid>
+            <Grid Margin="-7,-7,-7,163"
+                Height="30"
+                Width="324"
+                MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+
+                <TextBlock HorizontalAlignment="Left"
+                           TextWrapping="Wrap"
+                           FontSize="14"
+                           FontWeight="Medium"
+                           Text="{Binding Titulo}"
+                           Margin="9,4,0,0"/>
+
+                <Button Content="X"
+                        Width="30"
+                        Height="25"
+                        Click="Button_Click"
+                        DockPanel.Dock="Right"
+                        Margin="291,1,1,3"
+                        FontFamily="Comic Sans MS"
+                        Style="{StaticResource boton_control_cerrar}"/>
+            </Grid>
+
+
+            <Grid Margin="15,31,7,34">
+            
+                <StackPanel x:Name="ComboSelection" Visibility="Hidden">
+                    <CheckBox x:Name="control" Foreground="White" Background="#FFEDECEC" Content="Control" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,11,0,0"/>
+                    <CheckBox x:Name="shift" Foreground="White" Background="#FFEDECEC" Content="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,7,0,0"/>
+                    <CheckBox x:Name="alt" Foreground="White" Background="#FFEDECEC" Content="Alt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,7,0,0"/>
+                    <CheckBox x:Name="windows" Foreground="White" Background="#FFEDECEC" Content="Windows" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,7,0,0"/>
+                    <ComboBox x:Name="ComboKeyList"
+                              ItemsSource="{Binding KeyList}"
+                              SelectedValue="{Binding SelectedKey}"
+                              SelectedValuePath="Valor"
+                              DisplayMemberPath="LangValor"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Width="120"
+                              Margin="0,14,0,0"
+                              SelectedIndex="-1"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              Height="20"
+                              IsReadOnly="True"
+                              Style="{StaticResource combod}"/>
+                </StackPanel>
+
+                <StackPanel x:Name="PunteroSelection" Visibility="Hidden">
+                    <TextBlock Text="{Binding Parrafo}" 
+                               HorizontalAlignment="Left"
+                               Margin="21"
+                               TextWrapping="Wrap"/>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"
+                                Margin="21, 7, 21, 0">
+                        <Button Content="-" Width="21" Height="21" Click="Decrement_Click" />
+                            <TextBox x:Name="PunteroValueTxt" Width="50" Height="21" Text="1" TextAlignment="Center"
+                                     PreviewTextInput="PunteroSpeedValue_PreviewTextInput"/>
+                        <Button Content="+" Width="21" Height="21" Click="Increment_Click" />
+                    </StackPanel>
+                </StackPanel>
+            
+                <StackPanel x:Name="AbrirSelection" Visibility="Hidden">
+                    <TextBlock Text="{Binding Parrafo}" 
+                               HorizontalAlignment="Center"
+                               Margin="0,20,0,0"/>
+                    <TextBox x:Name="Url" Margin="20" Background="#FFFAFAFA"
+                             Text="{Binding Argo.Text, Mode=TwoWay}"
+                             TextWrapping="WrapWithOverflow"/>
+                </StackPanel>
+            </Grid>
+
+            <Button Content="OK" Foreground="White" Background="#444444"
+                    Margin="0,0,14,7"
+                    Click="ok_Clic"
+                    Width="89"
+                    HorizontalAlignment="Right"
+                    Height="25"
+                    VerticalAlignment="Bottom"
+                    Style="{StaticResource boton_confirmacion}"/>
+
+        </Grid>
+    </Border>
+</Window>
