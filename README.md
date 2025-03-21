@@ -58,7 +58,6 @@ Now it's free so anyone who wants to swap their side buttons can do it. 😊 <br
 
 # License
 **Raxer** is free!! You are free to use it for any purpose, personal or commercial. And install it on as many computers as you like. <br>
-It´s under [MIT License](https://github.com/BracoZS/Raxer/blob/main/LICENSE). <!-- pegar el vinculo con control + shift + v -->
 
 # How to use
 
