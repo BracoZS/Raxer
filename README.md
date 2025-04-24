@@ -3,9 +3,9 @@
 
 The pre-release version of Raxer v2.0.0 is now available! You can try it before the official launch.
 
-🔹 💾 Get it from the [Releases](https://github.com/BracoZS/Raxer/releases) section.
+🔹 💾 Get it from the [Here](https://github.com/BracoZS/Raxer/releases).
 
-🚀 Thank you for being part of this development stage.
+✅ You can check the [VirusTotal Report](https://www.virustotal.com/gui/file/728427eb4c8d463555b387015a56e389f541b3af310cc49605ba921626816b14)!
 
 ---
 
