@@ -3,7 +3,8 @@
 
 The pre-release version of Raxer v2.0.0 is now available! You can try it before the official launch.
 
-![image](https://github.com/user-attachments/assets/450d917e-5aba-48a4-80f3-e56b97971588)
+![image](https://github.com/user-attachments/assets/c73caad4-e910-4bf9-ae0b-e157a7749453)
+
 
 
 🔹 💾 Get it from the [Here](https://github.com/BracoZS/Raxer/releases).
