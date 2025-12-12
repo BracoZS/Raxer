@@ -1,6 +1,11 @@
 👉[![change language](https://img.shields.io/badge/leer_en:-español-yellow)](https://github.com/BracoZS/Raxer/blob/main/Readme.ES.md)
 # 🚀 Raxer v2.0.0 Pre-Release
 
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/bracozs/raxer/latest/total)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads-pre/bracozs/raxer/latest/total)
+
+
+
 The pre-release version of Raxer v2.0.0 is now available! You can try it before the official launch.
 
 ![image](https://github.com/user-attachments/assets/c73caad4-e910-4bf9-ae0b-e157a7749453)
