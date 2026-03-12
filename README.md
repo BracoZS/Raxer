@@ -2,7 +2,6 @@
 # 🚀 Raxer v2.0.0 Pre-Release
 
 ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/bracozs/raxer/latest/total)
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads-pre/bracozs/raxer/latest/total)
 
 
 
