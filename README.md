@@ -74,7 +74,7 @@ Reassign button(s) to:
 ## 💚 Support This Project!
 If you like Raxer and want to help its development, consider supporting this work.
 
-**[Buy a coffee ☕](https://ko-fi.com/A0A4G6LKI)**
+**[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4G6LKI)**
 
 As an independent developer, I greatly appreciate your support, patience, and enthusiasm while I continue improving the application.
 
