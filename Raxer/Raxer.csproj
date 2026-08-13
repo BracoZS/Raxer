@@ -9,13 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Infra\" />
-    <Folder Include="Modules\" />
     <Folder Include="..\docs\" />
+    <Folder Include="Dev\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="ResultPattern.Net" Version="1.1.0" />
   </ItemGroup>
 
 </Project>
