@@ -6,6 +6,9 @@
 # dotenv files
 .env
 
+# local-only, fuera del repo
+/AGENTS.md
+
 # User-specific files
 *.rsuser
 *.suo

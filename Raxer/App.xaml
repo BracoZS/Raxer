@@ -2,8 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Raxer"
-             StartupUri="">
+             xmlns:shared="clr-namespace:Raxer.Infra.Shared">
     <Application.Resources>
-         
+        <shared:BoolToVisibilityConverter x:Key="BoolToVisibility" />
+        <shared:NullToVisibilityConverter x:Key="NullToVisibility" />
     </Application.Resources>
 </Application>
