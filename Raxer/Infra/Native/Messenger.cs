@@ -3,11 +3,11 @@ using System.Runtime.InteropServices;
 
 namespace Raxer.Infra.Native;
 
-internal static class Messenger
+internal static partial class Messenger
 {
     #region Sendinput
-    [DllImport("user32.dll", SetLastError = true)]
-    internal static extern uint SendInput(uint numInputs, INPUT[] inputs, int cbSize);
+    [LibraryImport("user32.dll", SetLastError = true)]
+    internal static partial uint SendInput(uint numInputs, INPUT[] inputs, int cbSize);
 
     [StructLayout(LayoutKind.Sequential)]
     internal struct INPUT

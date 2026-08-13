@@ -7,57 +7,63 @@ internal static partial class WinApi
 {
     #region Ventanas
     // GET
-    [DllImport("user32.dll")]
-    public static extern bool IsIconic(IntPtr handle);
+    [LibraryImport("user32.dll")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static partial bool IsIconic(IntPtr handle);
 
-    [DllImport("user32.dll")]
-    public static extern bool IsZoomed(IntPtr handle);
+    [LibraryImport("user32.dll")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static partial bool IsZoomed(IntPtr handle);
 
-    [DllImport("user32.dll")]
-    public static extern IntPtr GetForegroundWindow();
+    [LibraryImport("user32.dll")]
+    public static partial IntPtr GetForegroundWindow();
 
     // SET
-    [DllImport("user32.dll")]
-    public static extern int SetForegroundWindow(IntPtr hwnd);
+    [LibraryImport("user32.dll")]
+    public static partial int SetForegroundWindow(IntPtr hwnd);
 
-    [DllImport("user32.dll")]
-    public static extern bool SwitchToThisWindow(IntPtr handle, bool funknow);
+    [LibraryImport("user32.dll")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static partial bool SwitchToThisWindow(IntPtr handle, [MarshalAs(UnmanagedType.Bool)] bool funknow);
 
 
-    [DllImport("user32.dll", SetLastError = true)]
-    internal static extern bool GetWindowRect(IntPtr hWnd, out RectApi lpRect);
+    [LibraryImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static partial bool GetWindowRect(IntPtr hWnd, out RectApi lpRect);
 
-    [DllImport("user32.dll", SetLastError = true)]
-    internal static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int X, int Y, int cx, int cy, int uFlags);
+    [LibraryImport("user32.dll", SetLastError = true)]
+    internal static partial IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int X, int Y, int cx, int cy, int uFlags);
     #endregion
 
     #region Coords mouse
-    [DllImport("user32.dll")]
-    internal static extern bool GetCursorPos(ref PointApi pt);
+    [LibraryImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static partial bool GetCursorPos(ref PointApi pt);
     #endregion
 
     #region Get Handles
-    [DllImport("user32.dll")]
-    internal static extern IntPtr WindowFromPoint(PointApi p);
+    [LibraryImport("user32.dll")]
+    internal static partial IntPtr WindowFromPoint(PointApi p);
 
-    [DllImport("user32.dll")]
-    internal static extern IntPtr GetAncestor(IntPtr hwnd, Ancestro gaFlags);
+    [LibraryImport("user32.dll")]
+    internal static partial IntPtr GetAncestor(IntPtr hwnd, Ancestro gaFlags);
 
     #endregion
 
     #region ID
-    [DllImport("user32.dll")]
-    internal static extern int GetWindowThreadProcessId(IntPtr handle, out int processId);
+    [LibraryImport("user32.dll")]
+    internal static partial int GetWindowThreadProcessId(IntPtr handle, out int processId);
     #endregion
 
     #region Estado de tecla
-    [DllImport("user32.dll")]
-    internal static extern short GetAsyncKeyState(int keyCode);
+    [LibraryImport("user32.dll")]
+    internal static partial short GetAsyncKeyState(int keyCode);
     #endregion
 
     #region Parámetros del sistema - SPI
-    [DllImport("user32.dll", SetLastError = true)]
-    internal static extern bool SystemParametersInfo(
+    [LibraryImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static partial bool SystemParametersInfo(
         uint uiAction,
         uint uiParam,
         IntPtr pvParam,
@@ -66,28 +72,31 @@ internal static partial class WinApi
     #endregion
 
     #region Velocidad del mouse
-    [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "SystemParametersInfo")]
-    public static extern bool GetMouseSpeed(uint uiAction, uint uiParam, out uint pvParam, uint fWinIni);
+    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfo")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static partial bool GetMouseSpeed(uint uiAction, uint uiParam, out uint pvParam, uint fWinIni);
 
-    [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "SystemParametersInfo")]
-    public static extern bool SetMouseSpeed(uint uiAction, uint uiParam, uint pvParam, uint fWinIni);
+    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfo")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static partial bool SetMouseSpeed(uint uiAction, uint uiParam, uint pvParam, uint fWinIni);
     #endregion
 
     #region Fix axis
-    [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "ClipCursor")]
-    internal static extern void ClipCursor(RectApi lpRect);
+    [LibraryImport("user32.dll")]
+    internal static partial void ClipCursor(RectApi lpRect);
 
-    [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "ClipCursor")]
-    internal static extern int UnclipCursor(IntPtr nullLpRect);
+    [LibraryImport("user32.dll", EntryPoint = "ClipCursor")]
+    internal static partial int UnclipCursor(IntPtr nullLpRect);
     #endregion
 
     #region Sistema
-    [DllImport("user32.dll")]
-    internal static extern int GetSystemMetrics(int nIndex);
+    [LibraryImport("user32.dll")]
+    internal static partial int GetSystemMetrics(int nIndex);
     #endregion
 
     #region Post async - app command
-    [DllImport("user32.dll")]
-    public static extern bool PostMessage(IntPtr hWnd, uint Msg, IntPtr wParam, int lParam);
+    [LibraryImport("user32.dll")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static partial bool PostMessage(IntPtr hWnd, uint Msg, IntPtr wParam, int lParam);
     #endregion
 }
