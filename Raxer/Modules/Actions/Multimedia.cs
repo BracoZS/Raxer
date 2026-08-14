@@ -12,7 +12,7 @@ internal static partial class Accion
     public static void MediaPlayPause() => LanzarTecla(KeyArti.MEDIA_PLAY_PAUSE);
     public static void MediaPistaSiguiente() => LanzarTecla(KeyArti.MEDIA_NEXT_TRACK);
     public static void MediaStop() => LanzarTecla(KeyArti.MEDIA_STOP);
-    public static void SwitchMicrofono() => SystemTools.RunAppCommand(AppCmd.MICROPHONE_VOLUME_MUTE);
-    public static void MicrofonoSubirVolumen() => SystemTools.RunAppCommand(AppCmd.MICROPHONE_VOLUME_UP);
-    public static void MicrofonoBajarVolumen() => SystemTools.RunAppCommand(AppCmd.MICROPHONE_VOLUME_DOWN);
+    public static void SwitchMicrofono() => SystemTools.RunAppCommand(AppCommand.MICROPHONE_VOLUME_MUTE);
+    public static void MicrofonoSubirVolumen() => SystemTools.RunAppCommand(AppCommand.MICROPHONE_VOLUME_UP);
+    public static void MicrofonoBajarVolumen() => SystemTools.RunAppCommand(AppCommand.MICROPHONE_VOLUME_DOWN);
 }

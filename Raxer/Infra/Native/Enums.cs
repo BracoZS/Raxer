@@ -1,6 +1,5 @@
 namespace Raxer.Infra.Native;
 
-
 /// <summary>
 ///     
 /// </summary>
@@ -231,7 +230,7 @@ public enum KeyArti : ushort
 /// <summary>
 /// 
 /// </summary>
-internal enum AppCmd
+internal enum AppCommand
 {
     // browser
     BROWSER_BACKWARD = 1,

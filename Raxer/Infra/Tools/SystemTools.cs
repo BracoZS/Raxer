@@ -8,7 +8,7 @@ namespace Raxer.Infra.Tools;
 /// </summary>
 internal static class SystemTools
 {
-    internal static void RunAppCommand(AppCmd cmd)
+    internal static void RunAppCommand(AppCommand cmd)
         => WinApi.PostMessage(GetCursorMainHandle(), WindowConstants.WM_APPCOMMAND, IntPtr.Zero, (int)cmd << 16);
 
     public static bool IsPressed(KeyArti key) 
