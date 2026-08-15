@@ -1,12 +1,22 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
+using Raxer.Modules.Loader;
 
 namespace Raxer;
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
+
 public partial class App : Application
 {
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        base.OnStartup(e);
+
+        // app loader
+        Loader.Startup();
+    }
+
+    protected override void OnExit(ExitEventArgs e)
+    {
+        Loader.Shutdown();
+        base.OnExit(e);
+    }
 }
 

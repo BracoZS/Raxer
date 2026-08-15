@@ -17,7 +17,8 @@ public static class MouseDispatcher
         ThreadPool.UnsafeQueueUserWorkItem(
             static state =>
             {
-                Result.Try(state).OnFailure(error => Log(error));
+                Result.Try(state)
+                    .OnFailure(error => Log(error));
             },
             remap!,
             preferLocal: true);

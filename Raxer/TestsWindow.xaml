@@ -5,24 +5,78 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raxer"
         mc:Ignorable="d"
-        Title="TestsWindow" Height="350" Width="600"
+        xmlns:svgc="clr-namespace:SharpVectors.Converters;assembly=SharpVectors.Converters.Wpf"
+        Title="Raxer" Height="480" Width="720"
         
         WindowStartupLocation="CenterScreen"
-        xmlns:svgc="clr-namespace:SharpVectors.Converters;assembly=SharpVectors.Converters.Wpf"
-        >
-    <Grid>
-        <TextBlock Text="Hola"/>
-        <StackPanel>
-            <svgc:SvgViewbox Source="/Assets/Iconos/pointer.svg"
-                             Width="32" Height="32"/>
-            <svgc:SvgViewbox Source="/Assets/Iconos/info.svg"
-                             Width="32" Height="32"/>
-            <svgc:SvgViewbox Source="/Assets/Iconos/home.svg"
-                             Width="32" Height="32"/>
-            <svgc:SvgViewbox Source="/Assets/Iconos/profile.svg"
-                             Width="32" Height="32"/>
-            <svgc:SvgViewbox Source="/Assets/Iconos/shortcuts.svg"
-                         Width="32" Height="32"/>
-        </StackPanel>
+        FontFamily="Assets/Fuentes/#Rubik">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="Fondo" Color="#e6e5ee" />
+        <SolidColorBrush x:Key="Panel" Color="#f4f4f6" />
+        <SolidColorBrush x:Key="PanelHover" Color="#232B35" />
+        <SolidColorBrush x:Key="Borde" Color="#2A323D" />
+        <SolidColorBrush x:Key="Texto" Color="#1a1a1a" />
+        <SolidColorBrush x:Key="TextoSuave" Color="#8A93A0" />
+        <SolidColorBrush x:Key="Acento" Color="#4D9DE0" />
+    </Window.Resources>
+
+    <Grid
+        Background="{StaticResource Fondo}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="72" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <Border Grid.Column="0" Background="{StaticResource Panel}" BorderBrush="{StaticResource Borde}" BorderThickness="0,0,1,0">
+            <StackPanel>
+                <svgc:SvgViewbox Source="/Assets/Iconos/profile.svg" Width="28" Height="28" Margin="22,20,22,28" />
+
+                <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" BorderThickness="0" IsHitTestVisible="False">
+                    <svgc:SvgViewbox Source="/Assets/Iconos/home.svg" Width="24" Height="24" />
+                </Button>
+                <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" BorderThickness="0" IsHitTestVisible="False" Margin="0,8,0,0">
+                    <svgc:SvgViewbox Source="/Assets/Iconos/shortcuts.svg" Width="24" Height="24" />
+                </Button>
+                <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" BorderThickness="0" IsHitTestVisible="False" Margin="0,8,0,0">
+                    <svgc:SvgViewbox Source="/Assets/Iconos/pointer.svg" Width="24" Height="24" />
+                </Button>
+                <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" BorderThickness="0" IsHitTestVisible="False" Margin="0,8,0,0">
+                    <svgc:SvgViewbox Source="/Assets/Iconos/info.svg" Width="24" Height="24" />
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <!-- Contenido -->
+        <Grid Grid.Column="1" Margin="36,32,36,32">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Raxer" FontSize="28" FontWeight="Bold" Foreground="{StaticResource Texto}" />
+                <TextBlock Text="Remap de mouse" FontSize="14" Foreground="{StaticResource TextoSuave}" Margin="0,2,0,24" />
+            </StackPanel>
+
+            <!-- Card de settings -->
+            <Border Grid.Row="1"
+                    Background="{StaticResource Panel}"
+                    BorderBrush="{StaticResource Borde}" BorderThickness="1"
+                    CornerRadius="10" Padding="24,20"
+                    VerticalAlignment="Top">
+                <StackPanel>
+                    <TextBlock Text="Settings" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource Texto}" />
+
+                    <CheckBox x:Name="ArrancarConWindowsCheck"
+                              Content="Arrancar con Windows"
+                              IsChecked="False"
+                              Foreground="{StaticResource Texto}"
+                              FontSize="14"
+                              Margin="0,20,0,0" />
+                </StackPanel>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

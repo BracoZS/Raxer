@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Raxer.Modules.Loader;
 
 namespace Raxer
 {
@@ -20,6 +21,10 @@ namespace Raxer
         public TestsWindow()
         {
             InitializeComponent();
+
+            ArrancarConWindowsCheck.IsChecked = Loader.Settings?.ArrancarConWindows;
+            ArrancarConWindowsCheck.Checked += (_, _) => Loader.Settings!.ArrancarConWindows = true;
+            ArrancarConWindowsCheck.Unchecked += (_, _) => Loader.Settings!.ArrancarConWindows = false;
         }
     }
 }
