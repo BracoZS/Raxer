@@ -1,8 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace Raxer.Modules.Remapping;
 
-namespace Raxer.Modules.Remapping;
+public enum MouseAccion
+{
+    None,
+    Move,
+    LeftDown,
+    LeftUp,
+    RightDown,
+    RightUp,
+    MiddleDown,
+    MiddleUp,
+    WheelUp,
+    WheelDown,
+    WheelLeft,
+    WheelRight,
+    SideButton1Down,
+    SideButton1Up,
+    SideButton2Down,
+    SideButton2Up
+}
 
 public enum FilterMode
 {

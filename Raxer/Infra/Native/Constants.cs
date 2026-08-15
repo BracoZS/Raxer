@@ -28,3 +28,8 @@ public static class WindowConstants
     internal const int WM_CLOSE = 0x0010;
     internal const uint WM_APPCOMMAND = 0x0319;
 }
+
+public static class HookConstants
+{
+    public const int WH_MOUSE_LL = 14;
+}
