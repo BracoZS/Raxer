@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raxer"
         mc:Ignorable="d"
-        Title="TestsWindow" Height="450" Width="800">
-    <Grid>
+        Title="TestsWindow" Height="350" Width="600"
         
+        WindowStartupLocation="CenterScreen"
+        xmlns:svgc="clr-namespace:SharpVectors.Converters;assembly=SharpVectors.Converters.Wpf"
+        >
+    <Grid>
+        <TextBlock Text="Hola"/>
+        <StackPanel>
+            <svgc:SvgViewbox Source="/Assets/Iconos/pointer.svg"
+                             Width="32" Height="32"/>
+            <svgc:SvgViewbox Source="/Assets/Iconos/info.svg"
+                             Width="32" Height="32"/>
+            <svgc:SvgViewbox Source="/Assets/Iconos/home.svg"
+                             Width="32" Height="32"/>
+            <svgc:SvgViewbox Source="/Assets/Iconos/profile.svg"
+                             Width="32" Height="32"/>
+            <svgc:SvgViewbox Source="/Assets/Iconos/shortcuts.svg"
+                         Width="32" Height="32"/>
+        </StackPanel>
     </Grid>
 </Window>

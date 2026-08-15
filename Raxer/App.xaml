@@ -3,9 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Raxer"
              xmlns:shared="clr-namespace:Raxer.Infra.Shared"
+             
+             StartupUri="TestsWindow.xaml"
              >
     <Application.Resources>
-        <shared:BoolToVisibilityConverter x:Key="BoolToVisibility" />
-        <shared:NullToVisibilityConverter x:Key="NullToVisibility" />
+   
+        <ResourceDictionary>
+            <!-- converters -->
+            <shared:BoolToVisibilityConverter x:Key="BoolToVisibility" />
+            <shared:NullToVisibilityConverter x:Key="NullToVisibility" />
+        </ResourceDictionary>
+        
     </Application.Resources>
 </Application>
