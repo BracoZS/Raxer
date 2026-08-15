@@ -27,6 +27,9 @@ public static class Loader
         };
 
         Log("Loader: settings cargados");
+
+        // placeholder: el hook todavia no se activa (remapping inactivo hasta que haya mapa)
+        // MouseHook.Start();
     }
 
     /// <summary>Cierre de la app. Llamar desde App.OnExit. Persiste settings.</summary>
@@ -34,6 +37,9 @@ public static class Loader
     {
         if (Settings is not null)
             SettingsStorage.Save(Settings);
+
+        // placeholder: ver Startup()
+        // MouseHook.Stop();
 
         Log("Loader: shutdown");
     }
