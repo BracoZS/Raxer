@@ -4,7 +4,6 @@
              xmlns:local="clr-namespace:Raxer"
              xmlns:shared="clr-namespace:Raxer.Infra.Shared"
              
-              StartupUri="TestsWindow.xaml"
               ShutdownMode="OnExplicitShutdown"
              >
     <Application.Resources>

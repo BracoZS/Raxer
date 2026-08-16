@@ -1,5 +1,6 @@
 ﻿using Raxer.Infra.Storage;
 using Raxer.Modules.Loader;
+using Raxer.Modules.Settings;
 using Raxer.Modules.Tray;
 using Raxer.Modules.WindowManager;
 using System.Windows;
@@ -23,7 +24,7 @@ public partial class App : Application
         _tray = new TrayIcon();
         _windowManager = new WindowManager();
 
-        _tray.Abrir += () => _windowManager!.OpenOrCreate<TestsWindow>();
+        _tray.Abrir += () => _windowManager!.OpenOrCreate<Settings>();
         _tray.Salir += Close;
     }
 
