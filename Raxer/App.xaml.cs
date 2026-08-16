@@ -24,8 +24,14 @@ public partial class App : Application
         _windowManager = new WindowManager();
 
         _tray.Abrir += () => _windowManager!.OpenOrCreate<TestsWindow>();
-        _tray.Salir += Shutdown;
+        _tray.Salir += Close;
     }
+
+    /// <summary>
+    /// Cierra la app desde cualquier lado (estático).
+    /// Dispara el evento Exit
+    /// </summary>
+    public static void Close() => Current.Shutdown();
 
     protected override void OnExit(ExitEventArgs e)
     {
