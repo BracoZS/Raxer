@@ -9,18 +9,15 @@ namespace Raxer.Modules.Loader;
 /// </summary>
 public static class Loader
 {
-    /// <summary>Settings globales cargados al inicio. null si todavia no se llamó Startup.</summary>
-    public static AppSettings? Settings { get; private set; }
-
     /// <summary>Arranque de la app. Llamar desde App.OnStartup.</summary>
     public static void Startup()
     {
         // leer settings config from file json
-        Settings = SettingsStorage.Load<AppSettings>();
+        App.Settings = SettingsStorage.Load<AppSettings>();
 
 
         // wiring settings events
-        Settings.SavingErrorOcurred += (s, e) =>
+        App.Settings.SavingErrorOcurred += (s, e) =>
         {
             Log($"Error al guardar settings: {e.Exception.Message}");
             e.Handled = true;
@@ -35,8 +32,8 @@ public static class Loader
     /// <summary>Cierre de la app. Llamar desde App.OnExit. Persiste settings.</summary>
     public static void Shutdown()
     {
-        if (Settings is not null)
-            SettingsStorage.Save(Settings);
+        if (App.Settings is not null)
+            SettingsStorage.Save(App.Settings);
 
         // placeholder: ver Startup()
         // MouseHook.Stop();

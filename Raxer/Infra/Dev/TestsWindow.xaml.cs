@@ -22,9 +22,9 @@ namespace Raxer
         {
             InitializeComponent();
 
-            ArrancarConWindowsCheck.IsChecked = Loader.Settings?.ArrancarConWindows;
-            ArrancarConWindowsCheck.Checked += (_, _) => Loader.Settings!.ArrancarConWindows = true;
-            ArrancarConWindowsCheck.Unchecked += (_, _) => Loader.Settings!.ArrancarConWindows = false;
+            ArrancarConWindowsCheck.IsChecked = App.Settings?.ArrancarConWindows;
+            ArrancarConWindowsCheck.Checked += (_, _) => App.Settings!.ArrancarConWindows = true;
+            ArrancarConWindowsCheck.Unchecked += (_, _) => App.Settings!.ArrancarConWindows = false;
         }
     }
 }
