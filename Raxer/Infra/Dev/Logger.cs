@@ -1,7 +1,7 @@
 ﻿using ResultPattern;
 using System.Diagnostics;
 
-namespace Raxer.Dev;
+namespace Raxer.Infra.Dev;
 
 #if DEBUG
 public static class Logger
