@@ -21,21 +21,50 @@ public sealed class TrayIcon : IDisposable
 
     public TrayIcon()
     {
-        var menu = new ContextMenuStrip();
-        menu.Items.Add("Abrir", null, (_, _) => Abrir?.Invoke());
-        menu.Items.Add(new ToolStripSeparator());
-        menu.Items.Add("Salir", null, (_, _) => Salir?.Invoke());
-
         _icon = new NotifyIcon
         {
             Icon = CargarIcono(),
-            ContextMenuStrip = menu,
+            ContextMenuStrip = CrearMenu(),
             Text = "Raxer",
             Visible = true
         };
         _icon.DoubleClick += (_, _) => Abrir?.Invoke();
 
         Log("Tray: iniciado");
+    }
+
+    private ContextMenuStrip CrearMenu()
+    {
+        var menu = new ContextMenuStrip();
+
+        // ▸ Abrir — abre la ventana de settings
+        var abrir = new ToolStripMenuItem
+        {
+            Text = "Abrir"
+        };
+        abrir.Click += (_, _) => Abrir?.Invoke();
+
+        // ▸ Iniciar con el sistema — checkbox atado a App.Settings.ArrancarConWindows
+        var iniciarConSistema = new ToolStripMenuItem
+        {
+            Text = "Iniciar con el sistema",
+            CheckOnClick = true,
+            Checked = App.Settings?.ArrancarConWindows ?? false
+        };
+        iniciarConSistema.CheckedChanged += (_, _) => App.Settings!.ArrancarConWindows = iniciarConSistema.Checked;
+
+        // ─── separador ────────────────────────────────────────────
+        var separador = new ToolStripSeparator();
+
+        // ▸ Salir — cierra la app
+        var salir = new ToolStripMenuItem
+        {
+            Text = "Salir"
+        };
+        salir.Click += (_, _) => Salir?.Invoke();
+
+        menu.Items.AddRange([abrir, iniciarConSistema, separador, salir]);
+        return menu;
     }
 
     public void Dispose()
