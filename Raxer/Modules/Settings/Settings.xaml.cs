@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Raxer.Infra.Lang;
 
 namespace Raxer.Modules.Settings;
 /// <summary>
@@ -10,8 +11,16 @@ public partial class Settings : Window
     {
         InitializeComponent();
 
-        ArrancarConWindowsCheck.IsChecked = App.Settings?.ArrancarConWindows;
-        ArrancarConWindowsCheck.Checked += (_, _) => App.Settings!.ArrancarConWindows = true;
-        ArrancarConWindowsCheck.Unchecked += (_, _) => App.Settings!.ArrancarConWindows = false;
+        IniciarConWindowsCheck.IsChecked = App.Settings!.ArrancarConWindows;
+        IniciarConWindowsCheck.Checked += (_, _) => App.Settings!.ArrancarConWindows = true;
+        IniciarConWindowsCheck.Unchecked += (_, _) => App.Settings!.ArrancarConWindows = false;
+
+        _ = TestLangChange();
+    }
+
+    private async Task TestLangChange()
+    {
+        await Task.Delay(5_000);
+        ResxDictionary.SetLanguage("es");
     }
 }

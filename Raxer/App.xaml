@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:Raxer"
              xmlns:shared="clr-namespace:Raxer.Infra.Shared"
              
-              ShutdownMode="OnExplicitShutdown"
+             ShutdownMode="OnExplicitShutdown"
+             xmlns:lang="clr-namespace:Raxer.Infra.Lang"
              >
     <Application.Resources>
    
@@ -12,6 +13,12 @@
             <!-- converters -->
             <shared:BoolToVisibilityConverter x:Key="BoolToVisibility" />
             <shared:NullToVisibilityConverter x:Key="NullToVisibility" />
+
+            <!-- UI text from resx -->
+            <ResourceDictionary.MergedDictionaries>
+                <lang:ResxDictionary />
+            </ResourceDictionary.MergedDictionaries>
+
         </ResourceDictionary>
         
     </Application.Resources>

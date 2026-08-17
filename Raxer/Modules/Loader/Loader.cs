@@ -1,4 +1,5 @@
 using LocalSettingsJson;
+using Raxer.Infra.Lang;
 using Raxer.Infra.Storage;
 
 namespace Raxer.Modules.Loader;
@@ -22,6 +23,9 @@ public static class Loader
             Log($"Error al guardar settings: {e.Exception.Message}");
             e.Handled = true;
         };
+
+        ResxDictionary.SetLanguage("en");
+
 
         Log("Loader: settings cargados");
 

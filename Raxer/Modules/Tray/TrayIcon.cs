@@ -1,6 +1,6 @@
 using System.Drawing;
 using System.Windows.Forms;
-using App = System.Windows.Application;
+using Raxer.Properties;
 
 namespace Raxer.Modules.Tray;
 
@@ -25,7 +25,7 @@ public sealed class TrayIcon : IDisposable
         {
             Icon = CargarIcono(),
             ContextMenuStrip = CrearMenu(),
-            Text = "Raxer",
+            Text = Resources.app_name,
             Visible = true
         };
         _icon.DoubleClick += (_, _) => Abrir?.Invoke();
@@ -40,14 +40,14 @@ public sealed class TrayIcon : IDisposable
         // ▸ Abrir — abre la ventana de settings
         var abrir = new ToolStripMenuItem
         {
-            Text = "Abrir"
+            Text = Resources.menu_open_settings
         };
         abrir.Click += (_, _) => Abrir?.Invoke();
 
         // ▸ Iniciar con el sistema — checkbox atado a App.Settings.ArrancarConWindows
         var iniciarConSistema = new ToolStripMenuItem
         {
-            Text = "Iniciar con el sistema",
+            Text = Resources.menu_start_with_system,
             CheckOnClick = true,
             Checked = App.Settings?.ArrancarConWindows ?? false
         };
@@ -59,7 +59,7 @@ public sealed class TrayIcon : IDisposable
         // ▸ Salir — cierra la app
         var salir = new ToolStripMenuItem
         {
-            Text = "Salir"
+            Text = Resources.menu_exit
         };
         salir.Click += (_, _) => Salir?.Invoke();
 
