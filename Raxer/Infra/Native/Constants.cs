@@ -1,6 +1,4 @@
-﻿using Raxer.Infra.Native;
-
-namespace Raxer.Infra.Native;
+﻿namespace Raxer.Infra.Native;
 
 public static class SystemMetrics
 {

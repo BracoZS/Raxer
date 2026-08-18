@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Text;
+﻿using System.Runtime.InteropServices;
 
 namespace Raxer.Infra.Native;
 
 [StructLayout(LayoutKind.Sequential)]
-internal struct PointApi
+internal struct Punto
 {
-    public int X;
-    public int Y;
+    public int X, Y;
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct RectApi
+public struct Rectangulo
 {
     public int left, top, right, bottom;
 }

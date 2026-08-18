@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace Raxer.Infra.Native;
@@ -132,6 +131,6 @@ internal static partial class Messenger
     #endregion
 
     #region Utils
-    internal static readonly int _genSize = Marshal.SizeOf(typeof(INPUT));
+    internal static readonly int _genSize = Marshal.SizeOf<INPUT>();
     #endregion
 }

@@ -30,8 +30,8 @@ internal static partial class Accion
     #endregion
 
     #region Puntero del mouse
-    private static RectApi _axisX = new() { left = 0, right = MouseConstants.AxisXMax };
-    private static RectApi _axisY = new() { top = 0, bottom = MouseConstants.AxisYMax };
+    private static Rectangulo _axisX = new() { left = 0, right = MouseConstants.AxisXMax };
+    private static Rectangulo _axisY = new() { top = 0, bottom = MouseConstants.AxisYMax };
 
     public static void SetPunteroSpeed(int velocidad)
     {

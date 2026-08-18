@@ -1,7 +1,7 @@
 namespace Raxer.Infra.Native;
 
 /// <summary>
-///     
+/// Keyboard Modifiers keys    
 /// </summary>
 [Flags]
 public enum Modificador

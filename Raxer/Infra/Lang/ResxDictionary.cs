@@ -1,19 +1,18 @@
-﻿using System.Collections;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Windows;
 
 namespace Raxer.Infra.Lang;
 
 /// <summary>
+/// requires /Properties/Resources.resx, Resources.es.resx, etc
 /// 
-/// use with:
+/// use in App.xaml with this:
 /// <!-- UI text from resx -->
 /// <ResourceDictionary.MergedDictionaries>
-///  <lang:ResxDictionary />
-///  </ResourceDictionary.MergedDictionaries>
-///  in App.xaml
-///  
-///  and like Title="{DynamicResource settings}" in controls
+///   <lang:ResxDictionary />
+/// </ResourceDictionary.MergedDictionaries>
+///
+/// and like Title="{DynamicResource settings}" in controls
 /// </summary>
 
 public sealed class ResxDictionary: ResourceDictionary

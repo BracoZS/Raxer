@@ -1,6 +1,6 @@
 using LocalSettingsJson;
 
-namespace Raxer.Infra.Storage;
+namespace Raxer.Modules.Settings;
 
 /// <summary>
 /// Settings globales de la app. Se persisten en ~/AppData/Local/Raxer/settings.json

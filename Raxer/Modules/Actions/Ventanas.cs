@@ -88,8 +88,8 @@ internal static partial class Accion
     }
 
     #region Dragmove (temporal)
-    private static PointApi _mouseDownPos;
-    private static PointApi _mouseClientPos;
+    private static Punto _mouseDownPos;
+    private static Punto _mouseClientPos;
 
     private static void MoverAtDrag()
     {
@@ -110,7 +110,7 @@ internal static partial class Accion
     {
         _mouseDownPos = SystemTools.GetRataPos();
         _cursorOverApp = SystemTools.GetCursorMainHandle(_mouseDownPos);
-        _ = WinApi.GetWindowRect(_cursorOverApp, out RectApi zoneVentana);
+        _ = WinApi.GetWindowRect(_cursorOverApp, out Rectangulo zoneVentana);
 
         _mouseClientPos.X = _mouseDownPos.X - zoneVentana.left;
         _mouseClientPos.Y = _mouseDownPos.Y - zoneVentana.top;

@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using static Raxer.Infra.Native.MouseHook;
 
@@ -30,32 +29,24 @@ internal static partial class WinApi
 
     [LibraryImport("user32.dll", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]
-    internal static partial bool GetWindowRect(IntPtr hWnd, out RectApi lpRect);
+    internal static partial bool GetWindowRect(IntPtr hWnd, out Rectangulo lpRect);
 
     [LibraryImport("user32.dll", SetLastError = true)]
     internal static partial IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int X, int Y, int cx, int cy, int uFlags);
     
     #endregion
 
-    #region Coords mouse
-
-    [LibraryImport("user32.dll", SetLastError = true)]
-    [return: MarshalAs(UnmanagedType.Bool)]
-    internal static partial bool GetCursorPos(ref PointApi pt);
-
-    #endregion
-
-    #region Get Handles
+    #region Get Handlers
 
     [LibraryImport("user32.dll")]
-    internal static partial IntPtr WindowFromPoint(PointApi p);
+    internal static partial IntPtr WindowFromPoint(Punto p);
 
     [LibraryImport("user32.dll")]
     internal static partial IntPtr GetAncestor(IntPtr hwnd, Ancestro gaFlags);
 
     #endregion
 
-    #region ID
+    #region Process Id
 
     [LibraryImport("user32.dll")]
     internal static partial int GetWindowThreadProcessId(IntPtr handle, out int processId);
@@ -82,7 +73,7 @@ internal static partial class WinApi
 
     #endregion
 
-    #region Velocidad del mouse
+    #region Mouse
 
     [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfo")]
     [return: MarshalAs(UnmanagedType.Bool)]
@@ -92,12 +83,13 @@ internal static partial class WinApi
     [return: MarshalAs(UnmanagedType.Bool)]
     public static partial bool SetMouseSpeed(uint uiAction, uint uiParam, uint pvParam, uint fWinIni);
 
-    #endregion
-
-    #region Fix axis
-
+    [LibraryImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static partial bool GetCursorPos(ref Punto pt);
+    
+    //Fix axis
     [LibraryImport("user32.dll")]
-    internal static partial void ClipCursor(RectApi lpRect);
+    internal static partial void ClipCursor(Rectangulo lpRect);
 
     [LibraryImport("user32.dll", EntryPoint = "ClipCursor")]
     internal static partial int UnclipCursor(IntPtr nullLpRect);

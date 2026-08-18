@@ -14,9 +14,9 @@ internal static class SystemTools
     public static bool IsPressed(KeyArti key) 
         => (WinApi.GetAsyncKeyState((int)key) & 0x8000) > 0;
 
-    public static PointApi GetRataPos()
+    public static Punto GetRataPos()
     {
-        PointApi rp = new();
+        Punto rp = new();
         WinApi.GetCursorPos(ref rp);
         return rp;
     }
@@ -37,7 +37,7 @@ internal static class SystemTools
         return GetCursorMainHandle(GetRataPos());
     }
 
-    public static IntPtr GetCursorMainHandle(PointApi rataPos)
+    public static IntPtr GetCursorMainHandle(Punto rataPos)
     {
         return WinApi.GetAncestor(WinApi.WindowFromPoint(rataPos), Ancestro.GetRoot);
     }
@@ -69,7 +69,7 @@ internal static class SystemTools
         return mods;
     }
 
-    public static string GetAppExeName()
+    public static string GetCursorAppExeName()
     {
         try
         {

@@ -21,6 +21,8 @@
 
   <ItemGroup>
     <Folder Include="..\docs\" />
+    <Folder Include="Modules\UI\Themes\" />
+    <Folder Include="Modules\UI\Styles\" />
   </ItemGroup>
 
   <ItemGroup>

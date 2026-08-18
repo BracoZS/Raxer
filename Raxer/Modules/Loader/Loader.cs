@@ -1,6 +1,6 @@
 using LocalSettingsJson;
 using Raxer.Infra.Lang;
-using Raxer.Infra.Storage;
+using Raxer.Modules.Settings;
 
 namespace Raxer.Modules.Loader;
 

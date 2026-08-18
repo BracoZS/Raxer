@@ -1,5 +1,4 @@
-﻿using Raxer.Infra.Shared;
-using Raxer.Modules.Remapping;
+﻿using Raxer.Modules.Remapping;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Security;
@@ -11,9 +10,7 @@ internal static partial class MouseHook
 {
     private static nint _hookID = nint.Zero;    
     private static LowHookProc _mouseProc = null!;
-    private static nint handled = 1;
-
-    #region Structs
+    private static nint _handled = 1;
 
     [StructLayout(LayoutKind.Sequential)]
     internal struct MSLLHOOKSTRUCT
@@ -24,8 +21,6 @@ internal static partial class MouseHook
         internal uint Time;
         internal nint DwExtraInfo;
     }
-
-    #endregion
 
     public delegate nint LowHookProc(int nCode, nint wParam, nint lParam);
 
@@ -139,7 +134,7 @@ internal static partial class MouseHook
         }
 
         if (MouseDispatcher.Handle(action))
-            return handled;
+            return _handled;
 
         return WinApi.CallNextHookEx(nint.Zero, nCode, wParam, lParam);
     }

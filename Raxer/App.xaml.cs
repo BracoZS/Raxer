@@ -1,10 +1,7 @@
-﻿using Raxer.Infra.Lang;
-using Raxer.Infra.Storage;
-using Raxer.Modules.Loader;
+﻿using Raxer.Modules.Loader;
 using Raxer.Modules.Settings;
 using Raxer.Modules.Tray;
 using Raxer.Modules.WindowManager;
-using System.Globalization;
 using System.Windows;
 
 namespace Raxer;

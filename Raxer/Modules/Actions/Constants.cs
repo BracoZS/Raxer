@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Raxer.Infra.Native;
+﻿using Raxer.Infra.Native;
 
 namespace Raxer.Modules.Actions;
 
