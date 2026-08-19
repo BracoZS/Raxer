@@ -14,9 +14,14 @@
             <shared:BoolToVisibilityConverter x:Key="BoolToVisibility" />
             <shared:NullToVisibilityConverter x:Key="NullToVisibility" />
 
-            <!-- UI text from resx -->
             <ResourceDictionary.MergedDictionaries>
+                <!-- UI text from resx -->
                 <lang:ResxDictionary />
+                <ResourceDictionary Source="/Modules/UI/Themes/Theme.xaml" />
+                <ResourceDictionary Source="/Modules/UI/Styles/ButtonStyles.xaml" />
+                <ResourceDictionary Source="/Modules/UI/Styles/TextBlockStyles.xaml" />
+                <ResourceDictionary Source="/Modules/UI/Styles/CheckBoxStyles.xaml" />
+                <ResourceDictionary Source="/Modules/UI/Styles/IconStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
         </ResourceDictionary>

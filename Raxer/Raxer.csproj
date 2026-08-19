@@ -13,16 +13,12 @@
   <ItemGroup>
     <Using Remove="System.Windows.Forms" />
     <Using Remove="System.Drawing" />
+    <Compile Remove="Infra\Dev\reference\**" />
+    <Page Remove="Infra\Dev\reference\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Assets\Iconos\profile.svg" />
-  </ItemGroup>
-
-  <ItemGroup>
+	<ItemGroup>
     <Folder Include="..\docs\" />
-    <Folder Include="Modules\UI\Themes\" />
-    <Folder Include="Modules\UI\Styles\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,7 +30,6 @@
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageReference Include="LocalSettingsJson" Version="1.0.0" />
     <PackageReference Include="ResultPattern.Net" Version="1.1.0" />
-    <PackageReference Include="SharpVectors" Version="1.8.5" />
   </ItemGroup>
 
   <ItemGroup>

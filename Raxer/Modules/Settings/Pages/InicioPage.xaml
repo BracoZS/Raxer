@@ -1,0 +1,27 @@
+<UserControl x:Class="Raxer.Modules.Settings.Pages.InicioPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            
+             Foreground="red"
+             >
+
+    <StackPanel Margin="24,16,24,8">
+        <TextBlock Text="{DynamicResource app-name}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource Texto}" />
+        <TextBlock Text="{DynamicResource tagline}" FontSize="13" Foreground="{StaticResource TextoSuave}" Margin="0,2,0,20" />
+
+        <Border Background="{StaticResource Panel}"
+                BorderBrush="{StaticResource Borde}" BorderThickness="1"
+                CornerRadius="8" Padding="20,16"
+                VerticalAlignment="Top">
+            <StackPanel>
+                <TextBlock Text="{DynamicResource settings}" FontSize="15" FontWeight="SemiBold" Foreground="{StaticResource Texto}" />
+                <CheckBox Content="{DynamicResource start-with-windows}"
+                          IsChecked="{Binding ArrancarConWindows}"
+                          Foreground="{StaticResource Texto}"
+                          FontSize="13"
+                          Margin="0,16,0,0" />
+            </StackPanel>
+        </Border>
+    </StackPanel>
+
+</UserControl>

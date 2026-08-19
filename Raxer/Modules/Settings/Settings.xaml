@@ -3,64 +3,109 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Raxer.Modules.Settings"
+        xmlns:vm="clr-namespace:Raxer.Modules.Settings"
         mc:Ignorable="d"
         
-        Height="450" Width="800"
-        Title="{DynamicResource settings}"
+        Title="Raxer - Settings"
+        Width="542" Height="522"
+        AllowsTransparency="True"
+        Foreground="Red"
+        Background="{x:Null}"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        
+        xmlns:myControls="clr-namespace:Raxer.Controls"
         >
 
-    <Window.Resources>
-        <SolidColorBrush x:Key="Fondo" Color="#e6e5ee" />
-        <SolidColorBrush x:Key="Panel" Color="#f4f4f6" />
-        <SolidColorBrush x:Key="PanelHover" Color="#232B35" />
-        <SolidColorBrush x:Key="Borde" Color="#2A323D" />
-        <SolidColorBrush x:Key="Texto" Color="#1a1a1a" />
-        <SolidColorBrush x:Key="TextoSuave" Color="#8A93A0" />
-        <SolidColorBrush x:Key="Acento" Color="#4D9DE0" />
-    </Window.Resources>
 
-    <Grid
-     Background="{StaticResource Fondo}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="72" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-
-        <!-- Sidebar -->
-        <Border Grid.Column="0" Background="{StaticResource Panel}" BorderBrush="{StaticResource Borde}" BorderThickness="0,0,1,0">
-            <!-- vacio x ahora -->
-        </Border>
-
-        <!-- Contenido -->
-        <Grid Grid.Column="1" Margin="36,32,36,32">
+    <!-- Contenedor base -->
+    <Border CornerRadius="8" Margin="8" Background="{StaticResource Fondo}">
+        <Grid>
+            <!--filas y columnas-->
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="34" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="39" />
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Row="0">
-                <TextBlock Text="{DynamicResource app-name}" FontSize="28" FontWeight="Bold" Foreground="{StaticResource Texto}" />
-                <TextBlock Text="{DynamicResource tagline}" FontSize="14" Foreground="{StaticResource TextoSuave}" Margin="0,2,0,24" />
+            <!-- Barra de título -->
+            <Border Grid.ColumnSpan="2"
+                    Background="{StaticResource TituloBarra}"
+                    CornerRadius="8,8,0,0"
+                    MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <TextBlock Text="Raxer - Settings"
+                           Foreground="#CCCCCC" FontSize="13"
+                           Margin="12,7,0,0" VerticalAlignment="Center"/>
+            </Border>
+
+            <!-- Sidebar -->
+            <StackPanel Grid.Row="1" Grid.RowSpan="2"
+                        Background="{StaticResource Sidebar}"
+                        Margin="0,0,0,4">
+
+                <!-- Logo -->
+                <Image Source="/Assets/Iconos/appIcon.ico"
+                       Width="48" Height="48"
+                       Margin="0,12,0,12"
+                       HorizontalAlignment="Center"/>
+
+                <!-- Inicio -->
+                <RadioButton Command="{Binding IrAInicioCommand}"
+                             IsChecked="True" Margin="1,0,1,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <myControls:Icon Source="/Assets/Iconos/home.svg" Width="24" Height="24" Margin="0,0,0,4"/>
+                        <TextBlock Text="Inicio" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <!-- Perfiles -->
+                <RadioButton Command="{Binding IrAPerfilesCommand}" Margin="1,4,1,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <myControls:Icon Source="/Assets/Iconos/profile.svg" Width="24" Height="24" Margin="0,0,0,4"/>
+                        <TextBlock Text="Perfiles" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <!-- Filtros -->
+                <RadioButton Command="{Binding IrAFiltrosCommand}" Margin="1,4,1,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <myControls:Icon Source="/Assets/Iconos/shortcuts.svg" Width="24" Height="24" Margin="0,0,0,4"/>
+                        <TextBlock Text="Filtros" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
+
+                <!-- Info -->
+                <RadioButton Command="{Binding IrAInfoCommand}" Margin="1,4,1,0">
+                    <StackPanel HorizontalAlignment="Center">
+                        <myControls:Icon Source="/Assets/Iconos/info.svg" Width="24" Height="24" Margin="0,0,0,4"/>
+                        <TextBlock Text="Info" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </RadioButton>
             </StackPanel>
 
-            <!-- Card de settings -->
-            <Border Grid.Row="1"
-                 Background="{StaticResource Panel}"
-                 BorderBrush="{StaticResource Borde}" BorderThickness="1"
-                 CornerRadius="10" Padding="24,20"
-                 VerticalAlignment="Top">
-                <StackPanel>
-                    <TextBlock Text="{DynamicResource settings}" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource Texto}" />
-                    <CheckBox x:Name="IniciarConWindowsCheck"
-                            Content="{DynamicResource start-with-windows}"
-                           IsChecked="False"
-                           Foreground="{StaticResource Texto}"
-                           FontSize="14"
-                           Margin="0,20,0,0" />
-                    <!--<TextBlock Text="{DynamicResource abcd}"/>-->
-                </StackPanel>
-            </Border>
+            <!-- Contenido -->
+            <ContentControl Grid.Row="1" Grid.Column="1"
+                            Content="{Binding PaginaActual}"
+                            Margin="0,0,0,2"/>
+
+            <!-- Botones de ventana -->
+            <StackPanel Grid.Row="0" Grid.Column="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Click="Minimize_Click" Background="Transparent" BorderThickness="0" Cursor="Hand"
+                        Padding="8,4">
+                    <myControls:Icon Source="/Assets/Iconos/minimize.svg" Width="12" Height="12"/>
+                </Button>
+                <Button Click="Close_Click" Background="Transparent" BorderThickness="0" Cursor="Hand"
+                        Padding="8,4">
+                    <myControls:Icon Source="/Assets/Iconos/close.svg" Width="12" Height="12"/>
+                </Button>
+            </StackPanel>
         </Grid>
-    </Grid>
+    </Border>
 </Window>
