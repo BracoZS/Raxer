@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- ════════════════════════════════════════ -->
+    <!-- REFERENCE TOKENS: Spacing Scale         -->
+    <!-- Base: 4px grid                          -->
+    <!-- ════════════════════════════════════════ -->
+
+    <!--TODO: rewrite this, base 7px -->
+    <!--<sys:Double x:Key="Space.0">0</sys:Double>
+    <sys:Double x:Key="Space.1">4</sys:Double>
+    <sys:Double x:Key="Space.2">8</sys:Double>
+    <sys:Double x:Key="Space.3">12</sys:Double>
+    <sys:Double x:Key="Space.4">16</sys:Double>
+    <sys:Double x:Key="Space.5">20</sys:Double>
+    <sys:Double x:Key="Space.6">24</sys:Double>
+    <sys:Double x:Key="Space.8">32</sys:Double>
+    <sys:Double x:Key="Space.10">40</sys:Double>
+    <sys:Double x:Key="Space.12">48</sys:Double>
+    <sys:Double x:Key="Space.16">64</sys:Double>
+    <sys:Double x:Key="Space.20">80</sys:Double>
+    <sys:Double x:Key="Space.24">96</sys:Double>-->
+</ResourceDictionary>

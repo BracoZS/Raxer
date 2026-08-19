@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- =========================
+         PRIMITIVE COLORS
+         ========================= -->
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- 1. BRAND (primary)                       -->
+    <!-- ════════════════════════════════════════ -->
+    <!--<Color x:Key="Brand.50">#EEF2FF</Color>
+    <Color x:Key="Brand.100">#E0E7FF</Color>
+    <Color x:Key="Brand.200">#C7D2FE</Color>
+    <Color x:Key="Brand.300">#A5B4FC</Color>
+    <Color x:Key="Brand.400">#818CF8</Color>-->
+    <Color x:Key="Brand.500">#e01111</Color>  <!-- Base -->
+    <!--<Color x:Key="Brand.600">#4F46E5</Color>
+    <Color x:Key="Brand.700">#4338CA</Color>
+    <Color x:Key="Brand.800">#3730A3</Color>
+    <Color x:Key="Brand.900">#312E81</Color>-->
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- 2. NEUTRAL (grises, secondary)           -->
+    <!-- ════════════════════════════════════════ -->
+    <Color x:Key="Neutral.50">#fafafa</Color>
+    <Color x:Key="Neutral.100">#f1f1f1</Color>
+    <Color x:Key="Neutral.200">#e6e6e6</Color>
+    <Color x:Key="Neutral.300">#d3d3d3</Color>
+    <Color x:Key="Neutral.400">#a3a3a3</Color>
+    <Color x:Key="Neutral.500">#727272</Color>
+    <Color x:Key="Neutral.600">#535353</Color>
+    <Color x:Key="Neutral.700">#404040</Color>
+    <Color x:Key="Neutral.800">#272727</Color>
+    <Color x:Key="Neutral.900">#1a1a1a</Color>
+    <Color x:Key="Neutral.950">#101010</Color>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- FEEDBACK (objetiva - estados, validación) -->
+    <!-- ════════════════════════════════════════ --> 
+    <!-- Success -->
+    <Color x:Key="Success.50">#F0FDF4</Color>
+    <Color x:Key="Success.500">#22C55E</Color>
+    <Color x:Key="Success.600">#16A34A</Color>
+    <Color x:Key="Success.700">#15803D</Color>
+
+    <!-- Warning -->
+    <Color x:Key="Warning.50">#FFFBEB</Color>
+    <Color x:Key="Warning.500">#F59E0B</Color>
+    <Color x:Key="Warning.600">#D97706</Color>
+    <Color x:Key="Warning.700">#B45309</Color>
+
+    <!-- Danger -->
+    <Color x:Key="Danger.50">#FEF2F2</Color>
+    <Color x:Key="Danger.500">#EF4444</Color>
+    <Color x:Key="Danger.600">#DC2626</Color>
+    <Color x:Key="Danger.700">#B91C1C</Color>
+
+    <!-- Info -->
+    <Color x:Key="Info.50">#EFF6FF</Color>
+    <Color x:Key="Info.500">#3B82F6</Color>
+    <Color x:Key="Info.600">#2563EB</Color>
+    <Color x:Key="Info.700">#1D4ED8</Color>
+</ResourceDictionary>
