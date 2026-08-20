@@ -8,20 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Raxer.Modules.Loader;
 
-namespace Raxer
+namespace Raxer.Infra.Dev;
+/// <summary>
+/// Lógica de interacción para TestControl.xaml
+/// </summary>
+public partial class TestControl : UserControl
 {
-    /// <summary>
-    /// Lógica de interacción para TestsWindow.xaml
-    /// </summary>
-    public partial class TestsWindow : Window
+    public TestControl()
     {
-        public TestsWindow()
-        {
-            InitializeComponent();
-
-        }
+        InitializeComponent();
     }
 }

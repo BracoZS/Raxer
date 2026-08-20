@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raxer"
         mc:Ignorable="d"
-        xmlns:svgc="clr-namespace:SharpVectors.Converters;assembly=SharpVectors.Converters.Wpf"
         Title="Raxer" Height="480" Width="720"
         
         WindowStartupLocation="CenterScreen"
