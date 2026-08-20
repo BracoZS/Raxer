@@ -1,10 +1,112 @@
 <UserControl x:Class="Raxer.Modules.Settings.Pages.FiltrosPage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             Background="Transparent">
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             
+             d:DesignWidth="445"
+             d:DesignHeight="426"
+             Background="Transparent"
+             
+             Width="400">
 
-    <StackPanel Margin="24,16,24,8">
-        <TextBlock Text="Filtros" FontSize="20" FontWeight="Bold" Foreground="{StaticResource text}" />
-    </StackPanel>
+    <Grid Margin="4" >
+
+        <!-- Base (redondeado abajo, derecha) -->
+        <Border CornerRadius="0,0,8,0"
+                Grid.RowSpan="2"/>
+
+        <!-- Título de contenido -->
+        <StackPanel
+            Height="30"
+            Width="400"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="11,2,0,0">
+            <Canvas
+                Height="29"
+                Width="69"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Text="Filtro de aplicaciones"
+                    Canvas.Left="11"
+                    Canvas.Top="7"
+                    Style="{StaticResource text.3}" />
+            </Canvas>
+            <Canvas>
+                <Rectangle 
+                    Height="1"
+                    Width="153"
+                    Fill="{StaticResource bg.geometry}"/>
+                <Rectangle
+                    Height="1"
+                    Width="417">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="#00CDCDCD" Offset="0.95"/>
+                            <GradientStop Color="#59F1F1F1" Offset="0"/>
+                            <GradientStop Color="#59F1F1F1" Offset="0.85"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Canvas>
+        </StackPanel>
+
+
+        <!-- Cuerpo  (poner scroll viewer)-->
+        <ListBox Margin="10,47" 
+                 Background="Transparent"
+                 BorderBrush="Transparent"
+                 BorderThickness="0"
+                 ItemsSource="{Binding Filtros}"
+                 Foreground="{StaticResource text}">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Style="{StaticResource borde}" Width="400" Padding="10,5,10,0">
+                        <StackPanel>
+                            <Grid>
+                                <TextBlock Text="{Binding Titulo}" />
+                                <Button Style="{StaticResource boton_menu}"
+                                        HorizontalAlignment="Right" Height="16"/>
+                            </Grid>
+                            <TextBlock Text="{Binding Tipo}" Style="{StaticResource t_x}"
+                               Margin="1,5,0,0"/>
+                            <ListBox Background="Transparent"
+                                     BorderBrush="Transparent"
+                                     BorderThickness="0"
+                                     ItemsSource="{Binding Apps}"
+                                     Foreground="{StaticResource text}">
+                                <ListBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel Margin="-17,2,-7,0"/>
+                                    </ItemsPanelTemplate>
+                                </ListBox.ItemsPanel>
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="56" Height="56" Margin="11,0,0,0">
+                                            <Image Source="/imgs/info.png" Margin="0,6,0,0" Width="28" Height="28"/>
+                                            <TextBlock Text="{Binding}" Margin="0,3,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+
+                            </ListBox>
+
+                            <TextBlock Text="Vinculado a:" Margin="0,4,0,0"/>
+                            <ItemsControl ItemsSource="{Binding Links}"
+                                  Style="{StaticResource perfiles_links}"
+                                  Margin="-4,0,0,5"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+    </Grid>
 
 </UserControl>

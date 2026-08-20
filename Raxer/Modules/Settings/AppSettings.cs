@@ -5,8 +5,9 @@ namespace Raxer.Modules.Settings;
 /// <summary>
 /// Settings globales de la app. Se persisten en ~/AppData/Local/Raxer/settings.json
 /// via LocalSettingsJson. Crece a partir de aqui.
+/// Modelo -> Json file
 /// </summary>
-public class AppSettings : SettingsBase
+public sealed class AppSettings : SettingsBase
 {
     private bool _arrancarConWindows = true;
 

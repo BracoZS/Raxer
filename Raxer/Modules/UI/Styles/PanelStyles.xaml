@@ -11,7 +11,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ItemsControl">
                     <Border
-                        BorderBrush="{StaticResource borde}"
+                        BorderBrush="{StaticResource border}"
                         BorderThickness="1"
                         CornerRadius="5">
                         <ItemsPresenter/>
@@ -81,7 +81,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ItemsControl">
                     <Canvas >
-                        <Image Source="/imgs/linea_modif.png"
+                        <Image Source="/Assets/Images/placeholder-sqr-sm.jpg"
                                Width="18"
                                Canvas.Left="18"
                                Canvas.Top="-5"/>
@@ -112,7 +112,7 @@
         <Setter Property="ItemTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    <Border BorderBrush="{StaticResource borde}"
+                    <Border BorderBrush="{StaticResource border}"
                             Background="{StaticResource bg.surface.1}"
                             CornerRadius="8"
                             BorderThickness="1"
