@@ -4,7 +4,7 @@
              Background="Transparent">
 
     <StackPanel Margin="24,16,24,8">
-        <TextBlock Text="Filtros" FontSize="20" FontWeight="Bold" Foreground="{StaticResource Texto}" />
+        <TextBlock Text="Filtros" FontSize="20" FontWeight="Bold" Foreground="{StaticResource text}" />
     </StackPanel>
 
 </UserControl>

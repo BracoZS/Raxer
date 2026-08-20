@@ -17,6 +17,8 @@
     <SolidColorBrush x:Key="bg" Color="{StaticResource Neutral.950}" />
     <SolidColorBrush x:Key="bg.surface" Color="{StaticResource Neutral.900}" />
     <SolidColorBrush x:Key="bg.surface.1" Color="{StaticResource Neutral.800}" />
+    <SolidColorBrush x:Key="bg.geometry" Color="{StaticResource Neutral.300}" />
+    
     <SolidColorBrush x:Key="bg.success" Color="{StaticResource Success.50}" />
     <SolidColorBrush x:Key="bg.info" Color="{StaticResource Info.50}" />
     <SolidColorBrush x:Key="bg.warning" Color="{StaticResource Warning.50}" />
@@ -29,12 +31,12 @@
     <SolidColorBrush x:Key="border.strong" Color="{StaticResource Neutral.600}" />
     <SolidColorBrush x:Key="border.over" Color="{StaticResource Neutral.600}" />   <!-- 10% Alpha -->
     <SolidColorBrush x:Key="border.focus" Color="{StaticResource Brand.500}" />
-    <SolidColorBrush x:Key="border.active" Color="{StaticResource Brand.500}" />
+    <SolidColorBrush x:Key="border.active" Color="{StaticResource Neutral.600}" />
     <SolidColorBrush x:Key="border.disabled" Color="{StaticResource Neutral.800}" /> 
     <!--<SolidColorBrush x:Key="border.error" Color="{StaticResource }" />-->
    
     <!-- Typography / Textos -->
-    <SolidColorBrush x:Key="text" Color="{StaticResource Neutral.50}" />
+    <SolidColorBrush x:Key="text" Color="{StaticResource Neutral.100}" />
     <SolidColorBrush x:Key="text.brand" Color="{StaticResource Brand.500}" />
     <!--<SolidColorBrush x:Key="text.on-accent" Color="{StaticResource }" />-->
     <SolidColorBrush x:Key="text.muted" Color="{StaticResource Neutral.400}" />
@@ -47,7 +49,7 @@
     <!--<SolidColorBrush x:Key="text.placeholder" Color="{StaticResource }" />-->
 
     <!-- Icons -->
-    <SolidColorBrush x:Key="icon" Color="{StaticResource Neutral.300}" />
+    <SolidColorBrush x:Key="icon" Color="{StaticResource Neutral.100}" />
     <!--<SolidColorBrush x:Key="icon.disabled" Color="{StaticResource }" />-->
     <!--<SolidColorBrush x:Key="icon.info" Color="{StaticResource }" />
     <SolidColorBrush x:Key="icon.success" Color="{StaticResource }" />

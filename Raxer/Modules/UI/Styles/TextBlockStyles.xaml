@@ -2,4 +2,44 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- TextBlock styles go here -->
 
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource text}"/>
+        <Setter Property="FontFamily" Value="/Assets/Fuentes/#Inter"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style x:Key="text.1" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource text}"/>
+        <Setter Property="FontFamily" Value="/fuentes/#Inter"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style x:Key="text.2" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource text}" />
+        <Setter Property="FontFamily" Value="/fuentes/#Inter"/>
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="text.3" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource text}" />
+        <Setter Property="FontFamily" Value="/fuentes/#Inter"/>
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="t_x" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource text}"/>
+        <Setter Property="FontFamily" Value="/fuentes/#Inter"/>
+        <Setter Property="FontSize" Value="11"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
 </ResourceDictionary>

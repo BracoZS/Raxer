@@ -3,24 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:Raxer.Modules.Settings"
         mc:Ignorable="d"
         
-        Title="Raxer - Settings"
         Width="542" Height="522"
         AllowsTransparency="True"
-        Foreground="Red"
         Background="{x:Null}"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         
+        xmlns:vm="clr-namespace:Raxer.Modules.Settings"
         xmlns:myControls="clr-namespace:Raxer.Controls"
         >
-
+    <Window.DataContext>
+        <vm:SettingsVM/>
+    </Window.DataContext>
 
     <!-- Contenedor base -->
-    <Border CornerRadius="8" Margin="8" Background="{StaticResource Fondo}">
+    <Border CornerRadius="8" Margin="8" Background="{StaticResource bg}">
         <Grid>
             <!--filas y columnas-->
             <Grid.RowDefinitions>
@@ -35,19 +35,36 @@
 
             <!-- Barra de título -->
             <Border Grid.ColumnSpan="2"
-                    Background="{StaticResource TituloBarra}"
+                    Background="{StaticResource bg.surface.1}"
                     CornerRadius="8,8,0,0"
                     MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
-                <TextBlock Text="Raxer - Settings"
-                           Foreground="#CCCCCC" FontSize="13"
-                           Margin="12,7,0,0" VerticalAlignment="Center"/>
+                <Grid>
+                    <TextBlock Text="Raxer - Settings"
+                               Foreground="#CCCCCC" FontSize="13"
+                               Margin="12,7,0,0" VerticalAlignment="Center"/>
+                    <!-- Botones de ventana -->
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center">
+                        <Button Click="Minimize_Click" Background="Transparent" BorderThickness="0" Cursor="Hand"
+                                Foreground="{StaticResource text}"  Padding="8,8,8,0">
+                            <myControls:Icon Source="/Assets/Iconos/minimize.svg" Width="12" Height="12"/>
+                        </Button>
+                        <Button Click="Close_Click" Background="Transparent" BorderThickness="0" Cursor="Hand"
+                                Foreground="{StaticResource text}" Padding="8,4">
+                            <myControls:Icon Source="/Assets/Iconos/close.svg" Width="12" Height="12"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
             </Border>
 
             <!-- Sidebar -->
             <StackPanel Grid.Row="1" Grid.RowSpan="2"
-                        Background="{StaticResource Sidebar}"
+                        Background="{StaticResource bg.surface}"
                         Margin="0,0,0,4">
 
+                <!-- ===== Sidebar items ==== -->
+                
                 <!-- Logo -->
                 <Image Source="/Assets/Iconos/appIcon.ico"
                        Width="48" Height="48"
@@ -56,7 +73,8 @@
 
                 <!-- Inicio -->
                 <RadioButton Command="{Binding IrAInicioCommand}"
-                             IsChecked="True" Margin="1,0,1,0">
+                             IsChecked="True" Margin="1,0,1,0"
+                             Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/home.svg" Width="24" Height="24" Margin="0,0,0,4"/>
                         <TextBlock Text="Inicio" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
@@ -64,7 +82,8 @@
                 </RadioButton>
 
                 <!-- Perfiles -->
-                <RadioButton Command="{Binding IrAPerfilesCommand}" Margin="1,4,1,0">
+                <RadioButton Command="{Binding IrAPerfilesCommand}" Margin="1,4,1,0"
+                             Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/profile.svg" Width="24" Height="24" Margin="0,0,0,4"/>
                         <TextBlock Text="Perfiles" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
@@ -72,7 +91,8 @@
                 </RadioButton>
 
                 <!-- Filtros -->
-                <RadioButton Command="{Binding IrAFiltrosCommand}" Margin="1,4,1,0">
+                <RadioButton Command="{Binding IrAFiltrosCommand}" Margin="1,4,1,0"
+                             Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/shortcuts.svg" Width="24" Height="24" Margin="0,0,0,4"/>
                         <TextBlock Text="Filtros" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
@@ -80,7 +100,8 @@
                 </RadioButton>
 
                 <!-- Info -->
-                <RadioButton Command="{Binding IrAInfoCommand}" Margin="1,4,1,0">
+                <RadioButton Command="{Binding IrAInfoCommand}" Margin="1,4,1,0"
+                             Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/info.svg" Width="24" Height="24" Margin="0,0,0,4"/>
                         <TextBlock Text="Info" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
@@ -93,19 +114,6 @@
                             Content="{Binding PaginaActual}"
                             Margin="0,0,0,2"/>
 
-            <!-- Botones de ventana -->
-            <StackPanel Grid.Row="0" Grid.Column="1"
-                        Orientation="Horizontal"
-                        HorizontalAlignment="Right">
-                <Button Click="Minimize_Click" Background="Transparent" BorderThickness="0" Cursor="Hand"
-                        Padding="8,4">
-                    <myControls:Icon Source="/Assets/Iconos/minimize.svg" Width="12" Height="12"/>
-                </Button>
-                <Button Click="Close_Click" Background="Transparent" BorderThickness="0" Cursor="Hand"
-                        Padding="8,4">
-                    <myControls:Icon Source="/Assets/Iconos/close.svg" Width="12" Height="12"/>
-                </Button>
-            </StackPanel>
         </Grid>
     </Border>
 </Window>

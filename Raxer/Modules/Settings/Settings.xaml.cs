@@ -22,6 +22,8 @@ public partial class Settings : Window
 
     void Close_Click(object sender, RoutedEventArgs e)
     {
-        Close();
+        //Close();
+        //debug:
+        App.Close();
     }
 }

@@ -9,6 +9,7 @@
 # local-only, fuera del repo
 /AGENTS.md
 /Raxer/Infra/Dev/Lang.cs
+/Raxer/Infra/Dev/reference/
 
 # User-specific files
 *.rsuser

@@ -8,4 +8,9 @@ public partial class InicioPage : UserControl
     {
         InitializeComponent();
     }
+
+    void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+    {
+        e.Handled = true;
+    }
 }
