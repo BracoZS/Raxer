@@ -7,61 +7,16 @@
              
              d:DesignWidth="445"
              d:DesignHeight="426"
+             Style="{StaticResource page}"
+             Tag="Filtro de aplicaciones"
+             Background="Transparent">
+
+    <ListBox Margin="10"
              Background="Transparent"
-             
-             Width="400">
-
-    <Grid Margin="4" >
-
-        <!-- Base (redondeado abajo, derecha) -->
-        <Border CornerRadius="0,0,8,0"
-                Grid.RowSpan="2"/>
-
-        <!-- Título de contenido -->
-        <StackPanel
-            Height="30"
-            Width="400"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Margin="11,2,0,0">
-            <Canvas
-                Height="29"
-                Width="69"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center">
-                <TextBlock
-                    Text="Filtro de aplicaciones"
-                    Canvas.Left="11"
-                    Canvas.Top="7"
-                    Style="{StaticResource text.3}" />
-            </Canvas>
-            <Canvas>
-                <Rectangle 
-                    Height="1"
-                    Width="153"
-                    Fill="{StaticResource bg.geometry}"/>
-                <Rectangle
-                    Height="1"
-                    Width="417">
-                    <Rectangle.Fill>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                            <GradientStop Color="#00CDCDCD" Offset="0.95"/>
-                            <GradientStop Color="#59F1F1F1" Offset="0"/>
-                            <GradientStop Color="#59F1F1F1" Offset="0.85"/>
-                        </LinearGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-            </Canvas>
-        </StackPanel>
-
-
-        <!-- Cuerpo  (poner scroll viewer)-->
-        <ListBox Margin="10,47" 
-                 Background="Transparent"
-                 BorderBrush="Transparent"
-                 BorderThickness="0"
-                 ItemsSource="{Binding Filtros}"
-                 Foreground="{StaticResource text}">
+             BorderBrush="Transparent"
+             BorderThickness="0"
+             ItemsSource="{Binding Filtros}"
+             Foreground="{StaticResource text}">
 
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -106,7 +61,5 @@
             </ListBox.ItemTemplate>
 
         </ListBox>
-
-    </Grid>
 
 </UserControl>

@@ -8,58 +8,12 @@
              d:DesignWidth="445"
              d:DesignHeight="426"
             
+             Style="{StaticResource page}"
+             Tag="Inicio"
              Background="LightSlateGray"
              >
 
-    <Grid Margin="4">
-        <Grid.Background>
-            <ImageBrush Stretch="Uniform"/>
-        </Grid.Background>
-
-        <!-- Base (redondeado abajo, derecha) -->
-        <Border CornerRadius="0,0,8,0" 
-               Grid.RowSpan="2">
-        </Border>
-
-        <!-- Título -->
-        <StackPanel
-           Height="30"
-           Width="400"
-           HorizontalAlignment="Left"
-           VerticalAlignment="Top"
-           Margin="11,2,0,0">
-            <Canvas
-               Height="29"
-               Width="69"
-               HorizontalAlignment="Left"
-               VerticalAlignment="Center">
-                <TextBlock
-                   Text="Inicio"
-                   Canvas.Left="11"
-                   Canvas.Top="7"
-                   Style="{StaticResource text.3}" />
-            </Canvas>
-            <Canvas>
-                <Rectangle 
-                   Height="1"
-                   Width="54"
-                   Fill="{StaticResource bg.geometry}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <Rectangle
-                   Height="1"
-                   Width="417">
-                    <Rectangle.Fill>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                            <GradientStop Color="#00CDCDCD" Offset="0.95"/>
-                            <GradientStop Color="#59F1F1F1" Offset="0"/>
-                            <GradientStop Color="#59F1F1F1" Offset="0.85"/>
-                        </LinearGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-            </Canvas>
-        </StackPanel>
-
-        <!-- Cuerpo -->
-        <DockPanel Margin="0,32,0,0">
+    <DockPanel>
             <!-- Top -->
             <Border Style="{StaticResource borde}"
                    DockPanel.Dock="Top"
@@ -241,7 +195,6 @@
             </Border>
 
         </DockPanel>
-    </Grid>
 
     <!--
     <StackPanel Margin="24,16,24,8">

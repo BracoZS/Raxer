@@ -16,7 +16,6 @@ public static class Loader
         // leer settings config from file json
         App.Settings = SettingsStorage.Load<AppSettings>();
 
-
         // wiring settings events
         App.Settings.SavingErrorOcurred += (s, e) =>
         {
@@ -25,7 +24,6 @@ public static class Loader
         };
 
         ResxDictionary.SetLanguage("en");
-
 
         Log("Loader: settings cargados");
 

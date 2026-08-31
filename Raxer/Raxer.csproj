@@ -24,6 +24,7 @@
   <ItemGroup>
     <Resource Include="Assets\Iconos\**" />
     <Resource Include="Assets\Fuentes\**" />
+	<Resource Include="Assets\Images\**" />
   </ItemGroup>
 
   <ItemGroup>

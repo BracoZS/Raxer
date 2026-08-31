@@ -7,90 +7,46 @@
              
              d:DesignWidth="445" 
              d:DesignHeight="426"
-             Background="Transparent"
-             
-             Width="400">
+             Style="{StaticResource page}"
+             Tag="Acerca de"
+             >
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Assets/Images/model-about.png" Stretch="Uniform" Opacity="0.0"/>
+    </UserControl.Background>
 
-    <Grid Margin="4" >
-
-        <!-- Base (redondeado abajo, derecha) -->
-        <Border CornerRadius="0,0,8,0"
-                Grid.RowSpan="2"/>
-
-        <!-- Título de contenido -->
-        <StackPanel
-            Height="30"
-            Width="400"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Margin="11,2,0,0">
-            <Canvas
-                Height="29"
-                Width="69"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center">
-                <TextBlock
-                    Text="Acerca de"
-                    Canvas.Left="11"
-                    Canvas.Top="7"
-                    Style="{StaticResource text.3}" />
-            </Canvas>
-            <Canvas>
-                <Rectangle 
-                    Height="1"
-                    Width="85"
-                    Fill="{StaticResource bg.geometry}"/>
-                <Rectangle
-                    Height="1"
-                    Width="417">
-                    <Rectangle.Fill>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                            <GradientStop Color="#00CDCDCD" Offset="0.95"/>
-                            <GradientStop Color="#59F1F1F1" Offset="0"/>
-                            <GradientStop Color="#59F1F1F1" Offset="0.85"/>
-                        </LinearGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-            </Canvas>
-        </StackPanel>
-
-        <!-- Cuerpo -->
-        <StackPanel Margin="14,48,14,0">
+    <StackPanel Margin="0,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <TextBlock Text="Raxer"
                        Style="{StaticResource t_x}"
-                       FontSize="14"
+                       FontSize="15"
                        Foreground="{StaticResource info}"/>
 
             <TextBlock Text="Version del software: 2.0 "
+                       Style="{StaticResource t_x}" FontStretch="UltraExpanded"
+                       Margin="0,4,0,0"/>
+            <TextBlock Text="©Copyright BracoZS "
                        Style="{StaticResource t_x}"
-                       Margin="10,3,0,0"/>
-            <TextBlock Text="Copyright @BracoZS "
-                       Style="{StaticResource t_x}"
-                       Margin="10,0,0,0"/>
+                       Margin="0,3,0,0"/>
 
             <TextBlock Style="{StaticResource t_x}"
-                       TextWrapping="Wrap"
+                       TextWrapping="WrapWithOverflow"
                        Height="auto"
-                       Margin="10,17,10,0"
+                       Margin="0,21,10,0"
                        LineHeight="17">
                 Para mas información diríjase al sitio web del repositorio oficial:
                 <Hyperlink Foreground="{StaticResource info}">https://github.com/BracoZS/Raxer</Hyperlink>
  Raxer is an app for remapping the mouse buttons, it supports:  left click, right click, mousewheel, backward, forward.
- If you want to be able to create a new mouse comportamietno, you can do it with Raxer. Works with any mouse, regardless of brand.Copyright @BracoZS
+ If you want to be able to create a new mouse comportamietno, you can do it with Raxer. Works with any mouse, regardless of brand.Copyright @BracoZSWorks with any mouse, regardless of brand.Copyright @BracoZS
             </TextBlock>
 
-            <TextBlock Text="Componentes adicionales"
+        <TextBlock Text="Componentes adicionales"
                        Style="{StaticResource t_x}"
                        Foreground="{StaticResource info}"
-                       Margin="10,11,0,0"/>
+                       Margin="0,11,0,0"/>
 
-            <TextBlock Style="{StaticResource t_x}"
+        <TextBlock Style="{StaticResource t_x}"
                        TextWrapping="Wrap"
                        Height="auto"
-                       Margin="10,7,0,0">
-                <TextBlock.Effect>
-                    <DropShadowEffect BlurRadius="3" Direction="0" ShadowDepth="0" Color="#FF7F7F7F" Opacity="0.5"/>
-                </TextBlock.Effect>
+                       Margin="0,11,0,0" LineHeight="14">
                 Some Library Name v12.
                 <LineBreak/>
                 Copyright @2004 Some Author Name
@@ -103,7 +59,7 @@
             <TextBlock Style="{StaticResource t_x}"
                        TextWrapping="Wrap"
                        Height="auto"
-                       Margin="10,7,0,0">
+                       Margin="0,11,0,0" LineHeight="14">
                 Some Library Name v12.
                 <LineBreak/>
                 Copyright @2004 Some Author Name
@@ -116,7 +72,7 @@
             <TextBlock Style="{StaticResource t_x}"
                        TextWrapping="Wrap"
                        Height="auto"
-                       Margin="10,7,0,0">
+                       Margin="0,11,0,0" LineHeight="14">
                 Some Library Name v12.
                 <LineBreak/>
                 Copyright @2004 Some Author Name
@@ -126,7 +82,45 @@
                 </Hyperlink>
             </TextBlock>
 
-        </StackPanel>
+            <TextBlock Style="{StaticResource t_x}"
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Margin="0,11,0,0" LineHeight="14">
+                Some Library Name v12.
+                <LineBreak/>
+                Copyright @2004 Some Author Name
+                <LineBreak/>
+                <Hyperlink Foreground="{StaticResource info}">
+                    MIT License
+                </Hyperlink>
+            </TextBlock>
 
-    </Grid>
+            <TextBlock Style="{StaticResource t_x}"
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Margin="0,11,0,0" LineHeight="14">
+                Some Library Name v12.
+                <LineBreak/>
+                Copyright @2004 Some Author Name
+                <LineBreak/>
+                <Hyperlink Foreground="{StaticResource info}">
+                    MIT License
+                </Hyperlink>
+            </TextBlock>
+
+        <TextBlock Style="{StaticResource t_x}"
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Margin="0,11,0,0" LineHeight="14">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="3" Direction="0" ShadowDepth="0" Color="#FF7F7F7F" Opacity="0.5"/>
+            </TextBlock.Effect>
+                Some Library Name v12.
+                <LineBreak /> Copyright @2004 Some Author Name <LineBreak/>
+                <Hyperlink Foreground="{StaticResource info}">
+                    MIT License
+                </Hyperlink>
+        </TextBlock>
+
+    </StackPanel>
 </UserControl>

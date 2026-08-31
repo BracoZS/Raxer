@@ -34,11 +34,11 @@
                 <ResourceDictionary Source="/Modules/UI/Styles/IconStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/ComboboxStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/BorderStyles.xaml" />
-                <ResourceDictionary Source="/Modules/UI/Styles/PageStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/PanelStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/RadioButtonStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/ScrollStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/SliderStyles.xaml" />
+                <ResourceDictionary Source="/Modules/UI/Styles/PageStyles.xaml" />
 
             </ResourceDictionary.MergedDictionaries>
 
