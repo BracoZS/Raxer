@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         
-        Width="542" Height="522"
+        Width="542"
+        Height="522"
         AllowsTransparency="True"
         Background="{x:Null}"
         ResizeMode="NoResize"
@@ -112,8 +113,19 @@
             <!-- Contenido -->
             <ContentControl Grid.Row="1" Grid.Column="1"
                             Content="{Binding PaginaActual}"
-                            Margin="0,0,0,2"/>
-
+                            Margin="0,0,0,0"/>
+            <!-- Botones de implementación -->
+            <StackPanel
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="0,0,4,0"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Button Content="OK"
+                        Style="{StaticResource boton_implement}"/>
+                <Button Content="Cancelar"
+                        Style="{StaticResource boton_implement}"/>
+            </StackPanel>
         </Grid>
     </Border>
 </Window>

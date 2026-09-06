@@ -20,4 +20,7 @@
     <sys:Double x:Key="Space.16">64</sys:Double>
     <sys:Double x:Key="Space.20">80</sys:Double>
     <sys:Double x:Key="Space.24">96</sys:Double>-->
+
+    <!--<Thickness x:Key="p.4">4</Thickness>-->
+    <Thickness x:Key="p.panel">10,7</Thickness>
 </ResourceDictionary>

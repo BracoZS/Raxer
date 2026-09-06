@@ -9,192 +9,179 @@
              d:DesignHeight="426"
             
              Style="{StaticResource page}"
-             Tag="Inicio"
-             Background="LightSlateGray"
+             Tag="Start"
              >
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Assets/Images/model-inicio.png" Stretch="Uniform"
+                    Opacity="0"
+                    d:Opacity="0.3" 
+                    />
+    </UserControl.Background>
 
     <DockPanel>
-            <!-- Top -->
-            <Border Style="{StaticResource borde}"
-                   DockPanel.Dock="Top"
-                   Height="135"
-                   Margin="13,15,0,0"
-                   Padding="0,6,0,0">
-                <Grid Width="399" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.2*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
+        <!-- Top -->
+        <Border Style="{StaticResource borde}"
+                DockPanel.Dock="Top"
+                Width="400"
+                Height="135"
+                Padding="{StaticResource p.panel}">
+            <Grid Width="400" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
-                    <!-- Parte izquierda -->
-                    <TextBlock Text="Perfil actual"
+                <!-- Parte izquierda -->
+                <TextBlock Text="Perfil actual"
                               Grid.Row="0"
                               />
-                    <TextBlock Text="Filtro"
+                <TextBlock Text="Filtro"
                               Grid.Row="1"
                               />
-                    <TextBlock Text="Archivo de configuración"
+                <TextBlock Text="Archivo de configuración"
                               Grid.Row="2"
                               />
-                    <TextBlock Text="Atajo para cambiar perfil"
+                <TextBlock Text="Atajo para cambiar perfil"
                               Grid.Row="3"
                                TextAlignment="Justify" />
-                    <CheckBox Style="{StaticResource casilla}"
+                <CheckBox Style="{StaticResource casilla}"
                              Grid.Row="4"
                              Margin="10,-4,0,0"
                              Content="Activar notificaciones"
                              />
-                    <TextBlock Grid.Row="5"
+                <TextBlock Grid.Row="5"
                               >
                        <Hyperlink RequestNavigate="Hyperlink_RequestNavigate"
                                   Foreground="{StaticResource info}">
                            Configuracion adicional en sistema ↗
                        </Hyperlink>
-                    </TextBlock>
+                </TextBlock>
 
-                    <!-- Parte derecha -->
-                    <TextBlock Text="Glorius 3X80CR"
+                <!-- Parte derecha -->
+                <TextBlock Text="Glorius 3X80CR"
                               Grid.Column="1"
                               Grid.Row="0"
                               />
-                    <TextBlock Text="Office aplications"
+                <TextBlock Text="Office aplications"
                               Grid.Column="1"
                               Grid.Row="1"
                               />
-                    <TextBlock Text="C:\Settings\ConfigFiles.rxconfig"
+                <TextBlock Text="C:\Settings\ConfigFiles.rxconfig"
                               Grid.Column="1"
                               Grid.Row="2"
                               />
-                    <TextBlock Text="Control + R  +  >"
+                <TextBlock Text="Control + R  +  >"
                               Grid.Column="1"
                               Grid.Row="3"
                               />
-                </Grid>
-            </Border>
+            </Grid>
+        </Border>
 
-            <!-- Left -->
-            <StackPanel DockPanel.Dock="Left"
-                       Margin="13,12,0,0">
-
-                <!-- 1 -->
-                <Border Style="{StaticResource borde}"
-                       Width="285"
-                       Height="79">
-                    <StackPanel Margin="0,8,0,0">
-                        <TextBlock Text="Velocidad del puntero"
-                                  />
-                        <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-                            <TextBlock 
-                                      Text="Lenta" Margin="10,0,17,0"/>
-                            <Slider Style="{StaticResource slider}"/>
-                            <TextBlock 
-                                      Text="Rapida" Margin="14,0,0,0"/>
-                        </StackPanel>
-                        <CheckBox 
-                                 Content="Mejora de precisión"
-                                 Margin="10,5,0,0"/>
+        <!-- Left -->
+        <StackPanel DockPanel.Dock="Left"
+                    Margin="0,12,0,0">
+            <!-- 1° -->
+            <HeaderedContentControl
+                Style="{StaticResource panel-tag}"
+                Header="Movimiento"
+                Width="285">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                        <TextBlock Text="Lenta" Margin="0,0,7,0"/>
+                        <Slider Style="{StaticResource slider}"/>
+                        <TextBlock Text="Rapida" Margin="18,0,0,0"/>
                     </StackPanel>
-                </Border>
+                    <CheckBox Content="Mejora de precisión"
+                            Margin="0,7,0,-1"/>
+                </StackPanel>
+            </HeaderedContentControl>
 
-                <!-- 2 -->
-                <Border 
-                       Width="285"
-                       Height="120"
-                       Margin="0,11,0,0" Visibility="Collapsed">
-                    <StackPanel Margin="0,8,0,0">
-                        <TextBlock Text="Visibilidad"
-                                  />
-                        <CheckBox 
-                                 Content="Mejora de precisión"
-                                 Margin="10,5,0,0"/>
-                        <CheckBox
-                                 Content="Mostrar rastro"
-                                 Margin="10,7,0,0"/>
-                        <CheckBox 
-                                 Margin="10,7,0,0" Height="33">
-                            <TextBlock TextWrapping="Wrap"
+            <!-- 2 -->
+            <HeaderedContentControl
+                Style="{StaticResource panel-tag}"
+                Header="Visibilidad"
+                Width="285"
+                Margin="0,11,0,0"
+                d:Visibility="Collapsed"
+                Visibility="Visible">
+                <StackPanel>
+                    <CheckBox 
+                        Content="Mejora de precisión"
+                        Margin="0,0,0,0"/>
+                    <CheckBox
+                        Content="Mostrar rastro"
+                        Margin="0,9,0,0"/>
+                    <CheckBox Margin="0,9,0,0" Height="33">
+                        <TextBlock TextWrapping="Wrap"
                                       Text="Sonar. Muestra la ubicación del puntero al presionar la tecla  ‘Control’"/>
-                        </CheckBox>
+                    </CheckBox>
+                </StackPanel>
+            </HeaderedContentControl>
+
+            <!-- 3 -->
+            <HeaderedContentControl Style="{StaticResource panel-tag}"
+                        Header="Visibilidad"
+                        Width="285"
+                        Margin="0,11,0,0">
+                <StackPanel Margin="0,0,0,8">
+                    <CheckBox Style="{StaticResource casilla}"
+                      Content="Activar"
+                      Margin="0,0,0,0" />
+                    <TextBlock Text="Presione durante el tiempo indicado para poder arrastrar  sin mantener presionado el boton del mouse. Vuelva a hacer clic para liberar."
+                       TextWrapping="Wrap"
+                       Height="auto"
+                       Visibility="Collapsed"
+                       Margin="0,11,0,0" />
+                    <TextBlock Text="Tiempo antes de bloquear"
+                        Margin="0,10,0,0" />
+                    <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
+                        <TextBlock Text="Corto" Margin="10,0,17,0" />
+                        <Slider Style="{StaticResource slider}" />
+                        <TextBlock Text="Largo" Margin="14,0,0,0" />
                     </StackPanel>
-                </Border>
+                </StackPanel>
+            </HeaderedContentControl>
+        </StackPanel>
 
-                <!-- 3 -->
-                <Border Style="{StaticResource borde}"
-                       Width="285"
-                       Height="285"
-                       Margin="0,11,0,0" >
-                    <StackPanel Margin="0,8,0,8">
-                        <TextBlock Text="Velocidad del puntero"
-                                  />
-                        <CheckBox Style="{StaticResource casilla}"
-                                 Content="Activar"
-                                 Margin="10,5,0,0"/>
-                        <TextBlock Text="Presione durante el tiempo indicado para poder arrastrar  sin mantener presionado el boton del mouse. Vuelva a hacer clic para liberar."
-                                  
-                                  TextWrapping="Wrap"
-                                  Height="auto"
-                                  Margin="10,11,0,0" Visibility="Collapsed"/>
-                        <TextBlock Text="Tiempo antes de bloquear"
-                                  
-                                  Margin="10,10,0,0"/>
-                        <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-                            <TextBlock 
-                                       Text="Corto" Margin="10,0,17,0"/>
-                            <Slider Style="{StaticResource slider}"/>
-                            <TextBlock 
-                                       Text="Largo" Margin="14,0,0,0"/>
-                        </StackPanel>
-
-                    </StackPanel>
-                </Border>
-            </StackPanel>
-
-            <!-- Right -->
-            <Border Style="{StaticResource borde}"
-                   Width="104"
-                   Height="320"
-                   DockPanel.Dock="Right"
-                   Margin="11,12,0,0">
-                <DockPanel Margin="10,8,10,0">
-
-                    <TextBlock Style="{StaticResource t_x}"
-                              Text="Apariencia"
-                              DockPanel.Dock="Top"
-                              Margin="0,0,0,11"/>
-
-                    <StackPanel Width="50"
+        <!-- Right -->
+        <HeaderedContentControl Style="{StaticResource panel-tag}"
+                                Header="Apariencia"
+                                DockPanel.Dock="Right"
+                                Width="104"
+                                Margin="4,12,0,0">
+            <DockPanel >
+                <StackPanel Width="50"
                                DockPanel.Dock="Left">
-                        <TextBlock Text="Normal" />
-                        <TextBlock Text="Arrow"/>
-                        <TextBlock Text="Ayuda" />
-                        <TextBlock Text="2° plano" />
-                        <TextBlock Text="Ocupado" />
-                        <TextBlock Text="Texto" />
-                        <TextBlock Text="Vinculo" />
-                        <TextBlock Text="Normal" />
-                    </StackPanel>
+                    <TextBlock Text="Normal" />
+                    <TextBlock Text="Arrow"/>
+                    <TextBlock Text="Ayuda" />
+                    <TextBlock Text="2° plano" />
+                    <TextBlock Text="Ocupado" />
+                    <TextBlock Text="Texto" />
+                    <TextBlock Text="Vinculo" />
+                    <TextBlock Text="Normal" />
+                </StackPanel>
+                <StackPanel Width="24" HorizontalAlignment="Right">
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                    <TextBlock Text="💉"   HorizontalAlignment="Center"/>
+                </StackPanel>
+            </DockPanel>
+        </HeaderedContentControl>
 
-                    <StackPanel Width="24" HorizontalAlignment="Right">
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                        <TextBlock Text="💉"   HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </DockPanel>
-            </Border>
-
-        </DockPanel>
+    </DockPanel>
 
     <!--
     <StackPanel Margin="24,16,24,8">

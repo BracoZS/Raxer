@@ -5,22 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raxer"
         mc:Ignorable="d"
-        Title="Raxer" Height="480" Width="720"
+        Title="Raxer" Height="480" Width="620"
         
         WindowStartupLocation="CenterScreen"
         FontFamily="Assets/Fuentes/#Rubik">
 
     <Window.Resources>
-        <SolidColorBrush x:Key="Fondo" Color="#e6e5ee" />
+        <!--<SolidColorBrush x:Key="Fondo" Color="#e6e5ee" />
         <SolidColorBrush x:Key="Panel" Color="#f4f4f6" />
         <SolidColorBrush x:Key="PanelHover" Color="#232B35" />
         <SolidColorBrush x:Key="Borde" Color="#2A323D" />
         <SolidColorBrush x:Key="Texto" Color="#1a1a1a" />
         <SolidColorBrush x:Key="TextoSuave" Color="#8A93A0" />
-        <SolidColorBrush x:Key="Acento" Color="#4D9DE0" />
+        <SolidColorBrush x:Key="Acento" Color="#4D9DE0" />-->
+
     </Window.Resources>
 
-    <Grid>
-        
+    <Grid Margin="14" Background="Black">
+        <!-- Replica de InicioPage border #3 (285x285) con bordeConTitulo -->
+        <HeaderedContentControl Style="{StaticResource panel-tag}"
+                                Header="Visibilidafnyyd"
+                                Width="285" 
+                                Height="285">
+            <StackPanel Margin="0,0,0,8">
+                <CheckBox Content="Activar"
+                          Style="{StaticResource casilla}"
+                          Margin="10,5,0,0" />
+                <TextBlock Text="Presione durante el tiempo indicado para poder arrastrar sin mantener presionado el boton del mouse. Vuelva a hacer clic para liberar."
+                           TextWrapping="Wrap"
+                           Height="auto"
+                           Visibility="Collapsed"
+                           Margin="10,11,0,0" />
+                <TextBlock Text="Tiempo antes de bloquear"
+                           Margin="10,10,0,0" />
+                <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
+                    <TextBlock Text="Corto" Margin="10,0,17,0" />
+                    <Slider Style="{StaticResource slider}" />
+                    <TextBlock Text="Largo" Margin="14,0,0,0" />
+                </StackPanel>
+            </StackPanel>
+        </HeaderedContentControl>
     </Grid>
 </Window>

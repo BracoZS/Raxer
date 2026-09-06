@@ -19,7 +19,7 @@
                 <lang:ResxDictionary />
 
                 <!-- Design tokens (Palette is pulled in by Theme) -->
-                <ResourceDictionary Source="/Modules/UI/Tokens/Paleta.xaml" />
+                <!--<ResourceDictionary Source="/Modules/UI/Tokens/Paleta.xaml" /> Theme.xaml:6 ya hace merge -->
                 <ResourceDictionary Source="/Modules/UI/Tokens/Radios.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Tokens/Spacing.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Tokens/Typography.xaml" />
