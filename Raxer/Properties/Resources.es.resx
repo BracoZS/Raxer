@@ -138,6 +138,39 @@
   <data name="tagline" xml:space="preserve">
     <value>Remapeo de mouse</value>
   </data>
+  <data name="settings-title" xml:space="preserve">
+    <value>Raxer - Configuración</value>
+  </data>
+  <data name="nav-start" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="nav-profiles" xml:space="preserve">
+    <value>Perfiles</value>
+  </data>
+  <data name="nav-filters" xml:space="preserve">
+    <value>Filtros</value>
+  </data>
+  <data name="nav-about" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="page-title-start" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="page-title-profiles" xml:space="preserve">
+    <value>Perfiles</value>
+  </data>
+  <data name="page-title-filters" xml:space="preserve">
+    <value>Filtro de aplicaciones</value>
+  </data>
+  <data name="page-title-about" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="btn-ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btn-cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
   <data name="abcd" xml:space="preserve">
     <value>algun-abcd</value>
   </data>

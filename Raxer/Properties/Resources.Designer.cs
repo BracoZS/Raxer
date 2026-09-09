@@ -79,6 +79,24 @@ namespace Raxer.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cancel.
+        /// </summary>
+        public static string btn_cancel {
+            get {
+                return ResourceManager.GetString("btn-cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a OK.
+        /// </summary>
+        public static string btn_ok {
+            get {
+                return ResourceManager.GetString("btn-ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Exit.
         /// </summary>
         public static string menu_exit {
@@ -106,11 +124,74 @@ namespace Raxer.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Remap de mouse.
+        ///   Busca una cadena traducida similar a About.
         /// </summary>
-        public static string remap_mouse {
+        public static string nav_about {
             get {
-                return ResourceManager.GetString("remap-mouse", resourceCulture);
+                return ResourceManager.GetString("nav-about", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Filters.
+        /// </summary>
+        public static string nav_filters {
+            get {
+                return ResourceManager.GetString("nav-filters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Profiles.
+        /// </summary>
+        public static string nav_profiles {
+            get {
+                return ResourceManager.GetString("nav-profiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Start.
+        /// </summary>
+        public static string nav_start {
+            get {
+                return ResourceManager.GetString("nav-start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a About.
+        /// </summary>
+        public static string page_title_about {
+            get {
+                return ResourceManager.GetString("page-title-about", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a App filter.
+        /// </summary>
+        public static string page_title_filters {
+            get {
+                return ResourceManager.GetString("page-title-filters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Profiles.
+        /// </summary>
+        public static string page_title_profiles {
+            get {
+                return ResourceManager.GetString("page-title-profiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Start.
+        /// </summary>
+        public static string page_title_start {
+            get {
+                return ResourceManager.GetString("page-title-start", resourceCulture);
             }
         }
         
@@ -124,11 +205,29 @@ namespace Raxer.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Raxer - Settings.
+        /// </summary>
+        public static string settings_title {
+            get {
+                return ResourceManager.GetString("settings-title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Start with Windows.
         /// </summary>
         public static string start_with_windows {
             get {
                 return ResourceManager.GetString("start-with-windows", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Remap de mouse.
+        /// </summary>
+        public static string tagline {
+            get {
+                return ResourceManager.GetString("tagline", resourceCulture);
             }
         }
     }

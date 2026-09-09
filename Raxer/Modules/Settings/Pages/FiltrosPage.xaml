@@ -8,7 +8,7 @@
              d:DesignWidth="445"
              d:DesignHeight="426"
              Style="{StaticResource page}"
-             Tag="Filtro de aplicaciones"
+             Tag="{DynamicResource page-title-filters}"
              Background="Transparent">
 
     <ListBox Margin="10"

@@ -23,7 +23,7 @@ public static class Loader
             e.Handled = true;
         };
 
-        ResxDictionary.SetLanguage("en");
+        ResxDictionary.SetLanguage("es");
 
         Log("Loader: settings cargados");
 

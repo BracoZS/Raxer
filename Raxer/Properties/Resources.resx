@@ -138,6 +138,39 @@
   <data name="tagline" xml:space="preserve">
     <value>Remap de mouse</value>
   </data>
+  <data name="settings-title" xml:space="preserve">
+    <value>Raxer - Settings</value>
+  </data>
+  <data name="nav-start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="nav-profiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="nav-filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="nav-about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="page-title-start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="page-title-profiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="page-title-filters" xml:space="preserve">
+    <value>App filter</value>
+  </data>
+  <data name="page-title-about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="btn-ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btn-cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="abcd" xml:space="preserve">
     <value>some-abcd</value>
   </data>

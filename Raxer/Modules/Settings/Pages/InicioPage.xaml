@@ -9,7 +9,7 @@
              d:DesignHeight="426"
             
              Style="{StaticResource page}"
-             Tag="Start"
+             Tag="{DynamicResource page-title-start}"
              >
     <UserControl.Background>
         <ImageBrush ImageSource="/Assets/Images/model-inicio.png" Stretch="Uniform"

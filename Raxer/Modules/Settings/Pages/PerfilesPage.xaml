@@ -9,7 +9,7 @@
              d:DesignHeight="426"
              
              Style="{StaticResource page}"
-             Tag="Perfiles"
+             Tag="{DynamicResource page-title-profiles}"
              Background="Transparent">
 
     <Grid>

@@ -40,7 +40,7 @@
                     CornerRadius="8,8,0,0"
                     MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
                 <Grid>
-                    <TextBlock Text="Raxer - Settings"
+<TextBlock Text="{DynamicResource settings-title}"
                                Foreground="#CCCCCC" FontSize="13"
                                Margin="12,7,0,0" VerticalAlignment="Center"/>
                     <!-- Botones de ventana -->
@@ -78,7 +78,7 @@
                              Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/home.svg" Width="24" Height="24" Margin="0,0,0,4" />
-                        <TextBlock Text="Inicio" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{DynamicResource nav-start}" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </RadioButton>
 
@@ -87,7 +87,7 @@
                              Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/profile.svg" Width="24" Height="24" Margin="0,0,0,4"/>
-                        <TextBlock Text="Perfiles" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{DynamicResource nav-profiles}" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </RadioButton>
 
@@ -96,7 +96,7 @@
                              Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/shortcuts.svg" Width="24" Height="24" Margin="0,0,0,4"/>
-                        <TextBlock Text="Filtros" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{DynamicResource nav-filters}" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </RadioButton>
 
@@ -105,7 +105,7 @@
                              Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
                         <myControls:Icon Source="/Assets/Iconos/info.svg" Width="24" Height="24" Margin="0,0,0,4"/>
-                        <TextBlock Text="Info" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{DynamicResource nav-about}" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </RadioButton>
             </StackPanel>
@@ -121,9 +121,9 @@
                 Margin="0,0,4,0"
                 HorizontalAlignment="Right"
                 Orientation="Horizontal">
-                <Button Content="OK"
+                <Button Content="{DynamicResource btn-ok}"
                         Style="{StaticResource boton_implement}"/>
-                <Button Content="Cancelar"
+                <Button Content="{DynamicResource btn-cancel}"
                         Style="{StaticResource boton_implement}"/>
             </StackPanel>
         </Grid>
