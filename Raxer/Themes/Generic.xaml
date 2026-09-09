@@ -15,7 +15,7 @@
                 <ControlTemplate TargetType="{x:Type myControls:Icon}">
                     <Viewbox>
                         <Path Data="{TemplateBinding Data}"
-                              Fill="{TemplateBinding Foreground}"
+                              Fill="{StaticResource text}"
                               Stretch="Uniform"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center" />

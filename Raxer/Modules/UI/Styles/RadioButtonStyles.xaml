@@ -55,7 +55,7 @@
                             <Setter TargetName="borde" Property="Background" Value="{StaticResource bg.surface.1}" />
                         </Trigger>
 
-                        <EventTrigger RoutedEvent="Border.MouseLeftButtonDown" SourceName="borde">
+                        <EventTrigger RoutedEvent="UIElement.PreviewMouseLeftButtonDown" SourceName="borde">
                             <BeginStoryboard>
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="indicador"
@@ -65,7 +65,7 @@
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
-                        <EventTrigger RoutedEvent="Button.PreviewMouseLeftButtonUp">
+                        <EventTrigger RoutedEvent="UIElement.PreviewMouseLeftButtonUp">
                             <BeginStoryboard>
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="indicador"

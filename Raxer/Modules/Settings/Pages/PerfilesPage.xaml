@@ -16,183 +16,182 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="63" />
             <RowDefinition Height="11" />
-            <RowDefinition />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
-            <!-- Top -->
-            <Grid 
-                Width="400"
-                Height="52"
-                HorizontalAlignment="Left"
-                Margin="13,0,0,0"
-                Grid.Row="0"
-                VerticalAlignment="Bottom">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="26"/>
-                    <RowDefinition Height="26"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="88"/>
-                    <ColumnDefinition Width="135"/>
-                    <ColumnDefinition Width="35"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+        <!-- Top -->
+        <Grid 
+            Width="400"
+            Height="52"
+            HorizontalAlignment="Left"
+            Margin="13,0,0,0"
+            Grid.Row="0"
+            VerticalAlignment="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="88"/>
+                <ColumnDefinition Width="135"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Current profile"
+            <TextBlock Text="Current profile"
                            Grid.Row="0"
                            Grid.Column="0"
                            Style="{StaticResource t_x}"/>
-                <ComboBox Text="Glorius KG#(8D"
+            <ComboBox Text="Glorius KG#(8D"
                            Grid.Row="0"
                            Grid.Column="1"
                            Width="128"
                            Height="22" 
                            Style="{StaticResource combo}"/>
-                <Button Style="{StaticResource boton_menu}"
+            <Button Style="{StaticResource boton_menu}"
                         Grid.Row="0"
                         Grid.Column="2"/>
 
-                <TextBlock Text="Filter: [solo gaming, apps Office]"
+            <TextBlock Text="Filter: [solo gaming, apps Office]"
                            Grid.Row="1"
                            Grid.ColumnSpan="2"
                            Grid.Column="0"
                            Style="{StaticResource t_x}"/>
-                <ComboBox Text="Glorius KG#(8D"
+            <ComboBox Text="Glorius KG#(8D"
                            Grid.Row="1"
                            Grid.Column="1"
                            Width="128" 
                            Style="{StaticResource combo}"
                           Visibility="Hidden"/>
-                <Button Style="{StaticResource boton_menu}"
+            <Button Style="{StaticResource boton_menu}"
                         Grid.Row="1"
                         Grid.Column="2"
                         Visibility="Hidden"/>
 
-                <Image Source="/Assets/Images/placeholder-sqr-sm.jpg"
+            <Image Source="/Assets/Images/placeholder-sqr-sm.jpg"
                        Grid.Column="3"
                        Grid.RowSpan="2"
                        Height="50"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Center"/>
-            </Grid>
+        </Grid>
 
-            <!-- Separador -->
-            <Rectangle
+        <!-- Separador -->
+        <Rectangle
                 Grid.Row="1"
                 Width="393"
                 Height="1"
                 VerticalAlignment="Bottom">
-                <Rectangle.Fill>
-                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                        <GradientStop Color="#00f1f1f1" Offset="0"/>
-                        <GradientStop Color="#59F1F1F1" Offset="0.15"/>
-                        <GradientStop Color="#59F1F1F1" Offset="0.85"/>
-                        <GradientStop Color="#00F1F1F1" Offset="1"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#00f1f1f1" Offset="0"/>
+                    <GradientStop Color="#59F1F1F1" Offset="0.15"/>
+                    <GradientStop Color="#59F1F1F1" Offset="0.85"/>
+                    <GradientStop Color="#00F1F1F1" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
 
-            <!-- Botones -->
-            <Grid Grid.Row="0" Grid.RowSpan="3">
-                <StackPanel Margin="0,87,0,0">
+        <!-- Botones -->
+        <Grid Grid.Row="2" Grid.RowSpan="3">
+            <StackPanel Margin="0,13,0,0">
 
-                    <!-- Boton 1 -->
-                    <ItemsControl Style="{StaticResource panel_borde}">
-                        <ItemsControl Style="{StaticResource panel_single}">
-                            <TextBlock Text="Left click"
+                <!-- Boton 1 -->
+                <ItemsControl Style="{StaticResource panel_borde}">
+                    <ItemsControl Style="{StaticResource panel_single}">
+                        <TextBlock Text="Left click"
                                        Grid.Column="0"
                                        Margin="10,0,0,0"
                                        Style="{StaticResource t_x}"/>
-                            <ComboBox ItemsSource="{Binding Lista}" SelectedIndex="1" Grid.Column="1" Style="{StaticResource combo}"/>
-                            <ComboBox Grid.Column="2" Style="{StaticResource combo}" IsEditable="True"/>
-                            <Button Style="{StaticResource boton_menu}"
+                        <ComboBox ItemsSource="{Binding Lista}" SelectedIndex="1" Grid.Column="1" Style="{StaticResource combo}"/>
+                        <ComboBox Grid.Column="2" Style="{StaticResource combo}" IsEditable="True"/>
+                        <Button Style="{StaticResource boton_menu}"
                                     Grid.Column="3"/>
-                            <Button Style="{StaticResource boton_menu_del}"
+                        <Button Style="{StaticResource boton_menu_del}"
                                 Grid.Column="4"/>
-                        </ItemsControl>
                     </ItemsControl>
+                </ItemsControl>
 
-                    <!-- Boton 2 -->
-                    <ItemsControl Style="{StaticResource panel_borde}" >
-                        <ItemsControl Style="{StaticResource panel_single}">
-                            <TextBlock Text="Mouse botton 1"
+                <!-- Boton 2 -->
+                <ItemsControl Style="{StaticResource panel_borde}" >
+                    <ItemsControl Style="{StaticResource panel_single}">
+                        <TextBlock Text="Mouse botton 1"
                                        Grid.Column="0"
                                        Margin="11,0,0,0"
                                        Style="{StaticResource t_x}"/>
-                            <ComboBox Grid.Column="1" Style="{StaticResource combo}">
-                                <ComboBoxItem Content="awdasdc"/>
-                                <ComboBoxItem Content="awdasdcwerv"/>
-                                <ComboBoxItem Content="awdasdwerwe"/>
-                                <ComboBoxItem Content="awwertw t yjtyudc"/>
-                            </ComboBox>
-                            <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
-                            <Button Style="{StaticResource boton_menu}"
+                        <ComboBox Grid.Column="1" Style="{StaticResource combo}">
+                            <ComboBoxItem Content="awdasdc"/>
+                            <ComboBoxItem Content="awdasdcwerv"/>
+                            <ComboBoxItem Content="awdasdwerwe"/>
+                            <ComboBoxItem Content="awwertw t yjtyudc"/>
+                        </ComboBox>
+                        <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
+                        <Button Style="{StaticResource boton_menu}"
                                     Grid.Column="3"/>
-                            <Button Style="{StaticResource boton_menu_del}"
+                        <Button Style="{StaticResource boton_menu_del}"
                                 Grid.Column="4"/>
-                        </ItemsControl>
-                        <ItemsControl
+                    </ItemsControl>
+                    <ItemsControl
                             Style="{StaticResource panel_modifcador}"
                             Grid.Row="1"
                             Grid.ColumnSpan="5">
-                            <TextBlock Text="Shift"
+                        <TextBlock Text="Shift"
                                        Grid.Column="0"
                                        Style="{StaticResource t_x}"/>
-                            <ComboBox Grid.Column="1" Style="{StaticResource combo}"
+                        <ComboBox Grid.Column="1" Style="{StaticResource combo}"
                                       SelectedIndex="0">
-                                <ComboBoxItem>None</ComboBoxItem>
-                            </ComboBox>
-                            <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
-                            <Button Style="{StaticResource boton_menu}"
+                            <ComboBoxItem>None</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
+                        <Button Style="{StaticResource boton_menu}"
                                     Grid.Column="3"/>
-                            <Button Style="{StaticResource boton_menu_del}"
+                        <Button Style="{StaticResource boton_menu_del}"
                                 Grid.Column="4"/>
-                        </ItemsControl>
-                        <ItemsControl
+                    </ItemsControl>
+                    <ItemsControl
                             Grid.Row="1"
                             Grid.ColumnSpan="5"
                             Style="{StaticResource panel_modifcador}">
-                            <TextBlock Text="Control"
+                        <TextBlock Text="Control"
                                        Grid.Column="0"
                                        Style="{StaticResource t_x}"/>
-                            <ComboBox Grid.Column="1" Style="{StaticResource combo}" />
-                            <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
-                            <Button Style="{StaticResource boton_menu}"
+                        <ComboBox Grid.Column="1" Style="{StaticResource combo}" />
+                        <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
+                        <Button Style="{StaticResource boton_menu}"
                                     Grid.Column="3"/>
-                            <Button Style="{StaticResource boton_menu_del}"
+                        <Button Style="{StaticResource boton_menu_del}"
                                 Grid.Column="4"/>
-                        </ItemsControl>
-                        <ItemsControl
+                    </ItemsControl>
+                    <ItemsControl
                             Grid.Row="2"
                             Grid.ColumnSpan="5"
                             Style="{StaticResource panel_modifcador}">
-                            <TextBlock Text="Alt"
+                        <TextBlock Text="Alt"
                                        Grid.Column="0"
                                        Style="{StaticResource t_x}"/>
-                            <ComboBox Grid.Column="1" Style="{StaticResource combo}" />
-                            <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
-                            <Button Style="{StaticResource boton_menu}"
+                        <ComboBox Grid.Column="1" Style="{StaticResource combo}" />
+                        <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
+                        <Button Style="{StaticResource boton_menu}"
                                     Grid.Column="3"/>
-                            <Button Style="{StaticResource boton_menu_del}"
+                        <Button Style="{StaticResource boton_menu_del}"
                                 Grid.Column="4"/>
-                        </ItemsControl>
-                        <ItemsControl
+                    </ItemsControl>
+                    <ItemsControl
                             Grid.Row="2"
                             Grid.ColumnSpan="5"
                             Style="{StaticResource panel_modifcador}" Visibility="Collapsed" >
-                            <TextBlock Text="Windows"
+                        <TextBlock Text="Windows"
                                        Grid.Column="0"
                                        Style="{StaticResource t_x}"/>
-                            <ComboBox Grid.Column="1" Style="{StaticResource combo}" />
-                            <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
-                            <TextBlock Grid.Column="3" Text="•••" Style="{StaticResource t_x}"/>
-                            <Label Grid.Column="4" Content="X"/>
-                        </ItemsControl>
+                        <ComboBox Grid.Column="1" Style="{StaticResource combo}" />
+                        <ComboBox Grid.Column="2" Style="{StaticResource combo}"/>
+                        <TextBlock Grid.Column="3" Text="•••" Style="{StaticResource t_x}"/>
+                        <Label Grid.Column="4" Content="X"/>
                     </ItemsControl>
+                </ItemsControl>
 
-                </StackPanel>
-            </Grid>
+            </StackPanel>
         </Grid>
+    </Grid>
 
 </UserControl>

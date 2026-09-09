@@ -77,7 +77,7 @@
                              IsChecked="True" Margin="1,0,1,0"
                              Style="{StaticResource sidebar-item}">
                     <StackPanel HorizontalAlignment="Center">
-                        <myControls:Icon Source="/Assets/Iconos/home.svg" Width="24" Height="24" Margin="0,0,0,4"/>
+                        <myControls:Icon Source="/Assets/Iconos/home.svg" Width="24" Height="24" Margin="0,0,0,4" />
                         <TextBlock Text="Inicio" Foreground="#CCCCCC" FontSize="11" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </RadioButton>
