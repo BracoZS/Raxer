@@ -97,6 +97,15 @@ namespace Raxer.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Activate hold.
+        /// </summary>
+        public static string check_activate_hold {
+            get {
+                return ResourceManager.GetString("check-activate-hold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Exit.
         /// </summary>
         public static string menu_exit {
@@ -196,6 +205,60 @@ namespace Raxer.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Appearance.
+        /// </summary>
+        public static string section_appearance {
+            get {
+                return ResourceManager.GetString("section-appearance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Double click speed.
+        /// </summary>
+        public static string section_dblclick_speed {
+            get {
+                return ResourceManager.GetString("section-dblclick-speed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hold &amp; Drag.
+        /// </summary>
+        public static string section_hold {
+            get {
+                return ResourceManager.GetString("section-hold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Movement.
+        /// </summary>
+        public static string section_movement {
+            get {
+                return ResourceManager.GetString("section-movement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Visibility.
+        /// </summary>
+        public static string section_visibility {
+            get {
+                return ResourceManager.GetString("section-visibility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Wheel.
+        /// </summary>
+        public static string section_wheel {
+            get {
+                return ResourceManager.GetString("section-wheel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Settings.
         /// </summary>
         public static string settings {
@@ -228,6 +291,33 @@ namespace Raxer.Properties {
         public static string tagline {
             get {
                 return ResourceManager.GetString("tagline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Horizontal.
+        /// </summary>
+        public static string wheel_horizontal {
+            get {
+                return ResourceManager.GetString("wheel-horizontal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Whole page per scroll.
+        /// </summary>
+        public static string wheel_page_per_scroll {
+            get {
+                return ResourceManager.GetString("wheel-page-per-scroll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Vertical.
+        /// </summary>
+        public static string wheel_vertical {
+            get {
+                return ResourceManager.GetString("wheel-vertical", resourceCulture);
             }
         }
     }

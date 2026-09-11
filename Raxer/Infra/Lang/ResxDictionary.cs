@@ -4,7 +4,8 @@ using System.Windows;
 namespace Raxer.Infra.Lang;
 
 /// <summary>
-/// requires /Properties/Resources.resx, Resources.es.resx, etc
+/// requires:
+/// /Properties/Resources.resx, Resources.es.resx, etc
 /// 
 /// use in App.xaml with this:
 /// <!-- UI text from resx -->

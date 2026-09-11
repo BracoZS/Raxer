@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              
              d:DesignWidth="445"
-             d:DesignHeight="426"
+             
             
              Style="{StaticResource page}"
              Tag="{DynamicResource page-title-start}"
@@ -22,22 +22,11 @@
         <!-- Top -->
         <Border Style="{StaticResource borde}"
                 DockPanel.Dock="Top"
-                Width="400"
                 Height="135"
                 Padding="{StaticResource p.panel}">
-            <Grid Width="400" >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1.2*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                </Grid.RowDefinitions>
+            <Grid Width="400" 
+                  ColumnDefinitions="1.2*,*"
+                  RowDefinitions="*,*,*,*,*,*">
 
                 <!-- Parte izquierda -->
                 <TextBlock Text="Perfil actual"
@@ -88,16 +77,17 @@
         <!-- Left -->
         <StackPanel DockPanel.Dock="Left"
                     Margin="0,12,0,0">
+            
             <!-- 1° -->
-            <HeaderedContentControl
+<HeaderedContentControl
                 Style="{StaticResource panel-tag}"
-                Header="Movimiento"
+                Header="{DynamicResource section-movement}"
                 Width="285">
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
                         <TextBlock Text="Lenta" Margin="0,0,7,0"/>
                         <Slider Style="{StaticResource slider}"/>
-                        <TextBlock Text="Rapida" Margin="18,0,0,0"/>
+<TextBlock Text="Rapida" Margin="18,0,0,0"/>
                     </StackPanel>
                     <CheckBox Content="Mejora de precisión"
                             Margin="0,7,0,-1"/>
@@ -105,19 +95,22 @@
             </HeaderedContentControl>
 
             <!-- 2 -->
-            <HeaderedContentControl
+<HeaderedContentControl
                 Style="{StaticResource panel-tag}"
-                Header="Visibilidad"
+                Header="{DynamicResource section-visibility}"
                 Width="285"
                 Margin="0,11,0,0"
-                d:Visibility="Collapsed"
+                d:Visibility="Visible"
                 Visibility="Visible">
                 <StackPanel>
                     <CheckBox 
-                        Content="Mejora de precisión"
+                        Content="Mostrar sombra"
                         Margin="0,0,0,0"/>
                     <CheckBox
                         Content="Mostrar rastro"
+                        Margin="0,9,0,0"/>
+                    <CheckBox
+                        Content="Ocultar putero mientras se escribe"
                         Margin="0,9,0,0"/>
                     <CheckBox Margin="0,9,0,0" Height="33">
                         <TextBlock TextWrapping="Wrap"
@@ -126,9 +119,9 @@
                 </StackPanel>
             </HeaderedContentControl>
 
-            <!-- 3 -->
-            <HeaderedContentControl Style="{StaticResource panel-tag}"
-                        Header="Visibilidad"
+            <!-- 3° -->
+<HeaderedContentControl Style="{StaticResource panel-tag}"
+                        Header="{DynamicResource section-dblclick-speed}"
                         Width="285"
                         Margin="0,11,0,0">
                 <StackPanel Margin="0,0,0,8">
@@ -146,6 +139,41 @@
                         <TextBlock Text="Corto" Margin="10,0,17,0" />
                         <Slider Style="{StaticResource slider}" />
                         <TextBlock Text="Largo" Margin="14,0,0,0" />
+</StackPanel>
+                </StackPanel>
+            </HeaderedContentControl>
+
+            <!-- 4° -->
+            <HeaderedContentControl Style="{StaticResource panel-tag}"
+                        Header="{DynamicResource section-hold}"
+                        Width="285"
+                        Margin="0,11,0,0">
+                <StackPanel Margin="0,0,0,8">
+                    <CheckBox Content="{DynamicResource check-activate-hold}"
+                              Margin="0,0,0,0" />
+                </StackPanel>
+            </HeaderedContentControl>
+
+            <!-- 5° -->
+            <HeaderedContentControl Style="{StaticResource panel-tag}"
+                        Header="{DynamicResource section-wheel}"
+                        Width="285"
+                        Margin="0,11,0,0">
+                <StackPanel Margin="0,0,0,8">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource wheel-vertical}"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,10,0" />
+                        <TextBox Width="50" Height="22" />
+                        <RadioButton Content="{DynamicResource wheel-page-per-scroll}"
+                                     VerticalAlignment="Center"
+                                     Margin="8,0,0,0" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,9,0,0">
+                        <TextBlock Text="{DynamicResource wheel-horizontal}"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,10,0" />
+                        <TextBox Width="50" Height="22" />
                     </StackPanel>
                 </StackPanel>
             </HeaderedContentControl>
@@ -153,10 +181,12 @@
 
         <!-- Right -->
         <HeaderedContentControl Style="{StaticResource panel-tag}"
-                                Header="Apariencia"
+                                Header="{DynamicResource section-appearance}"
                                 DockPanel.Dock="Right"
-                                Width="104"
-                                Margin="4,12,0,0">
+                                VerticalAlignment="Top"
+                                Width="Auto"
+                                Height="Auto"
+                                Margin="11,12,0,0">
             <DockPanel >
                 <StackPanel Width="50"
                                DockPanel.Dock="Left">

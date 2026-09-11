@@ -174,4 +174,34 @@
   <data name="abcd" xml:space="preserve">
     <value>algun-abcd</value>
   </data>
+  <data name="section-movement" xml:space="preserve">
+    <value>Movimiento</value>
+  </data>
+  <data name="section-visibility" xml:space="preserve">
+    <value>Visibilidad</value>
+  </data>
+  <data name="section-dblclick-speed" xml:space="preserve">
+    <value>Velocidad de doble clic</value>
+  </data>
+  <data name="section-appearance" xml:space="preserve">
+    <value>Apariencia</value>
+  </data>
+  <data name="section-wheel" xml:space="preserve">
+    <value>Rueda</value>
+  </data>
+  <data name="section-hold" xml:space="preserve">
+    <value>Bloqueo</value>
+  </data>
+  <data name="check-activate-hold" xml:space="preserve">
+    <value>Activar bloqueo</value>
+  </data>
+  <data name="wheel-page-per-scroll" xml:space="preserve">
+    <value>Una pantalla a la vez</value>
+  </data>
+  <data name="wheel-vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="wheel-horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
 </root>
