@@ -26,7 +26,7 @@ public partial class App : Application
         _tray.Abrir += () => _windowManager!.OpenOrCreate<Settings>();
         _tray.Salir += Close;
 
-        _windowManager.OpenOrCreate<Settings>();
+        _windowManager.OpenOrCreate<TestsWindow>();
     }
 
     /// <summary>

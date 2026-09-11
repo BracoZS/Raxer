@@ -12,5 +12,10 @@ namespace Raxer
             InitializeComponent();
 
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Environment.Exit(exitCode: 0);
+        }
     }
 }

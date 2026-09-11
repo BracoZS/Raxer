@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raxer"
+        xmlns:controls="clr-namespace:Raxer.Controls"
         mc:Ignorable="d"
         Title="Raxer" Height="480" Width="620"
         
         WindowStartupLocation="CenterScreen"
-        FontFamily="Assets/Fuentes/#Rubik">
+        FontFamily="Assets/Fuentes/#Rubik" Closed="Window_Closed">
 
     <Window.Resources>
         <!--<SolidColorBrush x:Key="Fondo" Color="#e6e5ee" />
@@ -22,28 +23,13 @@
     </Window.Resources>
 
     <Grid Margin="14" Background="Black">
-        <!-- Replica de InicioPage border #3 (285x285) con bordeConTitulo -->
-        <HeaderedContentControl Style="{StaticResource panel-tag}"
-                                Header="Visibilidafnyyd"
-                                Width="285" 
-                                Height="285">
-            <StackPanel Margin="0,0,0,8">
-                <CheckBox Content="Activar"
-                          Style="{StaticResource casilla}"
-                          Margin="10,5,0,0" />
-                <TextBlock Text="Presione durante el tiempo indicado para poder arrastrar sin mantener presionado el boton del mouse. Vuelva a hacer clic para liberar."
-                           TextWrapping="Wrap"
-                           Height="auto"
-                           Visibility="Collapsed"
-                           Margin="10,11,0,0" />
-                <TextBlock Text="Tiempo antes de bloquear"
-                           Margin="10,10,0,0" />
-                <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-                    <TextBlock Text="Corto" Margin="10,0,17,0" />
-                    <Slider Style="{StaticResource slider}" />
-                    <TextBlock Text="Largo" Margin="14,0,0,0" />
-                </StackPanel>
-            </StackPanel>
-        </HeaderedContentControl>
+        <controls:NumericUpDown
+                                Value="12"
+                                Minimum="0"
+                                Maximum="20"
+                                SmallChange="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" />
+        <Button Width="150" Height="25" VerticalAlignment="Bottom" Margin="100"/>
     </Grid>
 </Window>

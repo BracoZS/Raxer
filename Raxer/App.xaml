@@ -31,6 +31,7 @@
                 <ResourceDictionary Source="/Modules/UI/Styles/ButtonStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/TextBlockStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/CheckBoxStyles.xaml" />
+                <ResourceDictionary Source="/Modules/UI/Styles/RepeatButtonStyles.xaml" />   <!--important! mantener antes que iconstyles-->  
                 <ResourceDictionary Source="/Modules/UI/Styles/IconStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/ComboboxStyles.xaml" />
                 <ResourceDictionary Source="/Modules/UI/Styles/BorderStyles.xaml" />
