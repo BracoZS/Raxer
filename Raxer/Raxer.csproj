@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="LangRX" Version="1.0.1" />
     <PackageReference Include="LocalSettingsJson" Version="1.0.0" />
     <PackageReference Include="ResultPattern.Net" Version="1.1.0" />
   </ItemGroup>

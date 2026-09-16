@@ -1,4 +1,5 @@
-﻿using Raxer.Modules.Loader;
+﻿using LangRX;
+using Raxer.Modules.Loader;
 using Raxer.Modules.Settings;
 using Raxer.Modules.Tray;
 using Raxer.Modules.WindowManager;
@@ -18,6 +19,9 @@ public partial class App : Application
     {
         base.OnStartup(e);
 
+        LangRXDictionary.Initialize(Raxer.Properties.Resources.ResourceManager);
+        LangRXDictionary.SetLanguage("es-ES");
+
         Loader.Startup();
 
         _tray = new TrayIcon();
@@ -26,7 +30,8 @@ public partial class App : Application
         _tray.Abrir += () => _windowManager!.OpenOrCreate<Settings>();
         _tray.Salir += Close;
 
-        _windowManager.OpenOrCreate<TestsWindow>();
+       // _windowManager.OpenOrCreate<TestsWindow>();
+         _windowManager.OpenOrCreate<Settings>();
     }
 
     /// <summary>

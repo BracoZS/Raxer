@@ -1,5 +1,6 @@
+using LangRX;
 using LocalSettingsJson;
-using Raxer.Infra.Lang;
+//using Raxer.Infra.Lang;
 using Raxer.Modules.Settings;
 
 namespace Raxer.Modules.Loader;
@@ -23,7 +24,8 @@ public static class Loader
             e.Handled = true;
         };
 
-        ResxDictionary.SetLanguage("es");
+        //ResxDictionary.SetLanguage("es");
+        //LangRXDictionary.Initialize(Raxer.Properties.Resources.ResourceManager);
 
         Log("Loader: settings cargados");
 
