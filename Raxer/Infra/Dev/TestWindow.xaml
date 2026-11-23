@@ -30,6 +30,27 @@
                                 SmallChange="1"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center" />
-        <Button Width="150" Height="25" VerticalAlignment="Bottom" Margin="100"/>
+        
+        <TextBlock Width="150" Height="25" VerticalAlignment="Bottom" Margin="100"
+               Text="holaaaaaaa" Background="Transparent"/>
+
+        <CheckBox  Content="{DynamicResource section-visibility}" Margin="175,71,242,320"/>
+        <TextBlock Text="‘Control’" Margin="114,0,0,0" />
+        <HeaderedContentControl
+                Header="x"
+                Width="285"
+                Margin="0,11,0,0"
+                Visibility="Visible">
+        </HeaderedContentControl>
+
+        <!--Eso cierra el misterio por completo. Ahora todo cuadra:
+        Causa raíz unificada
+        d:Visibility="Visible" corrompe la resolución de DynamicResource en el diseñador. 
+        No importa en qué elemento esté: el simple hecho de combinar
+        un DynamicResource y d:Visibility en la misma ventana revienta la resolución
+        y sale el azul "no se pudo resolver el recurso".
+        Y cuando no había ningún DynamicResource cerca, d:Visibility solo tumbaba el render del surface
+        (lo del checkbox externo).-->
+
     </Grid>
 </Window>

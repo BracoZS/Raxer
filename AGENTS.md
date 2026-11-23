@@ -39,7 +39,7 @@ Si hubo avance grande pero el usuario puede seguir iterando, pregunta en una lí
 
 Al actualizar:
 1. Sobrescribe `.agents/STATUS.md` con el estado real (máx. 40 líneas).
-2. Agrega arriba en `.agents/LOG.md` (`## YYYY-MM-DD (hh:mm AM/PM) — <título>`, 12h).
+2. Agrega arriba en `.agents/LOG.md` (`## YYYY-MM-DD (hh:mm am/pm) — <título>`, 12h).
 3. Si hubo decisiones, añádelas al final de `.agents/DECISIONS.md`.
 4. Si algo quedó descartado, añádelo a "Out of scope" en `.agents/PROJECT.md`.
 5. Actualiza `.agents/ROADMAP.md` (marca completado y promueve si terminó el foco).

@@ -1,3 +1,17 @@
 <Solution>
+  <Folder Name="/.agents/">
+    <File Path=".agents/DECISIONS.md" />
+    <File Path=".agents/LOG.md" />
+    <File Path=".agents/PROJECT.md" />
+    <File Path=".agents/ROADMAP.md" />
+    <File Path=".agents/STACK.md" />
+    <File Path=".agents/STATUS.md" />
+  </Folder>
+  <Folder Name="/.agents/specs/">
+    <File Path=".agents/specs/_TEMPLATE.md" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="AGENTS.md" />
+  </Folder>
   <Project Path="Raxer/Raxer.csproj" />
 </Solution>
