@@ -1,14 +1,14 @@
-﻿using Raxer.Modules.Remapping;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Security;
+using Raxer.Modules.Remapping;
 
 namespace Raxer.Infra.Native;
 
 [SuppressUnmanagedCodeSecurity]
 internal static partial class MouseHook
 {
-    private static nint _hookID = nint.Zero;    
+    private static nint _hookID = nint.Zero;
     private static LowHookProc _mouseProc = null!;
     private static nint _handled = 1;
 
@@ -26,6 +26,9 @@ internal static partial class MouseHook
 
     public static void Start()
     {
+        if (_hookID != nint.Zero)
+            return;
+
         _mouseProc = LowLevelMouseProc;
         using var curProcess = Process.GetCurrentProcess();
         using var curModule = curProcess.MainModule!;
@@ -36,8 +39,11 @@ internal static partial class MouseHook
 
     public static void Stop()
     {
-        if (_hookID != nint.Zero)
-            WinApi.UnhookWindowsHookEx(_hookID);
+        if (_hookID == nint.Zero)
+            return;
+
+        WinApi.UnhookWindowsHookEx(_hookID);
+        _hookID = nint.Zero;
 
         Log($"Hook detenido: {DateTime.Now}");
     }
@@ -55,7 +61,9 @@ internal static partial class MouseHook
         if (nCode < 0 || lParam == nint.Zero)   // defensive, avoid read null lParam
             return WinApi.CallNextHookEx(_hookID, nCode, wParam, lParam);
 
-        // var data = Marshal.PtrToStructure<MSLLHOOKSTRUCT>(lParam);
+        ref readonly var hook = ref *(MSLLHOOKSTRUCT*)lParam;
+        if ((hook.Flags & 1) != 0)              // LLMHF_INJECTED: no re-procesar eventos sintéticos
+            return WinApi.CallNextHookEx(_hookID, nCode, wParam, lParam);
 
         MouseAccion action;
 
@@ -91,40 +99,36 @@ internal static partial class MouseHook
 
             case MouseMsg.MouseWheel: // WM_MOUSEWHEEL
             {
-                ref readonly var hook = ref *(MSLLHOOKSTRUCT*)lParam;   // unsafe ver
                 short wheelDelta = (short)(hook.MouseData >> 16);
-                action = wheelDelta > 0 
+                action = wheelDelta > 0
                     ? MouseAccion.WheelUp
                     : MouseAccion.WheelDown;
                 break;
             }
-                
+
             case MouseMsg.WheelHorizontal: // WM_MOUSEHWHEEL (Scroll Horizontal)
             {
-                ref readonly var hook = ref *(MSLLHOOKSTRUCT*)lParam;   
                 short hWheelDelta = (short)(hook.MouseData >> 16);
                 action = hWheelDelta > 0
-                    ? MouseAccion.WheelRight 
+                    ? MouseAccion.WheelRight
                     : MouseAccion.WheelLeft;
                 break;
             }
 
             case MouseMsg.XButtonDown: // WM_XBUTTONDOWN
             {
-                ref readonly var hook = ref *(MSLLHOOKSTRUCT*)lParam;   
                 ushort xButtonDown = (ushort)(hook.MouseData >> 16);
                 action = xButtonDown == 1
-                    ? MouseAccion.SideButton1Down 
+                    ? MouseAccion.SideButton1Down
                     : MouseAccion.SideButton2Down;
                 break;
             }
 
             case MouseMsg.XButtonUp: // WM_XBUTTONUP
             {
-                ref readonly var hook = ref *(MSLLHOOKSTRUCT*)lParam;   // unsafe ver
                 ushort xButtonUp = (ushort)(hook.MouseData >> 16);
-                action = xButtonUp == 1 
-                    ? MouseAccion.SideButton1Up 
+                action = xButtonUp == 1
+                    ? MouseAccion.SideButton1Up
                     : MouseAccion.SideButton2Up;
                 break;
             }

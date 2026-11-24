@@ -33,7 +33,7 @@ internal static partial class WinApi
 
     [LibraryImport("user32.dll", SetLastError = true)]
     internal static partial IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int X, int Y, int cx, int cy, int uFlags);
-    
+
     #endregion
 
     #region Get Handlers
@@ -62,7 +62,7 @@ internal static partial class WinApi
 
     #region Parámetros del sistema - SPI
 
-    [LibraryImport("user32.dll", SetLastError = true)]
+    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfoW", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]
     internal static partial bool SystemParametersInfo(
         uint uiAction,
@@ -75,18 +75,18 @@ internal static partial class WinApi
 
     #region Mouse
 
-    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfo")]
+    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfoW")]
     [return: MarshalAs(UnmanagedType.Bool)]
     public static partial bool GetMouseSpeed(uint uiAction, uint uiParam, out uint pvParam, uint fWinIni);
 
-    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfo")]
+    [LibraryImport("user32.dll", EntryPoint = "SystemParametersInfoW")]
     [return: MarshalAs(UnmanagedType.Bool)]
     public static partial bool SetMouseSpeed(uint uiAction, uint uiParam, uint pvParam, uint fWinIni);
 
     [LibraryImport("user32.dll", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]
     internal static partial bool GetCursorPos(ref Punto pt);
-    
+
     //Fix axis
     [LibraryImport("user32.dll")]
     internal static partial void ClipCursor(Rectangulo lpRect);
@@ -105,7 +105,7 @@ internal static partial class WinApi
 
     #region Post async - app command
 
-    [LibraryImport("user32.dll")]
+    [LibraryImport("user32.dll", EntryPoint = "PostMessageW")]
     [return: MarshalAs(UnmanagedType.Bool)]
     public static partial bool PostMessage(IntPtr hWnd, uint Msg, IntPtr wParam, int lParam);
 
@@ -113,7 +113,7 @@ internal static partial class WinApi
 
     #region Hook
 
-    [LibraryImport("user32.dll", SetLastError = true)]
+    [LibraryImport("user32.dll", EntryPoint = "SetWindowsHookExW", SetLastError = true)]
     internal static partial nint SetWindowsHookEx(int idHook, LowHookProc lpfn, nint hMod, uint dwThreadId);
 
     [LibraryImport("user32.dll", SetLastError = true)]
@@ -123,7 +123,7 @@ internal static partial class WinApi
     [LibraryImport("user32.dll", SetLastError = true)]
     internal static partial nint CallNextHookEx(nint hhk, int nCode, nint wParam, nint lParam);
 
-    [LibraryImport("kernel32.dll", StringMarshalling = StringMarshalling.Utf16, SetLastError = true)]
+    [LibraryImport("kernel32.dll", EntryPoint = "GetModuleHandleW", StringMarshalling = StringMarshalling.Utf16, SetLastError = true)]
     internal static partial IntPtr GetModuleHandle(string lpModuleName);
 
     #endregion

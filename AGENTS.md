@@ -23,7 +23,7 @@ Código artisan, sin arquitecturas impuestas (nada de clean, hexagonal, CQRS); o
 - Una tarea por sesión. Lo fuera de scope anótalo en "Next" de `.agents/STATUS.md` y sigue.
 - No hablar como cotorra. Si falta info para decidir, pregunta; no asumas.
 - Pregunta antes de decisiones de arquitectura, stack o scope, y regístralas en `.agents/DECISIONS.md`.
-- No hacer build sin permiso del developer.
+- Compilar (`dotnet build`) con criterio: tras cambios de código significativos o antes de commitear, sin spamear builds en ediciones menores; no correr `dotnet run` sin permiso.
 - Sin dependency injection. Sin interfaces de adorno. Módulos usan `Infra` libremente.
 - Idioma: spanglish (inglés/español con normalidad). Nunca escribir secretos en `.agents/`.
 - **Recursos (.resx)**: keys en kebab-case (`menu-start-with-windows`). Inglés neutral (`Resources.resx`), español (`Resources.es.resx`). Presentar siempre en tabla única: Key / English / Español.

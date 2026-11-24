@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using Raxer.Modules.Profiles;
+using AppLoader = Raxer.Modules.Loader.Loader;
 
 namespace Raxer.Modules.Settings.PageVMs;
 
@@ -39,6 +40,9 @@ public partial class PerfilesVM : ObservableObject
     partial void OnPerfilSeleccionadoChanged(Profile? value)
     {
         if (App.Settings is not null && value is not null)
+        {
             App.Settings.ActiveProfileId = value.Id;
+            AppLoader.ApplyActiveProfile();
+        }
     }
 }

@@ -1,7 +1,9 @@
 using LangRX;
 using LocalSettingsJson;
 //using Raxer.Infra.Lang;
+using Raxer.Infra.Native;
 using Raxer.Modules.Profiles;
+using Raxer.Modules.Remapping;
 using Raxer.Modules.Settings;
 
 namespace Raxer.Modules.Loader;
@@ -40,21 +42,28 @@ public static class Loader
 
         Log($"Loader: config cargada ({App.Config.Profiles.Count} perfiles, {App.Config.Filters.Count} filtros)");
 
-        // placeholder: el hook todavia no se activa (remapping inactivo hasta que haya mapa)
-        // MouseHook.Start();
+        ApplyActiveProfile();
+        MouseHook.Start();
+    }
+
+    /// <summary>Traduce el perfil activo y su filtro al registry de remapping.</summary>
+    public static void ApplyActiveProfile()
+    {
+        var profile = App.Config?.FindProfile(App.Settings?.ActiveProfileId);
+        ProfileMapper.Apply(profile, App.Config);
     }
 
     /// <summary>Cierre de la app. Llamar desde App.OnExit. Persiste settings y config.</summary>
     public static void Shutdown()
     {
+        MouseHook.Stop();
+        MouseReasignRegistry.Limpiar();
+
         if (App.Settings is not null)
             SettingsStorage.Save(App.Settings);
 
         if (App.Config is not null)
             ConfigStorage.Save(App.Config, App.Settings?.ConfigPath);
-
-        // placeholder: ver Startup()
-        // MouseHook.Stop();
 
         Log("Loader: shutdown");
     }

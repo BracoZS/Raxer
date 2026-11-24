@@ -1,21 +1,20 @@
 # Status
 
 Updated: 2026-11-23
-Current focus: Conectar Remapping end-to-end (Loader → MouseReasignRegistry → MouseHook + AppFilter)
+Current focus: UI (mocks en Infra/Dev/) y Backend de CRUD Perfiles/Filtros/Remaps por separado
 
 ## Done
-- Estructura `.agents/` creada y `AGENTS.md` fusionado.
-- `docs/` obsoleto limpiado y proyecto migrado a `.NET 11` (`net11.0-windows7.0`, C# 15).
-- `WindowManager` movido de `Modules/` a `Infra/WindowManagement/`.
-- `Modelo de Perfiles + Filtros y persistencia (.rxconfig)` cerrado: modelos en `Modules/Profiles/`, `ConfigStorage` (`.rxconfig`), wiring en `App`/`AppSettings`/`Loader`, VMs + `InicioPage`/`PerfilesPage` sin mocks y `d:Visibility` documentado en `STACK.md`.
+- `Modelo de Perfiles + Filtros y persistencia (.rxconfig)` cerrado (`29caab0`).
+- `Remapping end-to-end` conectado (`AppFilter.IsActive`, `MouseReasignRegistry`, `MouseDispatcher`, `ProfileMapper`, `MouseHook` + fix de 6 `EntryPoint` `*W` en `WinApi.cs`, `Loader`/`PerfilesVM`) y verificado compilando limpio.
+- Norma de `dotnet build` con criterio actualizada en `AGENTS.md` y `.agents/STACK.md`.
+- Registrada `D-003` en `.agents/DECISIONS.md` para trabajar UI (mocks en `Infra/Dev/`) y backend por separado antes del wiring.
 
 ## In progress
-- Ninguno (cambios de Perfiles/Filtros verificados en ejecución, pendientes de commit).
+- Ninguno (listo para arrancar siguiente sesión bajo `D-003`).
 
 ## Next
-1. Conectar Remapping end-to-end (`Loader` → `MouseReasignRegistry` → `MouseHook` + `AppFilter`).
-2. CRUD visual de Perfiles, Filtros y Remaps en Settings.
-3. Migrar `ConfigStorage` a `LocalSettingsJson` cuando soporte rutas custom.
+1. Wiring final UI ↔ Backend de CRUD Perfiles/Filtros/Remaps.
+2. Migrar `ConfigStorage` a `LocalSettingsJson` cuando soporte rutas custom.
 
 ## Blockers y preguntas
 - Ninguno.

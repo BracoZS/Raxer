@@ -1,17 +1,27 @@
-using ResultPattern;
 using System.Runtime.CompilerServices;
+using Raxer.Infra.Tools;
+using ResultPattern;
 
 namespace Raxer.Modules.Remapping;
 
 public static class MouseDispatcher
 {
-    /// <summary>Ejecuta el handler si la acciÛn est· reasignada.
-    /// Devuelve true si consumiÛ el evento (el hook no lo pasa al sistema).</summary>
+    /// <summary>Ejecuta el handler si la acci√≥n est√° reasignada y pasa el filtro de apps.
+    /// Devuelve true si consumi√≥ el evento (el hook no lo pasa al sistema).</summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool Handle(MouseAccion accion)
     {
-        var remap = MouseReasignRegistry.GetRemap(accion);
-        if (remap is null) return false;
+        if (!MouseReasignRegistry.HasTrigger(accion))
+            return false;
+
+        var mods = SystemTools.GetPressedModificador();
+        var remap = MouseReasignRegistry.GetRemap(accion, mods);
+        if (remap is null)
+            return false;
+
+        var filter = MouseReasignRegistry.ActiveFilter;
+        if (filter.IsActive && filter.IsBlocked(SystemTools.GetCursorAppExeName()))
+            return false;
 
         // fire and forget
         ThreadPool.UnsafeQueueUserWorkItem(
@@ -20,7 +30,7 @@ public static class MouseDispatcher
                 Result.Try(state)
                     .OnFailure(error => Log(error));
             },
-            remap!,
+            remap,
             preferLocal: true);
 
         return true;

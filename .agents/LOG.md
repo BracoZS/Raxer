@@ -2,6 +2,10 @@
 
 Prepend-only (más reciente primero), una entrada por sesión (`## YYYY-MM-DD (hh:mm am/pm) — <título>`, 12h). Nunca leer completo: cuando haya duda, leer solo las primeras 20 líneas.
 
+## 2026-11-23 (08:41 pm) — Remapping end-to-end y fix EntryPoint WinApi
+- Done: `ProfileMapper`, `MouseReasignRegistry` (modificadores + `ActiveFilter` + bitmask), `MouseDispatcher`, `MouseHook` (skip injected + guards), wiring en `Loader`/`PerfilesVM`, fix de 6 `EntryPoint` `*W` en `WinApi.cs`, y regla `dotnet build` con criterio en `AGENTS.md`/`STACK.md`. Registrada `D-003` para trabajar UI con mocks en `Infra/Dev/` y backend aparte.
+- Pending: Siguiente sesión — avanzar UI (mocks en `Infra/Dev/`) y backend CRUD por separado con contratos compatibles.
+
 ## 2026-11-23 (08:03 pm) — Perfiles, Filtros y persistencia (.rxconfig)
 - Done: Modelos en `Modules/Profiles/`, `ConfigStorage` (`.rxconfig`), wiring en `App`/`AppSettings`/`Loader`, PageVMs y `InicioPage`/`PerfilesPage` sin mocks; `WindowManager` movido a `Infra/WindowManagement/`; regla `d:Visibility` en `STACK.md` y limpiada de `InicioPage.xaml`.
 - Pending: Commit de cambios y arrancar `Conectar Remapping end-to-end`.

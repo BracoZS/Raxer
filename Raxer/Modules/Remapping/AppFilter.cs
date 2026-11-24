@@ -23,6 +23,8 @@ public class AppFilter
         _mode = mode;
     }
 
+    public bool IsActive => _mode != FilterMode.None;
+
     /// <summary>
     /// Evalúa si una aplicación debe ser bloqueada según las reglas configuradas.
     /// Consumir en un Guard Clause

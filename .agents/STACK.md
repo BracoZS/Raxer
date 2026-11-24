@@ -25,7 +25,7 @@
 
 | Action | Command |
 |---|---|
-| Build | `dotnet build` *(solo con permiso del developer)* |
+| Build | `dotnet build` *(con criterio tras cambios significativos)* |
 | Run | `dotnet run --project Raxer/Raxer.csproj` *(solo con permiso del developer)* |
 | Test | TBD |
 
