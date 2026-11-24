@@ -1,21 +1,23 @@
-using System.Collections.ObjectModel;
-using CommunityToolkit.Mvvm.ComponentModel;
+using Raxer.Modules.Profiles;
 
 namespace Raxer.Modules.Settings.PageVMs;
 
+/// <summary>
+/// ViewModel de la página de inicio. Expone resumen del perfil activo y configuración general.
+/// </summary>
 public partial class InicioVM : ObservableObject
 {
     [ObservableProperty]
-    string perfilActual = "Glorius 3X80CR";
+    string perfilActual = "—";
 
     [ObservableProperty]
-    string filtroActual = "Office aplications";
+    string filtroActual = "—";
 
     [ObservableProperty]
-    string archivoConfig = @"C:\Settings\ConfigFiles.rxconfig";
+    string archivoConfig = ConfigStorage.DefaultPath;
 
     [ObservableProperty]
-    string atajoPerfil = "Control + R + >";
+    string atajoPerfil = "—";
 
     [ObservableProperty]
     bool notificaciones = true;
@@ -25,4 +27,19 @@ public partial class InicioVM : ObservableObject
 
     [ObservableProperty]
     bool mejoraPrecision = false;
+
+    public InicioVM()
+    {
+        archivoConfig = ConfigStorage.ResolvePath(App.Settings?.ConfigPath);
+
+        if (App.Config is null)
+            return;
+
+        var active = App.Config.FindProfile(App.Settings?.ActiveProfileId);
+        var filter = App.Config.FindFilter(active?.FilterId);
+
+        perfilActual = active?.Name ?? "—";
+        filtroActual = filter?.Name ?? "—";
+        atajoPerfil = string.IsNullOrWhiteSpace(active?.Shortcut) ? "—" : active.Shortcut;
+    }
 }

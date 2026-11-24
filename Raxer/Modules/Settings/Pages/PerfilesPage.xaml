@@ -42,17 +42,19 @@
                            Grid.Row="0"
                            Grid.Column="0"
                            Style="{StaticResource t_x}"/>
-            <ComboBox Text="Glorius KG#(8D"
-                           Grid.Row="0"
-                           Grid.Column="1"
-                           Width="128"
-                           Height="22" 
-                           Style="{StaticResource combo}"/>
+            <ComboBox ItemsSource="{Binding Perfiles}"
+                      SelectedItem="{Binding PerfilSeleccionado}"
+                      DisplayMemberPath="Name"
+                      Grid.Row="0"
+                      Grid.Column="1"
+                      Width="128"
+                      Height="22"
+                      Style="{StaticResource combo}"/>
             <Button Style="{StaticResource boton_menu}"
                         Grid.Row="0"
                         Grid.Column="2"/>
 
-            <TextBlock Text="Filter: [solo gaming, apps Office]"
+            <TextBlock Text="{Binding FiltroDelPerfilTexto}"
                            Grid.Row="1"
                            Grid.ColumnSpan="2"
                            Grid.Column="0"

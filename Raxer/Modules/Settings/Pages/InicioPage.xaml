@@ -55,19 +55,21 @@
                 </TextBlock>
 
                 <!-- Parte derecha -->
-                <TextBlock Text="Glorius 3X80CR"
+                <TextBlock Text="{Binding PerfilActual}"
                               Grid.Column="1"
                               Grid.Row="0"
                               />
-                <TextBlock Text="Office aplications"
+                <TextBlock Text="{Binding FiltroActual}"
                               Grid.Column="1"
                               Grid.Row="1"
                               />
-                <TextBlock Text="C:\Settings\ConfigFiles.rxconfig"
+                <TextBlock Text="{Binding ArchivoConfig}"
+                           ToolTip="{Binding ArchivoConfig}"
+                           TextTrimming="CharacterEllipsis"
                               Grid.Column="1"
                               Grid.Row="2"
                               />
-                <TextBlock Text="Control + R  +  >"
+                <TextBlock Text="{Binding AtajoPerfil}"
                               Grid.Column="1"
                               Grid.Row="3"
                               />
@@ -100,7 +102,6 @@
                 Header="{DynamicResource section-visibility}"
                 Width="285"
                 Margin="0,11,0,0"
-                d:Visibility="Visible"
                 Visibility="Visible">
                 <StackPanel>
                     <CheckBox 

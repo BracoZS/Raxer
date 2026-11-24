@@ -2,6 +2,10 @@
 
 Prepend-only (más reciente primero), una entrada por sesión (`## YYYY-MM-DD (hh:mm am/pm) — <título>`, 12h). Nunca leer completo: cuando haya duda, leer solo las primeras 20 líneas.
 
+## 2026-11-23 (08:03 pm) — Perfiles, Filtros y persistencia (.rxconfig)
+- Done: Modelos en `Modules/Profiles/`, `ConfigStorage` (`.rxconfig`), wiring en `App`/`AppSettings`/`Loader`, PageVMs y `InicioPage`/`PerfilesPage` sin mocks; `WindowManager` movido a `Infra/WindowManagement/`; regla `d:Visibility` en `STACK.md` y limpiada de `InicioPage.xaml`.
+- Pending: Commit de cambios y arrancar `Conectar Remapping end-to-end`.
+
 ## 2026-11-23 (06:54 pm) — Migración a .NET 11 y limpieza de docs
 - Done: Target actualizado a `net11.0-windows7.0` (C# 15), compilando limpio; eliminada carpeta `docs/` y referencias al código viejo.
 - Pending: Definir próximo foco en `.agents/ROADMAP.md`.

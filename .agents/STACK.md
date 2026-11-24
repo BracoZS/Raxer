@@ -39,3 +39,4 @@
 
 - Dependency injection, interfaces de adorno, clean / hexagonal / CQRS.
 - `[DllImport]` (usar `[LibraryImport]`).
+- `d:Visibility` en XAML (rompe la resolución de `{DynamicResource}` y tumba el render del diseñador XAML en Visual Studio).

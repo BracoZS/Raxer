@@ -13,21 +13,12 @@
   <ItemGroup>
     <Using Remove="System.Windows.Forms" />
     <Using Remove="System.Drawing" />
-    <Compile Remove="Infra\Dev\reference\**" />
-  </ItemGroup>
-
-	<ItemGroup>
-    <Folder Include="Infra\Dev\reference\" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\Iconos\**" />
     <Resource Include="Assets\Fuentes\**" />
 	<Resource Include="Assets\Images\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Remove="Infra\Dev\reference\Configuracion.xaml" />
   </ItemGroup>
 
   <ItemGroup>

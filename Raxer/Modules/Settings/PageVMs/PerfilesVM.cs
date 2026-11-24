@@ -1,35 +1,44 @@
 using System.Collections.ObjectModel;
+using Raxer.Modules.Profiles;
 
 namespace Raxer.Modules.Settings.PageVMs;
 
+/// <summary>
+/// ViewModel de la página de perfiles. Carga perfiles y acciones disponibles desde <see cref="App.Config"/>.
+/// </summary>
 public partial class PerfilesVM : ObservableObject
 {
     [ObservableProperty]
-    ObservableCollection<DemoProfile> _perfiles = new()
-    {
-        new() { Nombre = "General", Filtro = "Ninguno", Activo = true },
-        new() { Nombre = "Gaming", Filtro = "Blacklist", Activo = false },
-        new() { Nombre = "Edición", Filtro = "Whitelist", Activo = false }
-    };
+    private ObservableCollection<Profile> _perfiles = [];
 
     [ObservableProperty]
-    ObservableCollection<string> _lista = new()
-    {
-        "Administrador",
-        "Default",
-        "Ninguno",
-        "Key",
-        "Usuario",
-        "Invitado"
-    };
+    [NotifyPropertyChangedFor(nameof(FiltroDelPerfilTexto))]
+    private Profile? _perfilSeleccionado;
 
     [ObservableProperty]
-    DemoProfile? _perfilSeleccionado;
-}
+    private ObservableCollection<string> _lista = new(Enum.GetNames<ActionKind>());
 
-public class DemoProfile
-{
-    public string Nombre { get; set; } = "";
-    public string Filtro { get; set; } = "";
-    public bool Activo { get; set; }
+    public string FiltroDelPerfilTexto
+    {
+        get
+        {
+            var filter = App.Config?.FindFilter(PerfilSeleccionado?.FilterId);
+            return filter is null ? "Filter: —" : $"Filter: {filter.Name} ({filter.Mode})";
+        }
+    }
+
+    public PerfilesVM()
+    {
+        if (App.Config is null)
+            return;
+
+        _perfiles = new(App.Config.Profiles);
+        _perfilSeleccionado = App.Config.FindProfile(App.Settings?.ActiveProfileId);
+    }
+
+    partial void OnPerfilSeleccionadoChanged(Profile? value)
+    {
+        if (App.Settings is not null && value is not null)
+            App.Settings.ActiveProfileId = value.Id;
+    }
 }

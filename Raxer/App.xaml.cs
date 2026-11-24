@@ -1,8 +1,9 @@
 ﻿using LangRX;
+using Raxer.Infra.WindowManagement;
 using Raxer.Modules.Loader;
+using Raxer.Modules.Profiles;
 using Raxer.Modules.Settings;
 using Raxer.Modules.Tray;
-using Raxer.Modules.WindowManager;
 using System.Windows;
 
 namespace Raxer;
@@ -11,6 +12,9 @@ public partial class App : Application
 {
     /// <summary>Settings globales de la app. App es el dueño; Loader las carga y persiste.</summary>
     public static AppSettings? Settings { get; set; }
+
+    /// <summary>Configuración portable (.rxconfig) de perfiles y filtros. Cargada por Loader.</summary>
+    public static RaxerConfig? Config { get; set; }
 
     private TrayIcon? _tray;
     private WindowManager? _windowManager;

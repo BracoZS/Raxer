@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace Raxer.Modules.WindowManager;
+namespace Raxer.Infra.WindowManagement;
 
 /// <summary>
 /// Gestión genérica de ventanas: abrir, mostrar y cerrar cualquier Window.

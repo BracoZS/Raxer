@@ -1,41 +1,47 @@
 using System.Collections.ObjectModel;
-using CommunityToolkit.Mvvm.ComponentModel;
+using Raxer.Modules.Profiles;
 
 namespace Raxer.Modules.Settings.PageVMs;
 
+/// <summary>
+/// ViewModel de la página de filtros. Proyecta los filtros definidos en <see cref="App.Config"/>.
+/// </summary>
 public partial class FiltrosVM : ObservableObject
 {
     [ObservableProperty]
-    ObservableCollection<DemoFilter> _filtros = new()
+    private ObservableCollection<FilterItem> _filtros = [];
+
+    public FiltrosVM()
     {
-        new DemoFilter
+        if (App.Config is null)
+            return;
+
+        foreach (var filter in App.Config.Filters)
         {
-            Titulo = "Navegadores",
-            Tipo = "Whitelist",
-            Apps = new() { "Chrome", "Firefox", "Edge" },
-            Links = new() { "Perfil general", "Perfil web" }
-        },
-        new DemoFilter
-        {
-            Titulo = "Juegos",
-            Tipo = "Blacklist",
-            Apps = new() { "Steam", "Epic", "GOG" },
-            Links = new() { "Perfil gaming" }
-        },
-        new DemoFilter
-        {
-            Titulo = "编辑",
-            Tipo = "Whitelist",
-            Apps = new() { "Photoshop", "Blender" },
-            Links = new() { "Perfil edición" }
+            var linkedProfiles = App.Config.Profiles
+                .Where(p => string.Equals(p.FilterId, filter.Id, StringComparison.Ordinal))
+                .Select(p => p.Name);
+
+            _filtros.Add(new FilterItem
+            {
+                Id = filter.Id,
+                Titulo = filter.Name,
+                Tipo = filter.Mode.ToString(),
+                Apps = new(filter.Apps),
+                Links = new(linkedProfiles)
+            });
         }
-    };
+    }
 }
 
-public class DemoFilter
+/// <summary>
+/// Proyección de lectura de un <see cref="FilterDefinition"/> para la vista de filtros.
+/// </summary>
+public sealed class FilterItem
 {
-    public string Titulo { get; set; } = "";
-    public string Tipo { get; set; } = "";
-    public ObservableCollection<string> Apps { get; set; } = new();
-    public ObservableCollection<string> Links { get; set; } = new();
+    public string Id { get; init; } = string.Empty;
+    public string Titulo { get; init; } = string.Empty;
+    public string Tipo { get; init; } = string.Empty;
+    public ObservableCollection<string> Apps { get; init; } = [];
+    public ObservableCollection<string> Links { get; init; } = [];
 }

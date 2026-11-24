@@ -6,12 +6,17 @@ Solo se trabaja en el ítem marcado `← CURRENT`.
 Ninguna, proyecto continuo.
 
 ## Current focus ← CURRENT
-TBD
+Conectar Remapping end-to-end (`Loader` → `MouseReasignRegistry` → `MouseHook` + `AppFilter`)
 Done when:
-- [ ] TBD
+- [ ] Traducir `Profile.Remaps` + `FilterDefinition.ToAppFilter()` hacia `MouseReasignRegistry` y `Modules/Actions`.
+- [ ] Enganchar `MouseHook.Start()`/`Stop()` en `Loader` y reactualizar al cambiar `ActiveProfileId`.
+- [ ] Verificado en ejecución por el developer.
 
 ## Next
-1. TBD
+1. CRUD visual de Perfiles, Filtros y Remaps en Settings.
+
+## Completed
+- [x] Modelo de Perfiles + Filtros y persistencia (`.rxconfig`) — spec: `.agents/specs/profiles-and-filters.md`
 
 ## Later
 - Limpiar cambios pendientes de `TestsWindow.xaml/.cs` (decidir commit propio).
